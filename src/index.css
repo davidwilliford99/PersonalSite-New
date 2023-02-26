@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gives us the dark scrollbar */
+* {
+  color-scheme: dark;
+}
