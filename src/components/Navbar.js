@@ -34,7 +34,7 @@ export const Navbar = () => {
     return (
       <div 
             id='Navbar' 
-            className='font-Montserrat 2xl:px-48
+            className='fixed w-full font-Montserrat 2xl:px-48
                        flex justify-center items-center'
             ref={ref}
             >

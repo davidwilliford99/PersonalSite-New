@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-dark">
       <BrowserRouter>
-        <Navbar className='sticky top-0 z-50'/>
+        <Navbar className='fixed'/>
 
         <Routes>
           <Route path="/" element={<MainPage />} />
