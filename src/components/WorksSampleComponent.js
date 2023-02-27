@@ -22,7 +22,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "My Portfolio Site",
-            description: "This site is made entirely from scratch using React and Tailwind. Enjoy!",
+            description: "This site is made entirely from scratch using React and Tailwind.",
             image: pwScreenshot
         },
         {
@@ -60,7 +60,13 @@ export const WorksSamplesComponent = () => {
                 <h3 className='text-xl ml-5 py-6 text-orange-300 tracking-widest'>MY WORKS</h3>
             </div>
 
-            <h3 className='text-6xl font-Gloock leading-snug my-6 mb-20'>
+            <h3 
+                className='text-6xl font-Gloock leading-snug my-6 mb-20'
+                style={{
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 3s"
+                }}
+                >
                 All of my projects are all available on Github, feel free to check them out!
             </h3>
 
