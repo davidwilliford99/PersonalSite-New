@@ -4,7 +4,6 @@ import { useRef } from 'react';
 
 import linkedIn from './../assets/linkedin.png'
 import github from './../assets/github.png'
-import './../animations/scroll-animations.css';
 import { useInView } from 'framer-motion';
 
 
@@ -18,7 +17,8 @@ export const IntroComponent = () => {
     return (
 
       <div id='Intro' 
-           className='font-Montserrat 2xl:px-48 min-h-screen flex items-center justify-between overflow-x-hidden'
+           className='  font-Montserrat 2xl:px-48 min-h-screen flex items-center 
+                        justify-between overflow-x-hidden z-0'
            >
         
         <div 
@@ -59,7 +59,8 @@ export const IntroComponent = () => {
                 >
                     I am David Williford, <br/>
                     a computer science<br/>
-                    student at ECU.</h1>
+                    student at ECU.
+            </h1>
 
             <Link 
                 to='' 

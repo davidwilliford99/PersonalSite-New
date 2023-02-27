@@ -1,5 +1,4 @@
 import { React, useRef } from 'react';
-import './../animations/scroll-animations.css';
 import { useInView } from 'framer-motion';
 
 // experience with logos 
@@ -65,7 +64,7 @@ export const WorksComponent = () => {
 
     return (
 
-        <div className='font-Montserrat bg-dark 2xl:px-48'>
+        <div className='font-Montserrat bg-dark 2xl:px-48 z-0'>
 
 
             {/* "Exeprience With" Section */}

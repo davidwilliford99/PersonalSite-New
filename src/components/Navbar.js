@@ -35,7 +35,7 @@ export const Navbar = () => {
       <div 
             id='Navbar' 
             className='fixed w-full font-Montserrat 2xl:px-48
-                       flex justify-center items-center'
+                       flex justify-center items-center z-10'
             ref={ref}
             >
         
@@ -54,7 +54,7 @@ export const Navbar = () => {
                     if(navItem.selected) {
                         return (
                             <Link className='w-full hover:text-orange-300 text-offWhite transition'>
-                                <li className='bg-dark w-full py-5 text-center tracking-wider'>
+                                <li className='font-bold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
                             </Link>
@@ -64,7 +64,7 @@ export const Navbar = () => {
                     else {
                         return (
                             <Link className='w-full hover:bg-dark bg-dark2 text-offWhite transition'>
-                                <li className='w-full py-5 text-center tracking-wider'>
+                                <li className='font-bold font-Roboto tracking-widest w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
                             </Link>

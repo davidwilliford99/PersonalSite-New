@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { AboutComponent } from '../components/AboutComponent';
 import { IntroComponent } from '../components/IntroComponent';
 import { WorksComponent } from '../components/WorksComponent';
 import { WorksSamplesComponent } from '../components/WorksSampleComponent';
@@ -10,6 +11,7 @@ export const MainPage = () => {
         <IntroComponent />
         <WorksComponent />
         <WorksSamplesComponent />
+        <AboutComponent />
       </div>
   
     );
