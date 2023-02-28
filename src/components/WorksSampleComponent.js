@@ -17,7 +17,7 @@ export const WorksSamplesComponent = () => {
     const worksSamples =[
         {
             name: "MajorStatistics",
-            description: "A personal project that displays statistics on various undergraduate majors.",
+            description: "A web app that displays statistics on various undergraduate majors.",
             image: cmScreenshot
         },
         {
