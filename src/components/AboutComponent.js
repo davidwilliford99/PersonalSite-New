@@ -39,8 +39,8 @@ export const AboutComponent = () => {
                         transition: "all 1s"
                     }}
                     >
-                        <h1 className='font-bold text-6xl mb-10'>
-                            About Me
+                        <h1 className='font-Roboto text-offWhite text-6xl mb-10'>
+                            About me ...
                         </h1>
 
                         <p className='text-2xl'>

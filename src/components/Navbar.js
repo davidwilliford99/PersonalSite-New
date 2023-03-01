@@ -1,10 +1,9 @@
 import { useInView } from 'framer-motion';
-import { React, useRef } from 'react';
+import { React, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-export const Navbar = () => {
-
+export const Navbar = (props) => {
 
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
@@ -14,16 +13,16 @@ export const Navbar = () => {
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", selected: false
+            name: "Welcome", url: "", logo: "", selected: props.introInView
         },
         {
-            name: "Works", url: "", logo: "", selected: true
+            name: "Works", url: "", logo: "", selected: props.worksInView
         },
         {
-            name: "About", url: "", logo: "", selected: false
+            name: "About", url: "", logo: "", selected: props.aboutInView
         },
         {
-            name: "Contact", url: "", logo: "", selected: false
+            name: "Contact", url: "", logo: "", selected: props.contactInView
         },
         {
             name: "Resume", url: "", logo: "", selected: false
@@ -34,7 +33,7 @@ export const Navbar = () => {
     return (
       <div 
             id='Navbar' 
-            className='fixed w-full font-Montserrat 2xl:px-48
+            className='bg-dark fixed w-full font-Montserrat 2xl:px-48
                        flex justify-center items-center z-10'
             ref={ref}
             >
