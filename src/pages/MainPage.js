@@ -6,6 +6,8 @@ import { WorksComponent } from '../components/WorksComponent';
 import { WorksSamplesComponent } from '../components/WorksSampleComponent';
 import { Navbar } from '../components/Navbar';
 import { useInView } from 'framer-motion';
+import { ResumeComponent } from '../components/ResumeComponent';
+import { Footer } from '../components/Footer';
 
 export const MainPage = () => {
 
@@ -13,11 +15,13 @@ export const MainPage = () => {
   const worksRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
+  const resumeRef = useRef(null)
 
   const introInView = useInView(introRef, {margin: '-250px'})
   const worksInView = useInView(worksRef, {margin: '-250px'})
   const aboutInView = useInView(aboutRef, {margin: '-250px'})
   const contactInView = useInView(contactRef, {margin: '-250px'})
+  const resumeInView = useInView(resumeRef, {margin: '-250px'})
 
   return (
     <div id='MainPage' className='font-Montserrat min-h-screen'>
@@ -28,6 +32,7 @@ export const MainPage = () => {
         worksInView={worksInView}
         aboutInView={aboutInView}
         contactInView={contactInView}
+        resumeInView={resumeInView}
         />
 
       <div ref={introRef}>
@@ -46,6 +51,12 @@ export const MainPage = () => {
       <div ref={contactRef}>
         <ContactComponent id='contact'/>
       </div>
+
+      <div ref={resumeRef}>
+        <ResumeComponent id='resume'/>
+      </div>
+
+      <Footer />
       
     </div>
 

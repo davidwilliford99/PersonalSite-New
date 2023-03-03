@@ -10,6 +10,7 @@ import { useInView } from 'framer-motion';
 
 export const IntroComponent = () => {
 
+    
     const ref = useRef(null)
     const isInView = useInView(ref, {margin: '-100px', once: true})
 
