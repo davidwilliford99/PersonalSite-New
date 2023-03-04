@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useRef } from 'react';
 import resumeImg from '../assets/resume-png.png';
 import resumePdf from '../assets/DavidWilliford-Resume.pdf';
 import { useInView } from 'framer-motion';
@@ -6,9 +6,12 @@ import { useInView } from 'framer-motion';
 
 export const ResumeComponent = () => {
 
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: true})
+
     return (
         <div id='Resume' 
-        className='  font-Montserrat 2xl:px-48 px-20 my-60 min-h-screen
+        className='  font-Montserrat 2xl:px-48 px-20 my-20 min-h-screen
                      flex items-center justify-center overflow-x-hidden
                      text-offWhite'
         >
@@ -16,6 +19,7 @@ export const ResumeComponent = () => {
          <div 
              className='flex'
              id='about-me-section'
+             ref={ref}
          >
 
 
