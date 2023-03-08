@@ -36,24 +36,24 @@ export const MainPage = () => {
         />
 
       <div ref={introRef}>
-        <IntroComponent id='intro'/>
+        <IntroComponent id='Intro'/>
       </div>
       
       <div ref={worksRef}>
-        <WorksComponent id='works'/>
-        <WorksSamplesComponent id='works'/>
+        <WorksComponent id='Works'/>
+        <WorksSamplesComponent id='Works'/>
       </div>
       
       <div ref={aboutRef}>
-        <AboutComponent id='about'/>
+        <AboutComponent id='About'/>
       </div>
 
       <div ref={contactRef}>
-        <ContactComponent id='contact'/>
+        <ContactComponent id='Contact'/>
       </div>
 
       <div ref={resumeRef}>
-        <ResumeComponent id='resume'/>
+        <ResumeComponent id='Resume'/>
       </div>
 
       <Footer />

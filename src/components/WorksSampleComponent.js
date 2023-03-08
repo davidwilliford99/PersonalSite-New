@@ -40,7 +40,9 @@ export const WorksSamplesComponent = () => {
 
     return (
 
-        <div className='font-Montserrat bg-dark px-20 2xl:px-48 mt-72 text-offWhite z-0'>
+        <div 
+            className='font-Montserrat bg-dark px-20 2xl:px-48 mt-72 text-offWhite z-0'
+            >
 
             <div 
                 id='welcome-text' 

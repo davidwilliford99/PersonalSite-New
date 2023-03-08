@@ -13,19 +13,19 @@ export const Navbar = (props) => {
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", selected: props.introInView
+            name: "Welcome", url: "", logo: "", isCurrent: props.introInView
         },
         {
-            name: "Works", url: "", logo: "", selected: props.worksInView
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView
         },
         {
-            name: "About", url: "", logo: "", selected: props.aboutInView
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView
         },
         {
-            name: "Contact", url: "", logo: "", selected: props.contactInView
+            name: "Contact", url: "", logo: "", isCurrent: props.contactInView
         },
         {
-            name: "Resume", url: "", logo: "", selected: props.resumeInView
+            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView
         },
 
     ];
@@ -50,7 +50,7 @@ export const Navbar = (props) => {
             {
                 navItems.map((navItem) => {
 
-                    if(navItem.selected) {
+                    if(navItem.isCurrent) {
                         return (
                             <Link className='w-full hover:text-orange-300 text-offWhite transition'>
                                 <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>

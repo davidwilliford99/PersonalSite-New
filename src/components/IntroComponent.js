@@ -64,7 +64,6 @@ export const IntroComponent = () => {
             </h1>
 
             <Link 
-                to='' 
                 className='
                         w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
                         rounded-lg text-center py-3 my-8
