@@ -1,0 +1,52 @@
+
+/* Head Movement Animation */
+@keyframes head {
+    0% {
+        transform: rotateZ(6deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+#head {
+    animation: head 1.3s infinite alternate ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+
+/* Check Movement Animation */
+@keyframes check {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+    }
+}
+
+
+#check {
+    animation: check 1s infinite alternate ease-in-out;
+}
+
+
+/* Head Movement Animation */
+@keyframes leaves {
+    0% {
+        transform: rotateZ(6deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+#leaves {
+    animation: leaves 5s infinite alternate ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}

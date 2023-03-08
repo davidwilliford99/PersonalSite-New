@@ -96,7 +96,7 @@ export const WorksSamplesComponent = () => {
                     <button 
                         type='button'
                         className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-orange-300 rounded-lg 
+                                    bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
@@ -123,7 +123,7 @@ export const WorksSamplesComponent = () => {
                     <button 
                         type='button'
                         className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-orange-300 rounded-lg 
+                                    bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
@@ -150,7 +150,7 @@ export const WorksSamplesComponent = () => {
                     <button 
                         type='button'
                         className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-orange-300 rounded-lg 
+                                    bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
@@ -177,7 +177,7 @@ export const WorksSamplesComponent = () => {
                     <button 
                         type='button'
                         className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-orange-300 rounded-lg 
+                                    bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!

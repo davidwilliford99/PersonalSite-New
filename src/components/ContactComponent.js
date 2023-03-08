@@ -62,7 +62,7 @@ export const ContactComponent = () => {
           </div>
 
           <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name='_next' value='http://localhost:3000/'></input>
+          <input type="hidden" name='_next' value='http://localhost:3000/ThankYou'></input>
           <textarea type="text"  rows="5" cols="10" placeholder="Write your message here" name="message" required className='m-3 w-full bg-dark border rounded-md p-4 text-white mb-10'></textarea>
           
           <button 
@@ -80,13 +80,6 @@ export const ContactComponent = () => {
               >
               SEND MESSAGE!
           </button>
-
-          { formSubmitted && (
-              <div> 
-                Your message has been sent, talk to you soon!
-              </div>
-              ) 
-          }
 
         </form>
 
