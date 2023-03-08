@@ -9,13 +9,15 @@ import { useInView } from 'framer-motion';
 import { ResumeComponent } from '../components/ResumeComponent';
 import { Footer } from '../components/Footer';
 
+
 export const MainPage = () => {
 
-  // state for component->component links 
-  const [linkClicked, setLinkClicked] = useState('')
-
-  // log for quick debugging
-  console.log(linkClicked)
+  // ref for clicked component
+  const aboutClickRef = useRef(null)
+  const introClickRef = useRef(null)
+  const worksClickRef = useRef(null)
+  const contactClickRef = useRef(null)
+  const resumeClickRef = useRef(null)
 
   // Refs for scroll location
   const introRef = useRef(null)
@@ -42,30 +44,44 @@ export const MainPage = () => {
         contactInView={contactInView}
         resumeInView={resumeInView}
 
-        setLinkClicked={setLinkClicked}
+        aboutClickRef={aboutClickRef}
+        introClickRef={introClickRef}
+        worksClickRef={worksClickRef}
+        resumeClickRef={resumeClickRef}
+        contactClickRef={contactClickRef}
         />
 
       <div ref={introRef}>
-        <IntroComponent 
-          id='Intro' 
-          setLinkClicked={setLinkClicked}/>
+        <div ref={introClickRef}>
+          <IntroComponent 
+            id='Intro' 
+            worksClickRef={worksClickRef}/>
+        </div>
       </div>
       
       <div ref={worksRef}>
         <WorksComponent id='Works'/>
-        <WorksSamplesComponent id='Works'/>
+          <div ref={worksClickRef}>
+            <WorksSamplesComponent id='Works'/>
+          </div>
       </div>
       
       <div ref={aboutRef}>
-        <AboutComponent id='About'/>
+        <div ref={aboutClickRef}>
+          <AboutComponent id='About'/>
+        </div>
       </div>
 
       <div ref={contactRef}>
-        <ContactComponent id='Contact'/>
+        <div ref={contactClickRef}>
+          <ContactComponent id='Contact'/>
+        </div>
       </div>
 
       <div ref={resumeRef}>
-        <ResumeComponent id='Resume'/>
+        <div ref={resumeClickRef}>
+          <ResumeComponent id='Resume'/>
+        </div>
       </div>
 
       <Footer />

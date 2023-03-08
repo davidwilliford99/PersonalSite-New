@@ -1,31 +1,40 @@
 import { useInView } from 'framer-motion';
 import { React, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export const Navbar = (props) => {
 
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
+
+    // run these functions from an event handler or an effect to execute scroll 
+    const introScroll = () => props.introClickRef.current.scrollIntoView({behavior: "smooth"})   
+    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
+    const aboutScroll = () => props.aboutClickRef.current.scrollIntoView({behavior: "smooth"})
+    const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
+    const resumeScroll = () => props.resumeClickRef.current.scrollIntoView({behavior: "smooth"})
+
+   
     
     /**
      * List of navbar items 
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", isCurrent: props.introInView
+            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
         },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
         },
         {
-            name: "Contact", url: "", logo: "", isCurrent: props.contactInView
+            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
         },
         {
-            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView
+            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView, goTo: resumeScroll
         },
 
     ];
@@ -52,31 +61,31 @@ export const Navbar = (props) => {
 
                     if(navItem.isCurrent) {
                         return (
-                            <Link 
+                            <NavLink 
                                 className='w-full hover:text-orange-300 text-offWhite transition' 
-                                onClick={() => props.setLinkClicked(navItem.name)}
+                                onClick={navItem.goTo}
                                 >
 
                                 <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
 
-                            </Link>
+                            </NavLink>
 
                         )
                     }
                     else {
                         return (
-                            <Link 
+                            <NavLink 
                                 className='w-full hover:bg-dark bg-dark2 text-offWhite transition' 
-                                onClick={() => props.setLinkClicked(navItem.name)}
+                                onClick={navItem.goTo}
                                 >
 
                                 <li className='font-semibold font-Roboto tracking-widest w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 
-                            </Link>
+                            </NavLink>
                         )
                     }
 

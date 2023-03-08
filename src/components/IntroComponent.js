@@ -8,12 +8,14 @@ import { useInView } from 'framer-motion';
 
 
 
-export const IntroComponent = () => {
+export const IntroComponent = (props) => {
 
     
     const ref = useRef(null)
     const isInView = useInView(ref, {margin: '-100px', once: true})
 
+    // prop for scrollingto projects section
+    const worksScroll = () => props.worksClickRef.current.scrollIntoView()
 
     return (
 
@@ -64,6 +66,7 @@ export const IntroComponent = () => {
             </h1>
 
             <Link 
+                onClick={worksScroll}
                 className='
                         w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
                         rounded-lg text-center py-3 my-8

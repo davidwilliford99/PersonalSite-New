@@ -5,15 +5,17 @@ import { useInView } from 'framer-motion';
 export const ContactComponent = () => {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const isInView = useInView(ref, {once: true, margin: '-100px'})
     const [formSubmitted, setFormSubmitted] = useState(false);
 
 
     return (
 
-      <div id='About' 
-           className='  font-Montserrat 2xl:px-48 px-20 mt-60 min-h-screen
+      <div 
+          id='About' 
+          className='  font-Montserrat 2xl:px-48 px-20 mt-60 min-h-screen
                         flex flex-col overflow-x-hidden text-offWhite'
+          ref={ref}
            >
 
         {/* Contact Title */}
@@ -21,7 +23,6 @@ export const ContactComponent = () => {
         <div 
                 id='welcome-text' 
                 className='flex items-center'
-                ref={ref}
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 0.5s"
