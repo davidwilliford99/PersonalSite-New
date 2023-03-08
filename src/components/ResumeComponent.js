@@ -55,15 +55,18 @@ export const ResumeComponent = () => {
                             transitionDelay: "1.5s"
                         }}
                         >
-                        <button 
-                            type='submit'
-                            className='
-                                    w-1/2 font-Montserrat bg-dark2 text-md
-                                    rounded-lg text-center py-3 my-10
-                                    hover:bg-neutral-300 hover:text-dark transition-all'
-                            >
-                            DOWNLOAD RESUME
-                        </button>
+                        <a href={resumePdf} download>
+                            <button 
+                                type='submit'
+                                className='
+                                        w-1/2 font-Montserrat bg-dark2 text-md
+                                        rounded-lg text-center py-3 my-10
+                                        hover:bg-neutral-300 hover:text-dark transition-all'
+                                >
+                                DOWNLOAD RESUME
+                            </button>
+                        </a>
+
                     </div>
 
 

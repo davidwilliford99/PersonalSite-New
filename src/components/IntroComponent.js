@@ -91,9 +91,16 @@ export const IntroComponent = () => {
                 transitionDelay: "2s"
             }}
             >
-                
-            <img src={linkedIn} alt='linkedin logo' className='h-10 mb-5 hover:rotate-180 transition'/>
-            <img src={github} alt='github logo' className='h-10 mt-5 hover:rotate-180 transition'/>
+            
+            <a href='https://www.linkedin.com/in/davidwilliford99/' target='_blank' rel="noreferrer">
+                <img src={linkedIn} alt='linkedin logo' className='h-10 mb-5 hover:rotate-180 transition cursor-pointer'/>
+            </a>
+            
+            <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
+                <img src={github} alt='github logo' className='h-10 mt-5 hover:rotate-180 transition cursor-pointer'/>
+            </a>
+
+
         </div>
 
   

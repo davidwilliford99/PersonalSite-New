@@ -93,14 +93,16 @@ export const WorksSamplesComponent = () => {
                     
                     <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[0].name}</h1>
                     <p className='text-center'>{worksSamples[0].description}</p>
-                    <button 
-                        type='button'
+                    <a 
+                        href='https://github.com/davidwilliford99/CollegeMajors'
+                        target='_blank'
+                        rel="noreferrer"
                         className=' my-5 px-5 py-2 text-dark font-semibold 
                                     bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
-                    </button>
+                    </a>
                 </li>
 
                 {/* Personal Website */}
@@ -120,14 +122,16 @@ export const WorksSamplesComponent = () => {
                     />
                     <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[1].name}</h1>
                     <p className='text-center'>{worksSamples[1].description}</p>
-                    <button 
-                        type='button'
+                    <a
+                        href='https://github.com/davidwilliford99/PersonalSite-New'
+                        target='_blank'
+                        rel="noreferrer"
                         className=' my-5 px-5 py-2 text-dark font-semibold 
                                     bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
-                    </button>
+                    </a>
                 </li>
 
                 {/* ACP */}
@@ -147,14 +151,12 @@ export const WorksSamplesComponent = () => {
                     />
                     <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[2].name}</h1>
                     <p className='text-center'>{worksSamples[2].description}</p>
-                    <button 
-                        type='button'
+                    <div
                         className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-purple-500 rounded-lg 
-                                    hover:bg-neutral-900 transition hover:text-offWhite'
+                                    bg-neutral-800 rounded-lg '
                         >
-                            Learn More!
-                    </button>
+                            Private Respository
+                    </div>
                 </li>
 
                 {/* TextArt */}
@@ -174,14 +176,16 @@ export const WorksSamplesComponent = () => {
                     />
                     <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[3].name}</h1>
                     <p className='text-center'>{worksSamples[3].description}</p>
-                    <button 
-                        type='button'
+                    <a 
+                        href='https://github.com/davidwilliford99/TextArt'
+                        target='_blank'
+                        rel="noreferrer"
                         className=' my-5 px-5 py-2 text-dark font-semibold 
                                     bg-purple-500 rounded-lg 
                                     hover:bg-neutral-900 transition hover:text-offWhite'
                         >
                             Learn More!
-                    </button>
+                    </a>
                 </li>
 
             </ul>
