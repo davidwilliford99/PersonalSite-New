@@ -3,8 +3,15 @@ import { React } from 'react';
 import { Link } from 'react-router-dom';
 
 
-export const Footer = () => {
+export const Footer = (props) => {
 
+        // run these functions from an event handler or an effect to execute scroll 
+        const introScroll = () => props.introClickRef.current.scrollIntoView({behavior: "smooth"})   
+        const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
+        const aboutScroll = () => props.aboutClickRef.current.scrollIntoView({behavior: "smooth"})
+        const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
+        const resumeScroll = () => props.resumeClickRef.current.scrollIntoView({behavior: "smooth"})
+    
 
     return (
         <div className='overflow-x-hidden pt-40'>

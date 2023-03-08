@@ -1,4 +1,4 @@
-import { React, useRef, useState } from 'react';
+import { React, useRef } from 'react';
 import { AboutComponent } from '../components/AboutComponent';
 import { ContactComponent } from '../components/ContactComponent';
 import { IntroComponent } from '../components/IntroComponent';
@@ -84,7 +84,13 @@ export const MainPage = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer 
+        aboutClickRef={aboutClickRef}
+        introClickRef={introClickRef}
+        worksClickRef={worksClickRef}
+        resumeClickRef={resumeClickRef}
+        contactClickRef={contactClickRef}
+      />
       
     </div>
 
