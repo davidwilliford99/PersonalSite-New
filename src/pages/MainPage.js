@@ -1,4 +1,4 @@
-import { React, useRef } from 'react';
+import { React, useRef, useState } from 'react';
 import { AboutComponent } from '../components/AboutComponent';
 import { ContactComponent } from '../components/ContactComponent';
 import { IntroComponent } from '../components/IntroComponent';
@@ -11,12 +11,20 @@ import { Footer } from '../components/Footer';
 
 export const MainPage = () => {
 
+  // state for component->component links 
+  const [linkClicked, setLinkClicked] = useState('')
+
+  // log for quick debugging
+  console.log(linkClicked)
+
+  // Refs for scroll location
   const introRef = useRef(null)
   const worksRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
   const resumeRef = useRef(null)
 
+  // View States for scroll location
   const introInView = useInView(introRef, {margin: '-250px'})
   const worksInView = useInView(worksRef, {margin: '-250px'})
   const aboutInView = useInView(aboutRef, {margin: '-250px'})
@@ -33,10 +41,14 @@ export const MainPage = () => {
         aboutInView={aboutInView}
         contactInView={contactInView}
         resumeInView={resumeInView}
+
+        setLinkClicked={setLinkClicked}
         />
 
       <div ref={introRef}>
-        <IntroComponent id='Intro'/>
+        <IntroComponent 
+          id='Intro' 
+          setLinkClicked={setLinkClicked}/>
       </div>
       
       <div ref={worksRef}>

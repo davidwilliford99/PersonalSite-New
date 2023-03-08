@@ -52,20 +52,30 @@ export const Navbar = (props) => {
 
                     if(navItem.isCurrent) {
                         return (
-                            <Link className='w-full hover:text-orange-300 text-offWhite transition'>
+                            <Link 
+                                className='w-full hover:text-orange-300 text-offWhite transition' 
+                                onClick={() => props.setLinkClicked(navItem.name)}
+                                >
+
                                 <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
+
                             </Link>
 
                         )
                     }
                     else {
                         return (
-                            <Link className='w-full hover:bg-dark bg-dark2 text-offWhite transition'>
+                            <Link 
+                                className='w-full hover:bg-dark bg-dark2 text-offWhite transition' 
+                                onClick={() => props.setLinkClicked(navItem.name)}
+                                >
+
                                 <li className='font-semibold font-Roboto tracking-widest w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
+                                
                             </Link>
                         )
                     }
