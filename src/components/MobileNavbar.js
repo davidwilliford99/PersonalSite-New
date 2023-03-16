@@ -2,6 +2,12 @@ import { useInView } from 'framer-motion';
 import { React, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import introImg from './../assets/welcome-mobile.png';
+import worksImg from './../assets/works-mobile.png';
+import aboutImg from './../assets/about-mobile.png';
+import contactImg from './../assets/contact-mobile.png';
+import resumeImg from './../assets/resume-mobile.png';
+
 
 export const MobileNavbar = (props) => {
 
@@ -22,19 +28,19 @@ export const MobileNavbar = (props) => {
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
+            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll, image: introImg
         },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: worksImg
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
         },
         {
-            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
+            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
         },
         {
-            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView, goTo: resumeScroll
+            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView, goTo: resumeScroll, image: resumeImg
         },
 
     ];
@@ -77,11 +83,13 @@ export const MobileNavbar = (props) => {
                     else {
                         return (
                             <NavLink 
-                                className='w-full text-offWhite transition border-solid border border-neutral-600' 
+                                className='w-full text-offWhite transition border-solid border border-neutral-600 flex flex-col items-center justify-center' 
                                 onClick={navItem.goTo}
                                 >
+                                
+                                <img src={navItem.image} alt='poop' className='h-10 pt-2'/>
 
-                                <li className='font-Roboto text-neutral-200 tracking-widest w-full py-5 text-center text-xs tracking-wider'>
+                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-5 pt-1 text-center text-xs tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 
