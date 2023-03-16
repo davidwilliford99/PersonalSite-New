@@ -3,7 +3,7 @@ import { React, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-export const Navbar = (props) => {
+export const MobileNavbar = (props) => {
 
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
@@ -43,7 +43,7 @@ export const Navbar = (props) => {
       <div 
             id='Navbar' 
             className='bg-dark fixed w-full font-Montserrat 2xl:px-48
-                       flex justify-center items-center z-10 invisible lg:visible'
+                       flex justify-center items-center z-10 lg:invisible bottom-0'
             ref={ref}
             >
         
@@ -66,7 +66,7 @@ export const Navbar = (props) => {
                                 onClick={navItem.goTo}
                                 >
 
-                                <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
+                                <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center text-sm tracking-wider'>
                                     {navItem.name}
                                 </li>
 
@@ -77,11 +77,11 @@ export const Navbar = (props) => {
                     else {
                         return (
                             <NavLink 
-                                className='w-full hover:bg-dark bg-dark2 text-offWhite transition' 
+                                className='w-full text-offWhite transition border-solid border border-neutral-600' 
                                 onClick={navItem.goTo}
                                 >
 
-                                <li className='font-semibold font-Roboto tracking-widest w-full py-5 text-center tracking-wider'>
+                                <li className='font-Roboto text-neutral-200 tracking-widest w-full py-5 text-center text-xs tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 

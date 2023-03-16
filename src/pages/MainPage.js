@@ -8,6 +8,7 @@ import { Navbar } from '../components/Navbar';
 import { useInView } from 'framer-motion';
 import { ResumeComponent } from '../components/ResumeComponent';
 import { Footer } from '../components/Footer';
+import { MobileNavbar } from '../components/MobileNavbar';
 
 
 export const MainPage = () => {
@@ -49,7 +50,23 @@ export const MainPage = () => {
         worksClickRef={worksClickRef}
         resumeClickRef={resumeClickRef}
         contactClickRef={contactClickRef}
-        />
+      />
+
+      <MobileNavbar 
+        className='fixed'
+        introInView={introInView}
+        worksInView={worksInView}
+        aboutInView={aboutInView}
+        contactInView={contactInView}
+        resumeInView={resumeInView}
+
+        aboutClickRef={aboutClickRef}
+        introClickRef={introClickRef}
+        worksClickRef={worksClickRef}
+        resumeClickRef={resumeClickRef}
+        contactClickRef={contactClickRef}
+      />
+
 
       <div ref={introRef}>
         <div ref={introClickRef}>
