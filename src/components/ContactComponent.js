@@ -69,7 +69,7 @@ export const ContactComponent = () => {
           </div>
 
           <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name='_next' value='https://davidwilliford.dev/#/ThankYou'></input>
+          <input type="hidden" name='_next' value='https://davidwilliford99.github.io/PersonalSite-New/#/ThankYou'></input>
           <textarea type="text"  rows="5" cols="10" placeholder="Write your message here" name="message" required className='m-3 w-full bg-dark border rounded-md p-4 text-white mb-10'></textarea>
           
           <button 
