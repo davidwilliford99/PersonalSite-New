@@ -11,23 +11,23 @@ export const ThankYouPage = () => {
 
   return (
       <div id='Thank-You' 
-      className='  font-Montserrat 2xl:px-48 px-20 min-h-screen
+      className='  font-Montserrat 2xl:px-48 px-5 py-14 md:px-20 md:min-h-screen
                    flex items-center justify-center overflow-x-hidden
                    text-offWhite'
       >
 
        <div 
-           className='flex'
+           className='flex flex-col md:flex-row'
            ref={ref}
        >
 
 
            <div
                id='text-section'
-               className='pr-20 flex flex-col justify-center'
+               className='md:pr-20 flex flex-col justify-center'
                >
                    <h1 
-                      className='font-Gloock text-offWhite text-8xl mb-10'
+                      className='font-Gloock text-offWhite text-5xl md:text-8xl mb-10'
                       style={{
                           transform: isInView ? "none" : "translateY(100px)",
                           opacity: isInView ? 1 : 0,
@@ -56,11 +56,11 @@ export const ThankYouPage = () => {
                       }}
                       >
                       <div className='
-                                    w-1/2 font-Montserrat bg-dark2 text-md
+                                    w-full md:w-1/2 font-Montserrat bg-dark2 text-md
                                     rounded-lg text-center py-3 my-10
                                     hover:bg-neutral-300 hover:text-dark transition-all'>
                         <Link to='/'>
-                              Back To Main Page
+                              Back To My Website
                         </Link>
                       </div>
 
@@ -76,9 +76,9 @@ export const ThankYouPage = () => {
 
               <div
                 id='svg'
-                className='w-1/3'
+                className='md:w-1/3 flex items-center justify-center'
                 >
-                  <svg width="500" height="705" viewBox="0 0 841 705" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg viewBox="0 0 841 705" fill="none" xmlns="http://www.w3.org/2000/svg" className='w-[20rem] md:w-[30rem]'>
                   <g id="Frame 1">
                   <g id="undraw_message_sent_re_q2kl 1" clip-path="url(#clip0_3_2)">
                   <g id="leaves">

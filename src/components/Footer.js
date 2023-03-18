@@ -24,7 +24,7 @@ export const Footer = (props) => {
             {/* End slanted rect div */}
 
 
-            <div className='flex w-full justify-between flex-between bg-dark2 px-5 sm:px-8 lg:px-52 py-10 pb-24 text-slate-200'>
+            <div className='flex w-full justify-between flex-between bg-dark2 px-5 sm:px-8 lg:px-52 2xl:px-72 py-10 pb-24 text-slate-200'>
 
                     
                 <div id='column-1' className='z-10 text-sm md:text-lg'>
