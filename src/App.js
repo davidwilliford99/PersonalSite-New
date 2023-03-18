@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import { MainPage } from "./pages/MainPage"
 import './App.css'
 import { ThankYouPage } from "./pages/ThankYouPage";
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="bg-dark">
-      <BrowserRouter>
+      <HashRouter>
 
         {/* 
             Navbar is now implemented in each page component seperately,
@@ -16,11 +16,12 @@ function App() {
         */}
 
         <Routes>
-          <Route path="/PersonalSite-New" element={<MainPage />} />
-          <Route path="/ThankYou" element={<ThankYouPage />} />
+          <Route exact path="/PersonalSite-New" element={<MainPage />} />
+          <Route exact path="/ThankYou" element={<ThankYouPage />} />
+          <Route exact path='/' element={ <MainPage /> }/>
         </Routes>
 
-      </BrowserRouter>
+      </HashRouter>
     </div>
 
 
