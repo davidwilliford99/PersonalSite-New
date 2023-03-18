@@ -71,7 +71,7 @@ export const WorksComponent = () => {
 
             <div 
                 id='experience-with'
-                className='flex flex-col px-5 md:px-20 mt-32 md:mt-40'
+                className='flex flex-col px-5 md:px-20 mt-40 md:mt-40'
                 ref={ref}
                 style={{
                     opacity: isInView ? 1 : 0,

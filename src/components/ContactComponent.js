@@ -13,7 +13,7 @@ export const ContactComponent = () => {
 
       <div 
           id='About' 
-          className='  font-Montserrat 2xl:px-48 px-20 mt-60 min-h-screen
+          className='  font-Montserrat 2xl:px-48 px-5 md:px-20 mt-60 min-h-screen
                         flex flex-col overflow-x-hidden text-offWhite'
           ref={ref}
            >
@@ -21,24 +21,30 @@ export const ContactComponent = () => {
         {/* Contact Title */}
 
         <div 
-                id='welcome-text' 
-                className='flex items-center'
-                style={{
-                    opacity: isInView ? 1 : 0,
-                    transition: "all 0.5s"
-                  }}
-                >
+            id='welcome-text' 
+            className='flex items-center justify-center md:justify-start'
+            style={{
+                opacity: isInView ? 1 : 0,
+                transition: "all 2s"
+              }}
+            >
 
-                {/* Line SVG */}
-                <svg height="3" width="50">
-                    <line x1="0" y1="0" x2="50" y2="0" className='stroke-neutral-300'/>
-                </svg>
-                  
-                <h3 className='text-xl ml-5 py-6 text-orange-300 tracking-widest'>CONTACT ME</h3>
-            </div>
+            {/* Line SVG */}
+            <svg height="3" width="50">
+                <line x1="0" y1="0" x2="50" y2="0" className='stroke-neutral-300'/>
+            </svg>
+
+            <h3 className='text-2xl md:text-xl mx-5 py-6 text-orange-300 tracking-widest'>CONTACT ME</h3>
+
+            {/* Line SVG  (only appears on mobile)*/}
+            <svg height="3" width="50">
+                <line x1="0" y1="0" x2="50" y2="0" className='md:invisible stroke-neutral-300'/>
+            </svg>
+
+        </div>
 
             <h3 
-                className='text-6xl font-Gloock leading-snug my-6 mb-20'
+                className='text-2xl md:text-6xl text-center md:text-left font-Gloock leading-snug my-6 mb-20'
                 style={{
                   transform: isInView ? "none" : "translateY(100px)",
                   opacity: isInView ? 1 : 0,

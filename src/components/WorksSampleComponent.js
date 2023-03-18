@@ -42,7 +42,7 @@ export const WorksSamplesComponent = () => {
 
         <div 
             className='
-                    font-Montserrat bg-dark px-5 md:px-20 2xl:px-48 mt-32 md:mt-72 text-offWhite z-0
+                    font-Montserrat bg-dark px-5 md:px-20 2xl:px-48 mt-52 md:mt-72 text-offWhite z-0
                     
                     flex flex-col items-center md:items-start'
             >

@@ -58,7 +58,7 @@ export const MobileNavbar = (props) => {
         <ul 
             className='flex w-full justify-evenly'
             style={{
-                transform: isInView ? "none" : "translateY(-100px)",
+                transform: isInView ? "none" : "translateY(100px)",
                 transition: "all 1s"
             }}
             >

@@ -14,7 +14,7 @@ export const Footer = (props) => {
     
 
     return (
-        <div className='overflow-x-hidden pt-40 z-0'>
+        <div className='overflow-x-hidden pt-20 md:pt-40 z-0'>
 
 
 
@@ -24,10 +24,10 @@ export const Footer = (props) => {
             {/* End slanted rect div */}
 
 
-            <div className='flex w-full justify-between flex-between bg-dark2 px-5 xl:px-52 py-10 pb-24 text-slate-200'>
+            <div className='flex w-full justify-between flex-between bg-dark2 px-5 sm:px-8 lg:px-52 py-10 pb-24 text-slate-200'>
 
                     
-                <div id='column-1' className='z-10'>
+                <div id='column-1' className='z-10 text-sm md:text-lg'>
                     <h1 id='title' className='mb-5 text-2xl font-semibold'>Socials</h1>
                     <div id='footer-item' className='mb-2 flex'>
                         <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill='rgb(226,232,240)'><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -41,13 +41,9 @@ export const Footer = (props) => {
                         <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill='rgb(226,232,240)'><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         <a rel='noreferrer' target='_blank' href='https://github.com/davidwilliford99' className='mx-2 hover:text-orange-300 transition-colors'>Github</a>
                     </div>
-                    <div id='footer-item' className='mb-2 flex'>
-                        <svg width="20" height="20" xmlns="https://www.w3.org/2000/svg" fill='rgb(226,232,240)' viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.178 11h-1.178v-2c.488-.001.784-.278.862-.665.637-2.461 3.164-8.335 10-8.335 6.888 0 9.484 6.135 10.294 8.413.15.421.459.584.844.584l.001 2.003h-1.18c.575.459 1.179 1.36 1.179 3.131 0 1.63-.904 3.686-2.877 4.531-2.153 3.445-5.027 5.338-8.123 5.338-3.096 0-5.97-1.893-8.123-5.338-1.974-.845-2.877-2.901-2.877-4.531 0-1.771.603-2.672 1.178-3.131zm12.022 7.459h-4.4c.004.012.626 1.74 2.2 1.74 1.634 0 2.196-1.728 2.2-1.74zm4.517-7.459h-13.435l-.013.515c0 .668-.682 1.114-1.288.844-.169-.075-.43-.073-.617.049-.917.601-.818 3.864 1.425 4.629.916.313 2.364 3.103 3.93.398.542-.934 2.251-1.039 3.281-.297 1.029-.742 2.739-.637 3.28.297 1.566 2.705 3.014-.085 3.931-.398 2.244-.765 2.341-4.028 1.424-4.629-.215-.14-.487-.106-.616-.049-.606.271-1.289-.176-1.289-.844l-.013-.515zm-9.696.996c-.634 0-1.146.62-1.146 1.385s.512 1.385 1.146 1.385c.632 0 1.146-.62 1.146-1.385s-.514-1.385-1.146-1.385zm7.104 1.385c0 .765-.513 1.385-1.146 1.385-.633 0-1.146-.62-1.146-1.385s.513-1.385 1.146-1.385c.633 0 1.146.62 1.146 1.385zm-5.125-11.338c-.735.075-1.4.244-2 .483v3.474c0 .552-.448 1-1 1s-1-.448-1-1v-2.269c-2.153 1.817-2.985 4.513-3.19 5.269h16.395c-.333-1.006-1.189-3.46-3.205-5.177v2.177c0 .552-.448 1-1 1s-1-.448-1-1v-3.406c-.599-.248-1.264-.431-2-.524v2.93c0 .552-.448 1-1 1s-1-.448-1-1v-2.957z"/></svg>
-                        <a rel='noreferrer' target='_blank' href='https://app.joinhandshake.com/stu/users/32534819' className='mx-2 hover:text-orange-300 transition-colors'>Handshake</a>
-                    </div>
                 </div>
 
-                <div id='column-2' className='z-10'>
+                <div id='column-2' className='z-10 text-sm md:text-lg'>
                     <h1 id='title' className='mb-5 text-2xl font-semibold'>Links</h1>
                     <div id='footer-item' className='mb-2 flex'>
                         <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" fill='rgb(226,232,240)' viewBox="0 0 24 24"><path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/></svg>
@@ -96,8 +92,8 @@ export const Footer = (props) => {
                     </div>
                 </div>
 
-                <div id='column-2' className='z-10'>
-                    <h1 id='title' className='mb-5 text-2xl font-semibold'>Primary Skills</h1>
+                <div id='column-2' className='z-10 text-sm md:text-lg'>
+                    <h1 id='title' className='mb-5 text-2xl font-semibold'>Skills</h1>
                     <div id='footer-item' className='mb-2 text-neutral-400'>
                         <h2>React</h2>
                     </div>
@@ -118,7 +114,7 @@ export const Footer = (props) => {
                             onClick={resumeScroll} 
                             className='text-orange-300 transition-colors'
                             >
-                                Find Out More!
+                                Learn More!
                         </Link>                     </div>
                 </div>
 

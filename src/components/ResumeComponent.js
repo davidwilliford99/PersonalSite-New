@@ -11,23 +11,23 @@ export const ResumeComponent = () => {
 
     return (
         <div id='Resume' 
-        className='  font-Montserrat 2xl:px-48 px-20 mt-60 min-h-screen
+        className='  font-Montserrat 2xl:px-48 px-5 md:px-20 mt-20 md:mt-60 md:min-h-screen
                      flex items-center justify-center overflow-x-hidden
                      text-offWhite'
         >
 
          <div 
-             className='flex'
+             className='flex flex-col md:flex-row'
              ref={ref}
          >
 
 
              <div
                  id='text-section'
-                 className='pr-20 flex flex-col justify-center'
+                 className='md:pr-20 flex flex-col justify-center'
                  >
                      <h1 
-                        className='font-Gloock text-offWhite text-8xl mb-10'
+                        className='font-Gloock text-offWhite text-5xl md:text-8xl mb-10'
                         style={{
                             transform: isInView ? "none" : "translateY(100px)",
                             opacity: isInView ? 1 : 0,
@@ -59,8 +59,8 @@ export const ResumeComponent = () => {
                             <button 
                                 type='submit'
                                 className='
-                                        w-1/2 font-Montserrat bg-dark2 text-md
-                                        rounded-lg text-center py-3 my-10
+                                        w-full md:w-1/2 font-Montserrat bg-dark2 text-md
+                                        rounded-lg text-center py-3 my-20 md:my-10 
                                         hover:bg-neutral-300 hover:text-dark transition-all'
                                 >
                                 DOWNLOAD RESUME
@@ -75,7 +75,7 @@ export const ResumeComponent = () => {
                 <img 
                     src={resumeImg} 
                     alt='my resume' 
-                    className='h-[40rem] rounded-sm'
+                    className='md:h-[40rem] rounded-sm'
                  />
          </div>
    </div>
