@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/PersonalSite-New/static/css/main.db2e5909.css",
+    "main.js": "/PersonalSite-New/static/js/main.d56bc5b0.js",
+    "static/js/787.717a35c2.chunk.js": "/PersonalSite-New/static/js/787.717a35c2.chunk.js",
+    "static/media/aboutPhoto.jpg": "/PersonalSite-New/static/media/aboutPhoto.be4923ca9fc76c0c2e55.jpg",
+    "static/media/resume-png.png": "/PersonalSite-New/static/media/resume-png.5f6a8371e32265fce5ce.png",
+    "static/media/CM1.png": "/PersonalSite-New/static/media/CM1.4a099fd9c6f06e28a067.png",
+    "static/media/ACP1.png": "/PersonalSite-New/static/media/ACP1.8f74297725fcbd011ab9.png",
+    "static/media/pw1.png": "/PersonalSite-New/static/media/pw1.424cb675012bdabb31b4.png",
+    "static/media/welcome-mobile.png": "/PersonalSite-New/static/media/welcome-mobile.d130552cd9bebb33ec34.png",
+    "static/media/spring.png": "/PersonalSite-New/static/media/spring.5d3a34e81adb6a9148fb.png",
+    "static/media/typescript.png": "/PersonalSite-New/static/media/typescript.52ea0bc40ba11d507e7d.png",
+    "static/media/tailwind.png": "/PersonalSite-New/static/media/tailwind.087f91401d142f1a4903.png",
+    "static/media/DavidWilliford-Resume.pdf": "/PersonalSite-New/static/media/DavidWilliford-Resume.16aea94921d5d16369d3.pdf",
+    "static/media/TextArt1.png": "/PersonalSite-New/static/media/TextArt1.530e633046c71db1cbba.png",
+    "static/media/contact-mobile.png": "/PersonalSite-New/static/media/contact-mobile.6ae3f79057e2f9a0737f.png",
+    "static/media/about-mobile.png": "/PersonalSite-New/static/media/about-mobile.17930b02565a61017fab.png",
+    "static/media/resume-mobile.png": "/PersonalSite-New/static/media/resume-mobile.c624e9809171283f9269.png",
+    "static/media/react.png": "/PersonalSite-New/static/media/react.f3e576ba08e6be927148.png",
+    "static/media/junit.png": "/PersonalSite-New/static/media/junit.c4c0e0b0250bbea6d3c1.png",
+    "static/media/python.png": "/PersonalSite-New/static/media/python.f425b3566f71c2c25ad5.png",
+    "static/media/java.png": "/PersonalSite-New/static/media/java.2be0bca1b95cfc0ce63e.png",
+    "static/media/works-mobile.png": "/PersonalSite-New/static/media/works-mobile.257f3a570f728bb0e9bf.png",
+    "static/media/aws.png": "/PersonalSite-New/static/media/aws.469b5b1db02062afc357.png",
+    "static/media/c++.png": "/PersonalSite-New/static/media/c++.d7a72328ffe7d955a33e.png",
+    "index.html": "/PersonalSite-New/index.html",
+    "main.db2e5909.css.map": "/PersonalSite-New/static/css/main.db2e5909.css.map",
+    "main.d56bc5b0.js.map": "/PersonalSite-New/static/js/main.d56bc5b0.js.map",
+    "787.717a35c2.chunk.js.map": "/PersonalSite-New/static/js/787.717a35c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db2e5909.css",
+    "static/js/main.d56bc5b0.js"
+  ]
+}
