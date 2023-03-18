@@ -38,7 +38,7 @@ export const IntroComponent = (props) => {
 
             <div 
                 id='welcome-text' 
-                className='flex items-center justify-center md:justify-start'
+                className='flex items-center justify-center md:justify-start mt-3 md:mt-0'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 2s"
