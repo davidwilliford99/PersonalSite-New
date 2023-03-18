@@ -12,10 +12,10 @@ export const IntroComponent = (props) => {
 
     
     const ref = useRef(null)
-    const isInView = useInView(ref, {margin: '-100px', once: true, behavior: "smooth"})
+    const isInView = useInView(ref, {margin: '-100px', once: true})
 
     // prop for scrollingto projects section
-    const worksScroll = () => props.worksClickRef.current.scrollIntoView()
+    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
 
     return (
 
