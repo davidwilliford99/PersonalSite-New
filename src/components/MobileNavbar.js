@@ -68,7 +68,7 @@ export const MobileNavbar = (props) => {
                     if(navItem.isCurrent) {
                         return (
                             <NavLink 
-                                className='w-full bg-neutral-800 text-offWhite transition border-solid border border-neutral-600 flex flex-col items-center justify-center font-semibold' 
+                                className='w-full bg-neutral-800 text-offWhite transition border-solid border border-neutral-700 flex flex-col items-center justify-center font-semibold' 
                                 onClick={navItem.goTo}
                                 >
                                 
@@ -85,7 +85,7 @@ export const MobileNavbar = (props) => {
                     else {
                         return (
                             <NavLink 
-                                className='w-full text-offWhite transition border-solid border border-neutral-600 flex flex-col items-center justify-center' 
+                                className='w-full text-offWhite transition border-solid border border-neutral-700 flex flex-col items-center justify-center' 
                                 onClick={navItem.goTo}
                                 >
                                 
