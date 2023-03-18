@@ -71,7 +71,7 @@ export const WorksComponent = () => {
 
             <div 
                 id='experience-with'
-                className='flex flex-col px-20 mt-40'
+                className='flex flex-col px-5 md:px-20 mt-32 md:mt-40'
                 ref={ref}
                 style={{
                     opacity: isInView ? 1 : 0,
@@ -79,7 +79,7 @@ export const WorksComponent = () => {
                 }}
             >
                 <h1 
-                    className='font-Roboto text-2xl tracking-widest text-offWhite'
+                    className='font-Roboto text-lg md:text-2xl md:tracking-widest text-offWhite'
 
                     >
                         Technology I use to turn my ideas into reality... 
@@ -89,9 +89,9 @@ export const WorksComponent = () => {
                     {
                         familiarWith.map((tech) => {
                             return (
-                            <li className='flex items-center justify-center bg-dark2 p-2 rounded-lg'>
-                                <img src={tech.image} alt="tech logo" className='h-8'/>
-                                <h1 className='text-center text-xl text-offWhite mx-5'>{tech.name}</h1>
+                            <li className='flex items-center justify-center bg-dark2 p-1 md:p-2 rounded-lg'>
+                                <img src={tech.image} alt="tech logo" className='h-6 md:h-8'/>
+                                <h1 className='text-center text-lg md:text-xl text-offWhite mx-5'>{tech.name}</h1>
                             </li>
                             )
                         })

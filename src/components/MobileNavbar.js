@@ -49,7 +49,7 @@ export const MobileNavbar = (props) => {
       <div 
             id='Navbar' 
             className='bg-dark fixed w-full font-Montserrat 2xl:px-48
-                       flex justify-center items-center z-10 lg:invisible bottom-0'
+                       flex justify-center items-center z-20 lg:invisible bottom-0'
             ref={ref}
             >
         
@@ -68,14 +68,16 @@ export const MobileNavbar = (props) => {
                     if(navItem.isCurrent) {
                         return (
                             <NavLink 
-                                className='w-full hover:text-orange-300 text-offWhite transition' 
+                                className='w-full bg-neutral-800 text-offWhite transition border-solid border border-neutral-600 flex flex-col items-center justify-center font-semibold' 
                                 onClick={navItem.goTo}
                                 >
+                                
+                                <img src={navItem.image} alt='poop' className='h-10 pt-2'/>
 
-                                <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center text-sm tracking-wider'>
+                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-5 pt-1 text-center text-xs tracking-wider'>
                                     {navItem.name}
                                 </li>
-
+                                
                             </NavLink>
 
                         )

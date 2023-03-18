@@ -41,12 +41,15 @@ export const WorksSamplesComponent = () => {
     return (
 
         <div 
-            className='font-Montserrat bg-dark px-20 2xl:px-48 mt-72 text-offWhite z-0'
+            className='
+                    font-Montserrat bg-dark px-5 md:px-20 2xl:px-48 mt-32 md:mt-72 text-offWhite z-0
+                    
+                    flex flex-col items-center md:items-start'
             >
 
             <div 
                 id='welcome-text' 
-                className='flex items-center'
+                className='flex items-center justify-center md:justify-start'
                 ref={ref}
                 style={{
                     opacity: isInView ? 1 : 0,
@@ -59,11 +62,17 @@ export const WorksSamplesComponent = () => {
                     <line x1="0" y1="0" x2="50" y2="0" className='stroke-neutral-300'/>
                 </svg>
                   
-                <h3 className='text-xl ml-5 py-6 text-orange-300 tracking-widest'>MY WORKS</h3>
+                <h3 className='text-3xl md:text-xl mx-5 py-6 text-orange-300 tracking-widest'>MY WORKS</h3>
+
+                {/* Line SVG  (only appears on mobile)*/}
+                <svg height="3" width="50">
+                    <line x1="0" y1="0" x2="50" y2="0" className='md:invisible stroke-neutral-300'/>
+                </svg>
             </div>
 
             <h3 
-                className='text-6xl font-Gloock leading-snug my-6 mb-20'
+                className='
+                        text-3xl md:text-6xl font-Gloock leading-snug my-6 my-20 text-center md:text-left'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 3s"
@@ -74,7 +83,7 @@ export const WorksSamplesComponent = () => {
 
             {/* My works examples are hardcoded since every animation must be a different delay */}
             <ul 
-                className='flex flex-col md:flex-row gap-5'
+                className='flex flex-col md:flex-row md:flex-wrap gap-5'
             >
 
                 {/* Major Statistics */}

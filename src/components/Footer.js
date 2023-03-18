@@ -14,16 +14,20 @@ export const Footer = (props) => {
     
 
     return (
-        <div className='overflow-x-hidden pt-40'>
+        <div className='overflow-x-hidden pt-40 z-0'>
+
+
 
             {/* Slanted rectangle */}
-            <div id='slanted-div' className='w-[200rem] h-60 bg-dark2 -rotate-6 z-10 relative top-20 right-20'>
+            <div id='slanted-div' className='w-[200rem] h-60 bg-dark2 -rotate-6 relative top-20 right-20'>
             </div>
+            {/* End slanted rect div */}
 
-            <div className='flex w-full justify-between flex-between bg-dark2 px-5 xl:px-52 py-10 text-slate-200'>
+
+            <div className='flex w-full justify-between flex-between bg-dark2 px-5 xl:px-52 py-10 pb-24 text-slate-200'>
 
                     
-                <div id='column-1' className='z-20'>
+                <div id='column-1' className='z-10'>
                     <h1 id='title' className='mb-5 text-2xl font-semibold'>Socials</h1>
                     <div id='footer-item' className='mb-2 flex'>
                         <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill='rgb(226,232,240)'><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -43,7 +47,7 @@ export const Footer = (props) => {
                     </div>
                 </div>
 
-                <div id='column-2' className='z-20'>
+                <div id='column-2' className='z-10'>
                     <h1 id='title' className='mb-5 text-2xl font-semibold'>Links</h1>
                     <div id='footer-item' className='mb-2 flex'>
                         <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" fill='rgb(226,232,240)' viewBox="0 0 24 24"><path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/></svg>
@@ -92,7 +96,7 @@ export const Footer = (props) => {
                     </div>
                 </div>
 
-                <div id='column-2' className='z-20'>
+                <div id='column-2' className='z-10'>
                     <h1 id='title' className='mb-5 text-2xl font-semibold'>Primary Skills</h1>
                     <div id='footer-item' className='mb-2 text-neutral-400'>
                         <h2>React</h2>

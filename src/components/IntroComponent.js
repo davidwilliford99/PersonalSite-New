@@ -20,19 +20,25 @@ export const IntroComponent = (props) => {
     return (
 
       <div id='Intro' 
-           className='  font-Montserrat 2xl:px-48 min-h-screen flex items-center 
-                        justify-between overflow-x-hidden z-0'
+           className='  
+                    font-Montserrat 2xl:px-48 md:min-h-screen flex items-center 
+                    flex-col md:flex-row md:justify-between overflow-x-hidden z-0
+                        
+                    '
            >
         
         <div 
             id='main-text-section'
-            className='flex flex-col text-offWhite px-20 fadeIn'
+            className='
+                    flex flex-col text-offWhite md:px-20 fadeIn
+                    
+                    px-5'
             >
 
 
             <div 
                 id='welcome-text' 
-                className='flex items-center'
+                className='flex items-center justify-center md:justify-start'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 2s"
@@ -44,15 +50,23 @@ export const IntroComponent = (props) => {
                     <line x1="0" y1="0" x2="50" y2="0" className='stroke-neutral-300'/>
                 </svg>
 
-                <h3 className='text-xl ml-5 py-6 text-orange-300 tracking-widest'>WELCOME</h3>
+                <h3 className='text-3xl md:text-xl mx-5 py-6 text-orange-300 tracking-widest'>WELCOME</h3>
+
+                {/* Line SVG  (only appears on mobile)*/}
+                <svg height="3" width="50">
+                    <line x1="0" y1="0" x2="50" y2="0" className='md:invisible stroke-neutral-300'/>
+                </svg>
 
             </div>
 
 
             <h1 
                 className=' 
-                            font-Gloock text-7xl leading-tight
-                            2xl:text-8xl'
+                            font-Gloock md:text-7xl leading-tight
+                            2xl:text-8xl
+                            
+                            text-4xl mt-20 md:mt-0
+                            '
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 5s",
@@ -68,9 +82,11 @@ export const IntroComponent = (props) => {
             <Link 
                 onClick={worksScroll}
                 className='
-                        w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
+                        md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
                         rounded-lg text-center py-3 my-8
-                        hover:bg-neutral-300 hover:text-dark transition-all'
+                        hover:bg-neutral-300 hover:text-dark transition-all
+                        
+                        w-full'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "background-color 0.3s, opacity 3s",
@@ -85,7 +101,7 @@ export const IntroComponent = (props) => {
 
         <div 
             id='socials' 
-            className='pr-20 mb-10'
+            className='pr-5 md:pr-20 mb-10 flex md:flex-col'
             style={{
                 transform: isInView ? "none" : "translateX(200px)",
                 opacity: isInView ? 1: 0,
@@ -95,11 +111,11 @@ export const IntroComponent = (props) => {
             >
             
             <a href='https://www.linkedin.com/in/davidwilliford99/' target='_blank' rel="noreferrer">
-                <img src={linkedIn} alt='linkedin logo' className='h-10 mb-5 hover:rotate-180 transition cursor-pointer'/>
+                <img src={linkedIn} alt='linkedin logo' className='h-16 mt-3 md:h-10 md:mb-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
             </a>
             
             <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
-                <img src={github} alt='github logo' className='h-10 mt-5 hover:rotate-180 transition cursor-pointer'/>
+                <img src={github} alt='github logo' className='h-16 mt-3 md:h-10 md:mt-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
             </a>
 
 
