@@ -16,7 +16,7 @@ function App() {
         */}
 
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/PersonalSite-New" element={<MainPage />} />
           <Route path="/ThankYou" element={<ThankYouPage />} />
         </Routes>
 
