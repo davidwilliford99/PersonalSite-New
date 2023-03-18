@@ -72,9 +72,9 @@ export const MobileNavbar = (props) => {
                                 onClick={navItem.goTo}
                                 >
                                 
-                                <img src={navItem.image} alt='poop' className='h-10 pt-2'/>
+                                <img src={navItem.image} alt='poop' className='h-8 pt-1'/>
 
-                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-5 pt-1 text-center text-xs tracking-wider'>
+                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-1 pt-1 text-center text-xs tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 
@@ -89,9 +89,9 @@ export const MobileNavbar = (props) => {
                                 onClick={navItem.goTo}
                                 >
                                 
-                                <img src={navItem.image} alt='poop' className='h-10 pt-2'/>
+                                <img src={navItem.image} alt='poop' className='h-8 pt-1'/>
 
-                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-5 pt-1 text-center text-xs tracking-wider'>
+                                <li className='font-Roboto text-neutral-200 tracking-widest w-full pb-1 pt-1 text-center text-xs tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 
