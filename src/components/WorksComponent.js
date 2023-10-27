@@ -82,7 +82,7 @@ export const WorksComponent = () => {
                     className='font-Roboto text-lg md:text-2xl md:tracking-widest text-offWhite'
 
                     >
-                        Technology I use to turn my ideas into reality... 
+                        Some technologies I have used to turn my ideas into reality... 
                     </h1>
 
                 <ul className='flex flex-wrap gap-5 mt-10'>

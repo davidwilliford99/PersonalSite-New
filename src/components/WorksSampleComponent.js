@@ -6,6 +6,7 @@ import acpScreenshot from './../assets/ACP1.png';
 import cmScreenshot from './../assets/CM1.png';
 import taScreenshot from './../assets/TextArt1.png';
 import pwScreenshot from './../assets/pw1.png';
+import ajScreenshot from './../assets/AJI1.png';
 
 export const WorksSamplesComponent = () => {
 
@@ -34,6 +35,16 @@ export const WorksSamplesComponent = () => {
             name: "TextArt",
             description: "C/C++ terminal application used to create, animate and edit text art images.",
             image: taScreenshot
+        },
+        {
+            name: "BGC Web Application",
+            description: "Non-profit repository for surgeons to find an unbiased source of bone grafts.",
+            image: taScreenshot
+        },
+        {
+            name: "SnackMajic Subscription",
+            description: "Developed web page to host Aji's international subscription boxes.",
+            image: ajScreenshot
         },
 
     ]
@@ -116,13 +127,42 @@ export const WorksSamplesComponent = () => {
                     </a>
                 </li>
 
-                {/* Personal Website */}
+                {/* SnackMajic Boxes */}
                 <li 
                     className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
                     style={{
                         transform: isInView ? `translateX(0px)` : `translateX(-1100px)` ,
                         transition: "all 3s",
                         transitionDelay: '1s'
+                    }}
+                    >
+
+                    <img 
+                        src={worksSamples[5].image}
+                        className='h-28'
+                        alt='works-logo'
+                    />
+                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[5].name}</h1>
+                    <p className='text-center'>{worksSamples[5].description}</p>
+                    <a 
+                        href='https://sweetaji.com/pages/subscription-boxes'
+                        target='_blank'
+                        rel="noreferrer"
+                        className=' my-5 px-5 py-2 text-dark font-semibold 
+                                    bg-purple-500 rounded-lg 
+                                    hover:bg-neutral-900 transition hover:text-offWhite'
+                        >
+                            See it Live!
+                    </a>
+                </li>
+
+                {/* Personal Website */}
+                <li 
+                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
+                    style={{
+                        transform: isInView ? `translateX(0px)` : `translateX(-1500px)` ,
+                        transition: "all 3s",
+                        transitionDelay: '0.5s'
                     }}
                     >
 
@@ -149,9 +189,9 @@ export const WorksSamplesComponent = () => {
                 <li 
                     className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
                     style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-1500px)` ,
+                        transform: isInView ? `translateX(0px)` : `translateX(-2000px)` ,
                         transition: "all 3s",
-                        transitionDelay: '0.5s'
+                        transitionDelay: '0s'
                     }}
                     >
 
@@ -174,7 +214,7 @@ export const WorksSamplesComponent = () => {
                 <li 
                     className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
                     style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-2000px)` ,
+                        transform: isInView ? `translateX(0px)` : `translateX(-2400px)` ,
                         transition: "all 3s",
                         transitionDelay: '0s'
                     }}
@@ -197,6 +237,31 @@ export const WorksSamplesComponent = () => {
                         >
                             Learn More!
                     </a>
+                </li>
+
+                {/* BGC */}
+                <li 
+                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
+                    style={{
+                        transform: isInView ? `translateX(0px)` : `translateX(-3000px)` ,
+                        transition: "all 3s",
+                        transitionDelay: '0s'
+                    }}
+                    >
+
+                    <img 
+                        src={worksSamples[4].image}
+                        className='h-28'
+                        alt='works-logo'
+                    />
+                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[4].name}</h1>
+                    <p className='text-center'>{worksSamples[4].description}</p>
+                    <div
+                        className=' my-5 px-5 py-2 text-dark font-semibold 
+                                    bg-neutral-800 rounded-lg '
+                        >
+                            Private Respository
+                    </div>
                 </li>
 
             </ul>

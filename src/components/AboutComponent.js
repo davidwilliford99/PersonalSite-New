@@ -44,7 +44,7 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-l md:text-2xl mb-10 md:mb-00'>
-                            I am <span className='text-orange-200'>David Williford</span>. I enjoy creating and learning about software, particularly in <span className='text-orange-200'>Java and Javascript</span>. Working on both front-end and back-end, I am always striving to learn and <span className='text-orange-200'>develop new skills</span> to become a well rounded engineer. My main experience is in <span className='text-orange-200'>full stack web applications using React, Java & MySQL</span>. I also have experience in cloud computing, low level systems, and a <span className='text-orange-200'>strong mathematics background</span>.
+                            I am <span className='text-orange-200'>David Williford</span>. I enjoy creating and learning about software, particularly in <span className='text-orange-200'>Ecommerce, Cloud Computing and API development</span>. Working on both front-end and back-end, I am always striving to learn and <span className='text-orange-200'>develop new skills</span> to become a well rounded engineer. My primary experience is mostly in <span className='text-orange-200'>full stack web applications</span>. I also have strong experience in cloud computing, automation, and an <span className='text-orange-200'>engineering / mathematics background</span>.
                         </p>
 
                     </div>
