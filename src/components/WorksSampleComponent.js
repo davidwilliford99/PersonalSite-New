@@ -191,7 +191,7 @@ export const WorksSamplesComponent = () => {
                     style={{
                         transform: isInView ? `translateX(0px)` : `translateX(-2000px)` ,
                         transition: "all 3s",
-                        transitionDelay: '0s'
+                        transitionDelay: '1.5s'
                     }}
                     >
 
@@ -216,7 +216,7 @@ export const WorksSamplesComponent = () => {
                     style={{
                         transform: isInView ? `translateX(0px)` : `translateX(-2400px)` ,
                         transition: "all 3s",
-                        transitionDelay: '0s'
+                        transitionDelay: '1s'
                     }}
                     >
 
@@ -245,7 +245,7 @@ export const WorksSamplesComponent = () => {
                     style={{
                         transform: isInView ? `translateX(0px)` : `translateX(-3000px)` ,
                         transition: "all 3s",
-                        transitionDelay: '0s'
+                        transitionDelay: '0.5s'
                     }}
                     >
 
