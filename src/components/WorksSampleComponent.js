@@ -7,6 +7,7 @@ import cmScreenshot from './../assets/CM1.png';
 import taScreenshot from './../assets/TextArt1.png';
 import pwScreenshot from './../assets/pw1.png';
 import ajScreenshot from './../assets/AJI1.png';
+import bgcScreenshot from './../assets/BGC1.png';
 
 export const WorksSamplesComponent = () => {
 
@@ -39,7 +40,7 @@ export const WorksSamplesComponent = () => {
         {
             name: "BGC Web Application",
             description: "Non-profit repository for surgeons to find an unbiased source of bone grafts.",
-            image: taScreenshot
+            image: bgcScreenshot
         },
         {
             name: "SnackMajic Subscription",
