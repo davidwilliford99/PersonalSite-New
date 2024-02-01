@@ -43,8 +43,8 @@ export const AboutComponent = () => {
                             About me ...
                         </h1>
 
-                        <p className='text-l md:text-2xl mb-10 md:mb-00'>
-                            I am <span className='text-orange-200'>David Williford</span>. I enjoy creating and learning about software, particularly in <span className='text-orange-200'>Ecommerce, Cloud Computing and API development</span>. Working on both front-end and back-end, I am always striving to learn and <span className='text-orange-200'>develop new skills</span> to become a well rounded engineer. My primary experience is mostly in <span className='text-orange-200'>full stack web applications</span>. I also have strong experience in cloud computing, automation, and an <span className='text-orange-200'>engineering / mathematics background</span>.
+                        <p className='text-lg md:text-lg mb-10 md:mb-00'>
+                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, and marveling at the compleity of the internet. This intrigue has lead me to obtiain a <span className='text-orange-200'>Computer Science degree</span> from ECU. I now have multiple years of experience in <span className='text-orange-200'>Ecommerce, Frontend Development, Cloud Computing, Automation and API Development</span>. I am also familiar with <span className='text-orange-200'>Low-Level Systems, Computer Architecture and Graphics</span>. Some beneficial traits about myself; I am <span className='text-orange-200'>well organized, self motivated, and enjoy learning</span>. As a natural problem solver, I am knowledgable in diagnosing/resolving bugs within programs and systems. Working on both front-end and back-end, I am always striving to learn and <span className='text-orange-200'>develop new skills</span> to become a well rounded engineer.
                         </p>
 
                     </div>
