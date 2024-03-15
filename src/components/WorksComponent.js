@@ -36,10 +36,10 @@ export const WorksComponent = () => {
             name: "Tailwind", image: tailwindLogo
         },
         {
-            name: "MySQL", image: mysqlLogo
+            name: "SQL", image: mysqlLogo
         },
         {
-            name: "AWS", image: awsLogo
+            name: "Cloud Computing", image: awsLogo
         },
         {
             name: "Github", image: githubLogo
@@ -53,9 +53,9 @@ export const WorksComponent = () => {
         {
             name: "Python", image: pythonLogo
         },
-        {
-            name: "Junit", image: junitLogo
-        },
+        // {
+        //     name: "Junit", image: junitLogo
+        // },
         {
             name: "Typescript", image: typescriptLogo
         },
@@ -82,7 +82,7 @@ export const WorksComponent = () => {
                     className='font-Roboto text-lg md:text-2xl md:tracking-widest text-offWhite'
 
                     >
-                        Some technologies I have used to turn my ideas into reality... 
+                        Some technologies that I am comfortable with ... 
                     </h1>
 
                 <ul className='flex flex-wrap gap-5 mt-10'>

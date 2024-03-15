@@ -1,6 +1,7 @@
 import { React, useRef } from 'react';
 import { useInView } from 'framer-motion';
 import aboutPhoto from '../assets/aboutPhoto.jpg';
+import { Link } from 'react-router-dom';
 
 
 export const AboutComponent = () => {
@@ -43,9 +44,25 @@ export const AboutComponent = () => {
                             About me ...
                         </h1>
 
-                        <p className='text-lg md:text-lg mb-10 md:mb-00'>
-                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, and marveling at the compleity of the internet. This intrigue has lead me to obtiain a <span className='text-orange-200'>Computer Science degree</span> from ECU. I now have multiple years of experience in <span className='text-orange-200'>Ecommerce, Frontend Development, Cloud Computing, Automation and API Development</span>. I am also familiar with <span className='text-orange-200'>Low-Level Systems, Computer Architecture and Graphics</span>. Some beneficial traits about myself; I am <span className='text-orange-200'>well organized, self motivated, and enjoy learning</span>. As a natural problem solver, I am knowledgable in diagnosing/resolving bugs within programs and systems. Working on both front-end and back-end, I am always striving to learn and <span className='text-orange-200'>develop new skills</span> to become a well rounded engineer.
+                        <p className='text-lg md:text-lg mb-8'>
+                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, marveling at it's complexity. This intrigue has lead me to pursuing a <span className='text-orange-200'>Computer Science degree</span> from ECU. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Frontend Development, Cloud Computing, Automation and API Development/Usage</span>. I am familiar with <span className='text-orange-200'>Low-Level Systems, Computer Architecture and Graphics</span> as well. To describe my work style in 3 words, it would be: <span className='text-orange-200'>organized, focused, detailed</span>. As someone who prioritizes organization, I steadily take notes on progress and future goals for my projects. My current long-term goal is to <span className='text-orange-200'>develop new skills</span> to become a master of the internet.
                         </p>
+
+                        <Link 
+                            onClick={() => {window.open('https://davidwilliford.hashnode.dev', '_blank');}}
+                            className='
+                                    md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
+                                    rounded-lg text-center py-3 my-8
+                                    hover:bg-neutral-300 hover:text-dark transition-all
+                                    w-full'
+                            style={{
+                                opacity: isInView ? 1 : 0,
+                                transition: "background-color 0.3s, opacity 3s",
+                                transitionDelay: "opacity 3s"
+                            }}
+                            >
+                            VISIT MY BLOG
+                        </Link>
 
                     </div>
             </div>

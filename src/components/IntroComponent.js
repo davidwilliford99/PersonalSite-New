@@ -4,6 +4,7 @@ import { useRef } from 'react';
 
 import linkedIn from './../assets/linkedin.png'
 import github from './../assets/github.png'
+import hashnode from './../assets/hashnode.png'
 import { useInView } from 'framer-motion';
 
 
@@ -79,22 +80,41 @@ export const IntroComponent = (props) => {
                     student at ECU.
             </h1>
 
-            <Link 
-                onClick={worksScroll}
-                className='
-                        md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                        rounded-lg text-center py-3 my-8
-                        hover:bg-neutral-300 hover:text-dark transition-all
-                        
-                        w-full'
-                style={{
-                    opacity: isInView ? 1 : 0,
-                    transition: "background-color 0.3s, opacity 3s",
-                    transitionDelay: "opacity 3s"
-                }}
-                >
-                SEE MY PROJECTS
-            </Link>
+            <div className='buttons flex gap-2'>
+                <Link 
+                    onClick={worksScroll}
+                    className='
+                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
+                            rounded-lg text-center py-3 my-8
+                            hover:bg-neutral-300 hover:text-dark transition-all
+                            
+                            w-full'
+                    style={{
+                        opacity: isInView ? 1 : 0,
+                        transition: "background-color 0.3s, opacity 3s",
+                        transitionDelay: "opacity 3s"
+                    }}
+                    >
+                    SEE MY PROJECTS
+                </Link>
+                <Link 
+                    onClick={() => {window.open('https://davidwilliford.hashnode.dev', '_blank');}}
+                    className='
+                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
+                            rounded-lg text-center py-3 my-8
+                            hover:bg-neutral-300 hover:text-dark transition-all
+                            
+                            w-full'
+                    style={{
+                        opacity: isInView ? 1 : 0,
+                        transition: "background-color 0.3s, opacity 3s",
+                        transitionDelay: "opacity 3s"
+                    }}
+                    >
+                    VISIT MY BLOG
+                </Link>
+            </div>
+
         </div>
 
 
@@ -115,7 +135,7 @@ export const IntroComponent = (props) => {
             </a>
             
             <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
-                <img src={github} alt='github logo' className='h-16 mt-3 md:h-10 md:mt-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
+                <img src={github} alt='github logo' className='h-16 mt-3 mb-3 md:h-10 md:mt-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
             </a>
 
 
