@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f644b77a.css",
-    "main.js": "/static/js/main.42faf4d0.js",
+    "main.css": "/static/css/main.956054d4.css",
+    "main.js": "/static/js/main.a9e840e3.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.9ff517a7b80d597063fe.jpg",
     "static/media/AJI1.png": "/static/media/AJI1.fe16ed7174de59accf4a.png",
@@ -15,6 +15,7 @@
     "static/media/spring.png": "/static/media/spring.5d3a34e81adb6a9148fb.png",
     "static/media/typescript.png": "/static/media/typescript.52ea0bc40ba11d507e7d.png",
     "static/media/tailwind.png": "/static/media/tailwind.087f91401d142f1a4903.png",
+    "static/media/hashnode.png": "/static/media/hashnode.6f4842cded42a18e7cd4.png",
     "static/media/TextArt1.png": "/static/media/TextArt1.530e633046c71db1cbba.png",
     "static/media/contact-mobile.png": "/static/media/contact-mobile.6ae3f79057e2f9a0737f.png",
     "static/media/about-mobile.png": "/static/media/about-mobile.17930b02565a61017fab.png",
@@ -27,12 +28,12 @@
     "static/media/aws.png": "/static/media/aws.469b5b1db02062afc357.png",
     "static/media/c++.png": "/static/media/c++.d7a72328ffe7d955a33e.png",
     "index.html": "/index.html",
-    "main.f644b77a.css.map": "/static/css/main.f644b77a.css.map",
-    "main.42faf4d0.js.map": "/static/js/main.42faf4d0.js.map",
+    "main.956054d4.css.map": "/static/css/main.956054d4.css.map",
+    "main.a9e840e3.js.map": "/static/js/main.a9e840e3.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f644b77a.css",
-    "static/js/main.42faf4d0.js"
+    "static/css/main.956054d4.css",
+    "static/js/main.a9e840e3.js"
   ]
 }
