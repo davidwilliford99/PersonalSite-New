@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.956054d4.css",
-    "main.js": "/static/js/main.a9e840e3.js",
+    "main.js": "/static/js/main.2ed6e87e.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.9ff517a7b80d597063fe.jpg",
     "static/media/AJI1.png": "/static/media/AJI1.fe16ed7174de59accf4a.png",
@@ -21,19 +21,19 @@
     "static/media/about-mobile.png": "/static/media/about-mobile.17930b02565a61017fab.png",
     "static/media/resume-mobile.png": "/static/media/resume-mobile.c624e9809171283f9269.png",
     "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
-    "static/media/junit.png": "/static/media/junit.c4c0e0b0250bbea6d3c1.png",
     "static/media/python.png": "/static/media/python.f425b3566f71c2c25ad5.png",
     "static/media/java.png": "/static/media/java.2be0bca1b95cfc0ce63e.png",
+    "static/media/shopify.png": "/static/media/shopify.8e5ec92db71af19ec59e.png",
     "static/media/works-mobile.png": "/static/media/works-mobile.257f3a570f728bb0e9bf.png",
     "static/media/aws.png": "/static/media/aws.469b5b1db02062afc357.png",
     "static/media/c++.png": "/static/media/c++.d7a72328ffe7d955a33e.png",
     "index.html": "/index.html",
     "main.956054d4.css.map": "/static/css/main.956054d4.css.map",
-    "main.a9e840e3.js.map": "/static/js/main.a9e840e3.js.map",
+    "main.2ed6e87e.js.map": "/static/js/main.2ed6e87e.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.956054d4.css",
-    "static/js/main.a9e840e3.js"
+    "static/js/main.2ed6e87e.js"
   ]
 }
