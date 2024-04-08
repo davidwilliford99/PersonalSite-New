@@ -12,7 +12,7 @@ import githubLogo from './../assets/github.png';
 import angularLogo from './../assets/angular.png';
 import cLogo from './../assets/c++.png';
 import pythonLogo from './../assets/python.png';
-import junitLogo from './../assets/junit.png';
+import shopifyLogo from './../assets/shopify.png'
 import typescriptLogo from './../assets/typescript.png';
 
 
@@ -25,6 +25,12 @@ export const WorksComponent = () => {
     const familiarWith = [
         {
             name: "React", image: reactLogo
+        },
+        {
+            name: "Shopify", image: shopifyLogo
+        },
+        {
+            name: "Python", image: pythonLogo
         },
         {
             name: "Java", image: javaLogo
@@ -50,12 +56,6 @@ export const WorksComponent = () => {
         {
             name: "C/C++", image: cLogo
         },
-        {
-            name: "Python", image: pythonLogo
-        },
-        // {
-        //     name: "Junit", image: junitLogo
-        // },
         {
             name: "Typescript", image: typescriptLogo
         },

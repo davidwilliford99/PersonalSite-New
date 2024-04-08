@@ -98,7 +98,7 @@ export const IntroComponent = (props) => {
                     SEE MY PROJECTS
                 </Link>
                 <Link 
-                    onClick={() => {window.open('https://davidwilliford.hashnode.dev', '_blank');}}
+                    onClick={() => {window.open('https://blog.davidwilliford.dev', '_blank');}}
                     className='
                             md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
                             rounded-lg text-center py-3 my-8
