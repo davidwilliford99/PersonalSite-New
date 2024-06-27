@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         'offWhite': '#FFFFF0',
         'dark': '#121212',
-        'dark2': '#2b2b2b'
+        'dark2': '#2c2c2c'
       },
     },
   },

@@ -1,4 +1,4 @@
-import { React, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
 // projects screenshots 
@@ -8,57 +8,82 @@ import taScreenshot from './../assets/TextArt1.png';
 import pwScreenshot from './../assets/pw1.png';
 import ajScreenshot from './../assets/AJI1.png';
 import bgcScreenshot from './../assets/BGC1.png';
+import blogScreenshot from './../assets/Blog-ss.png';
 
 export const WorksSamplesComponent = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { margin: '-100px', once: true });
 
-
-    const ref = useRef(null)
-    const isInView = useInView(ref, {margin: '-100px', once: true})
-
-
-    const worksSamples =[
-        {
-            name: "MajorStatistics",
-            description: "A web app that displays statistics on various undergraduate majors.",
-            image: cmScreenshot
-        },
+    const worksSamples = [
         {
             name: "My Portfolio Site",
-            description: "This site is made entirely from scratch using React and Tailwind.",
-            image: pwScreenshot
+            description: "This website! This site is made entirely from scratch using React and Tailwind. The goal was to make a visually pleasing yet professional portfolio site. This was a first introduction to a lot of things concerning UI/UX, such as mobile responsiveness, animations, web design, and more. I plan on keeping this site updated, and keeping my best works to show here.",
+            image: pwScreenshot,
+            github: "https://github.com/davidwilliford99/PersonalSite-New",
+            isLive: true,
+            link: "davidwilliford.dev"
+        },
+        {
+            name: "My Blog",
+            description: "Where I write articles related to computer science. I primarily write on the topics of web development, ecommerce and mobile web design. I also log niche bug fixes and features of frameworks/languages I may be using. In the future, I plan on expanding to topics such as technology news, ethical discussions in computing, life experiences as a developer, and computer graphics.",
+            image: blogScreenshot,
+            github: "",
+            isLive: true,
+            link: "https://blog.davidwilliford.dev"
         },
         {
             name: "ACP Web App",
-            description: "A web application I worked on during my time at Autonomic Solutions",
-            image: acpScreenshot
+            description: "A web application I worked on during my time at Autonomic Solutions. This was my first work experience on a team of developers and devops engineers, so it taught me a ton about the daily work life as a software engineer. This application was meant to streamline the cloud infrastructure process, making cloud platforms more accessible to business owners and other non-technical individuals. This project has since been delayed, so sadly I can not show any live examples of it. During my time on this team, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
+            image: acpScreenshot,
+            github: "",
+            isLive: false,
+            link: ""
         },
         {
             name: "TextArt",
-            description: "C/C++ terminal application used to create, animate and edit text art images.",
-            image: taScreenshot
+            description: "C/C++ terminal application used to create, animate and edit text art images.This was a final project for my Data structures and Algorithms class, as it creatively implements topics from this course. It utilizes linked lists (for undo/redo functionality), multi-dimensional arrays (for the grid layout), pointers, file import / export (for saving/importing textArt files), and recursion (for drawing preset shapes like boxes, trees etc.). It is a really cool app with a cyberpunk feel. If you would like to give it a shot, visit the github link and download the .exe!.",
+            image: taScreenshot,
+            github: "https://github.com/davidwilliford99/TextArt",
+            isLive: false,
+            link: ""
         },
         {
             name: "BGC Web Application",
-            description: "Non-profit repository for surgeons to find an unbiased source of bone grafts.",
-            image: bgcScreenshot
+            description: "BGC stands for Bone Graft Consortium. A non-profit repository for surgeons and other medical professionals, assisting them in finding an unbiased source for bone grafts. This web application is built from scratch using vanilla React, Tailwind, Django and CockroachDB. BGC also implements features such as shopify payments, SSL security, and a credit system. Development is a dual effort between me and a close friend, helping a local business owner through a university entrepenuership program. This website is live on the url, but currently is still in demo for testing. We are also still adding frontend copmonents.",
+            image: bgcScreenshot,
+            github: "",
+            isLive: true,
+            link: "https://bonegraftconsortium.com",
+            isDemo: true
         },
         {
             name: "SnackMajic Subscription",
-            description: "Developed web page to host Aji's international subscription boxes.",
-            image: ajScreenshot
+            description: "SnackMajic is a subset of the Aji website, which is a store for selling candy, wine and pantry items from each part of the globe. They are both an online ecommerce store and a physical store in my current town. The owner of this store wanted a subscription box service, and I was tasked to implement this on her shopify website. This project utilized shopify liquid, Recharge Subscriptions and many other shopify apps. I was able to get this working rather quickly, and is live now!",
+            image: ajScreenshot,
+            github: "",
+            isLive: true,
+            link: "https://sweetaji.com/pages/subscription-boxes"
         },
-
-    ]
+        {
+            name: "MajorStatistics",
+            description: "A web application that displays statistics on various undergraduate majors. One of my first full-stack projects created during my time as a CS student. It started with a dataset from Kaggle, which was then imported into a MySQL database. Then built a REST API using Java Spring Boot. The frontend is built with React and Tailwind. This project significantly enhanced my understanding of full-stack development and had a major impact on my early skill growth.",
+            image: cmScreenshot,
+            github: "https://github.com/davidwilliford99/CollegeMajors",
+            isLive: false,
+            link: ""
+        },
+        // {
+        //     name: "Sizzlefish Headless Rebuild",
+        //     description: "Rebuild of Sizzlefish.com from the ground up, migrating them from a Shopify theme to a custom Hydrogen build. Hydrogen is the official React framework of Shopify. Hydrogen allows you to continue using the Shopify CMS, while leveraging the customization and performance optimization of a custom build.",
+        //     image: ajScreenshot,
+        //     github: "",
+        //     isLive: true,
+        //     link: "https://sweetaji.com/pages/subscription-boxes"
+        // }
+    ];
 
     return (
-
-        <div 
-            className='
-                    font-Montserrat bg-dark px-5 md:px-20 2xl:px-48 mt-52 md:mt-72 text-offWhite z-0
-                    
-                    flex flex-col items-center md:items-start'
-            >
-
+        <div className='font-Montserrat bg-dark px-5 md:px-20 2xl:px-48 mt-52 md:mt-72 text-offWhite z-0 flex flex-col items-center md:items-start'>
             <div 
                 id='welcome-text' 
                 className='flex items-center justify-center md:justify-start'
@@ -66,9 +91,8 @@ export const WorksSamplesComponent = () => {
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 2s"
-                  }}
-                >
-
+                }}
+            >
                 {/* Line SVG */}
                 <svg height="3" width="50">
                     <line x1="0" y1="0" x2="50" y2="0" className='stroke-neutral-300'/>
@@ -83,192 +107,70 @@ export const WorksSamplesComponent = () => {
             </div>
 
             <h3 
-                className='
-                        text-3xl md:text-6xl font-Gloock leading-snug my-6 my-20 text-center md:text-left'
+                className='text-3xl md:text-6xl font-Gloock leading-snug my-6 my-20 text-center md:text-left'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 3s"
                 }}
-                >
-                All of my projects are all available on Github, feel free to check them out!
+            >
+                Here are some of my projects, feel free to check them out!
             </h3>
 
-            {/* My works examples are hardcoded since every animation must be a different delay */}
-            <ul 
-                className='flex flex-col md:flex-row md:flex-wrap gap-5'
-            >
-
-                {/* Major Statistics */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-800px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '1.5s'
-                    }}
+            {/* My works examples are dynamically generated */}
+            <ul className='flex flex-col md:flex-row md:flex-wrap gap-5'>
+                {worksSamples.map((work, index) => (
+                    <li 
+                        key={index} 
+                        className='bg-dark2 rounded-xl p-5 w-full'
+                        style={{
+                            transform: isInView ? `translateX(0px)` : `translateX(${index * -400}px)`,
+                            transition: "all 3s",
+                            transitionDelay: `${1.5 - index * 0.5}s`
+                        }}
                     >
+                        <div className='w-full flex flex-col lg:flex-row gap-5'>
 
-                    <img 
-                        src={worksSamples[0].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[0].name}</h1>
-                    <p className='text-center'>{worksSamples[0].description}</p>
-                    <a 
-                        href='https://github.com/davidwilliford99/CollegeMajors'
-                        target='_blank'
-                        rel="noreferrer"
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-purple-500 rounded-lg 
-                                    hover:bg-neutral-900 transition hover:text-offWhite'
-                        >
-                            Learn More!
-                    </a>
-                </li>
+                            <img 
+                                src={work.image}
+                                className='w-full lg:w-1/2'
+                                alt='works-logo'
+                            />
 
-                {/* SnackMajic Boxes */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-1100px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '1s'
-                    }}
-                    >
+                            <div>
+                                <h1 className='font-Gloock text-2xl my-5 w-full lg:w-1/2'>{work.name}</h1>
+                                <p className=''>{work.description}</p>
+                                <div className='flex gap-3'>
+                                    {work.isLive && (
+                                        <a 
+                                            href={work.link}
+                                            target='_blank'
+                                            rel="noreferrer"
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-purple-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                        >
+                                            See It Live
+                                        </a>
+                                    )}
+                                    {work.github && (
+                                        <a 
+                                            href={work.github}
+                                            target='_blank'
+                                            rel="noreferrer"
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-orange-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                        >
+                                            Github Repo
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
 
-                    <img 
-                        src={worksSamples[5].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[5].name}</h1>
-                    <p className='text-center'>{worksSamples[5].description}</p>
-                    <a 
-                        href='https://sweetaji.com/pages/subscription-boxes'
-                        target='_blank'
-                        rel="noreferrer"
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-purple-500 rounded-lg 
-                                    hover:bg-neutral-900 transition hover:text-offWhite'
-                        >
-                            See it Live!
-                    </a>
-                </li>
-
-                {/* Personal Website */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-1500px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '0.5s'
-                    }}
-                    >
-
-                    <img 
-                        src={worksSamples[1].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[1].name}</h1>
-                    <p className='text-center'>{worksSamples[1].description}</p>
-                    <a
-                        href='https://github.com/davidwilliford99/PersonalSite-New'
-                        target='_blank'
-                        rel="noreferrer"
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-purple-500 rounded-lg 
-                                    hover:bg-neutral-900 transition hover:text-offWhite'
-                        >
-                            Learn More!
-                    </a>
-                </li>
-
-                {/* ACP */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-2000px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '1.5s'
-                    }}
-                    >
-
-                    <img 
-                        src={worksSamples[2].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[2].name}</h1>
-                    <p className='text-center'>{worksSamples[2].description}</p>
-                    <div
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-neutral-800 rounded-lg '
-                        >
-                            Private Respository
-                    </div>
-                </li>
-
-                {/* TextArt */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-2400px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '1s'
-                    }}
-                    >
-
-                    <img 
-                        src={worksSamples[3].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[3].name}</h1>
-                    <p className='text-center'>{worksSamples[3].description}</p>
-                    <a 
-                        href='https://github.com/davidwilliford99/TextArt'
-                        target='_blank'
-                        rel="noreferrer"
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-purple-500 rounded-lg 
-                                    hover:bg-neutral-900 transition hover:text-offWhite'
-                        >
-                            Learn More!
-                    </a>
-                </li>
-
-                {/* BGC */}
-                <li 
-                    className='bg-dark2 rounded-xl p-5 flex flex-col justify-center items-center w-80'
-                    style={{
-                        transform: isInView ? `translateX(0px)` : `translateX(-3000px)` ,
-                        transition: "all 3s",
-                        transitionDelay: '0.5s'
-                    }}
-                    >
-
-                    <img 
-                        src={worksSamples[4].image}
-                        className='h-28'
-                        alt='works-logo'
-                    />
-                    <h1 className='font-Gloock text-center text-2xl my-5'>{worksSamples[4].name}</h1>
-                    <p className='text-center'>{worksSamples[4].description}</p>
-                    <div
-                        className=' my-5 px-5 py-2 text-dark font-semibold 
-                                    bg-neutral-800 rounded-lg '
-                        >
-                            Private Respository
-                    </div>
-                </li>
-
+                        </div>
+                        
+                        
+                        
+                        
+                    </li>
+                ))}
             </ul>
-
         </div>
     );
-}
-
-
+};

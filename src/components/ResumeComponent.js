@@ -45,7 +45,7 @@ export const ResumeComponent = () => {
                             transition: "all 1.5s"
                           }}
                         >
-                         Feel free to download my resume. If you have any further questions, please email me at <span className='text-orange-300'>WillifordD21@students.ecu.edu</span>, or use the contact form above. It was a pleasure having you, thanks for stopping by!
+                         Feel free to download my resume. If you have any further questions, please email me at <span className='text-orange-300'>d9899w@gmail.com</span>, or use the contact form above. It was a pleasure having you, thanks for stopping by!
                      </p>
                     
                     <div

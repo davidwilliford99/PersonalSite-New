@@ -57,18 +57,18 @@ export const ContactComponent = () => {
 
         {/* Contact Form */}
         <form 
-            action="https://formsubmit.co/WillifordD21@students.ecu.edu" 
+            action="https://formsubmit.co/d9899w@gmail.com" 
             method='POST' 
             className='w-full flex flex-col items-center justify-center'
             ref={ref}
           >
           
-          <div className='flex w-full items-center justify-center gap-3' id='name and email'>
+          <button className='flex w-full items-center justify-center gap-3' id='name and email'>
             <input type="text" placeholder='Your Name' name="Name" required className='w-full bg-dark border rounded-md p-4 text-white'></input>
             <input type="email" placeholder='Email Address' name="Email" required className='w-full bg-dark border rounded-md p-4 text-white'></input>
             <input type="hidden" name="_captcha" value="false"></input>
             <input type="hidden" name='_next' value='https://davidwilliford99.github.io/PersonalSite-New/#/ThankYou'></input>
-          </div>
+          </button>
           <textarea type="text"  rows="5" cols="10" placeholder="Write your message here" name="message" required className='m-3 w-full bg-dark border rounded-md p-4 text-white mb-10'></textarea>
           
           <button 

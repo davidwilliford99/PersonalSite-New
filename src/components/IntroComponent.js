@@ -76,8 +76,8 @@ export const IntroComponent = (props) => {
                 ref={ref}
                 >
                     I am David Williford, <br/>
-                    a computer science<br/>
-                    student at ECU.
+                    software developer<br/>
+                    and tech enthusiast.
             </h1>
 
             <div className='buttons flex gap-2'>
