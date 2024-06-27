@@ -49,7 +49,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "BGC Web Application",
-            description: "BGC stands for Bone Graft Consortium. A non-profit repository for surgeons and other medical professionals, assisting them in finding an unbiased source for bone grafts. This web application is built from scratch using vanilla React, Tailwind, Django and CockroachDB. BGC also implements features such as shopify payments, SSL security, and a credit system. Development is a dual effort between me and a close friend, helping a local business owner through a university entrepenuership program. This website is live on the url, but currently is still in demo for testing. We are also still adding frontend copmonents.",
+            description: "A non-profit repository for surgeons and other medical professionals, providing an unbiased source of bone grafts. This web application is built with React, Tailwind, Django and CockroachDB. BGC implements features such as PayPal payments, SSL security, and a credit system. This website is live on the url, but currently is still in demo for testing. We are also still adding frontend copmonents.",
             image: bgcScreenshot,
             github: "",
             isLive: true,
@@ -123,7 +123,7 @@ export const WorksSamplesComponent = () => {
                         key={index} 
                         className='bg-dark2 rounded-xl p-5 w-full'
                         style={{
-                            transform: isInView ? `translateX(0px)` : `translateX(${index * -400}px)`,
+                            transform: isInView ? `translateY(0px)` : `translateY(${index * -300}px)`,
                             transition: "all 3s",
                             transitionDelay: `${1.5 - index * 0.5}s`
                         }}
@@ -132,13 +132,19 @@ export const WorksSamplesComponent = () => {
 
                             <img 
                                 src={work.image}
-                                className='w-full lg:w-1/2'
+                                className='w-full lg:w-1/2 h-auto object-contain'
                                 alt='works-logo'
                             />
 
                             <div>
                                 <h1 className='font-Gloock text-2xl my-5 w-full lg:w-1/2'>{work.name}</h1>
                                 <p className=''>{work.description}</p>
+                                {work.isDemo && (
+                                    <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 my-5 text-xs'>
+                                        <p className='text-yellow-500'>&#x25B3;</p>
+                                        <p className='text-neutral-400'>This project is still in demo. Understand the live viewing is incomplete.</p>
+                                    </div>
+                                )}
                                 <div className='flex gap-3'>
                                     {work.isLive && (
                                         <a 

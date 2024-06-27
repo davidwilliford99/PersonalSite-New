@@ -45,7 +45,7 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-lg md:text-lg mb-8'>
-                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, marveling at it's complexity. This intrigue has lead me to pursuing a <span className='text-orange-200'>Computer Science degree</span> from ECU. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Frontend Development, Cloud Computing, Automation and API Development/Usage</span>. I am familiar with <span className='text-orange-200'>Low-Level Systems, Computer Architecture and Graphics</span> as well. To describe my work style in 3 words, it would be: <span className='text-orange-200'>organized, focused, detailed</span>. As someone who prioritizes organization, I steadily take notes on progress and future goals for my projects. My current long-term goal is to <span className='text-orange-200'>develop new skills</span> to become a master of the internet.
+                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online. This intrigue eventually lead me to pursuing a Computer Science degree. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Full Stack Development, Cloud Computing, Web Deployment, Automation and API Development/Usage</span>. Outside of programming, I enjoy video Games, geography, computer hardware, math and fitness.
                         </p>
 
                         <Link 
