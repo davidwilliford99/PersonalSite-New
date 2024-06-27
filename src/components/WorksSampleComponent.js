@@ -33,7 +33,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "ACP Web App",
-            description: "A web application I worked on during my time at Autonomic Solutions. This was my first work experience on a team of developers and devops engineers, so it taught me a ton about the daily work life as a software engineer. This application was meant to streamline the cloud infrastructure process, making cloud platforms more accessible to business owners and other non-technical individuals. This project has since been delayed, so sadly I can not show any live examples of it. During my time on this team, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
+            description: "A web application I participated on during time at Autonomic Solutions. This was my first work experience on a team of developers, giving a realistic setting of the daily work as a software engineer. This application was meant to create self-healing computing models based off of the autonomic nervous system. Sadly this project has since been delayed. During my contributions, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
             image: acpScreenshot,
             github: "",
             isLive: false,
@@ -140,7 +140,7 @@ export const WorksSamplesComponent = () => {
                                 <h1 className='font-Gloock text-2xl my-5 w-full lg:w-1/2'>{work.name}</h1>
                                 <p className=''>{work.description}</p>
                                 {work.isDemo && (
-                                    <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 my-5 text-xs'>
+                                    <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 text-xs mt-2'>
                                         <p className='text-yellow-500'>&#x25B3;</p>
                                         <p className='text-neutral-400'>This project is still in demo. Understand the live viewing is incomplete.</p>
                                     </div>
