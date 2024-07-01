@@ -9,6 +9,8 @@ import pwScreenshot from './../assets/pw1.png';
 import ajScreenshot from './../assets/AJI1.png';
 import bgcScreenshot from './../assets/BGC1.png';
 import blogScreenshot from './../assets/Blog-ss.png';
+import steamScreenshot from './../assets/SteamAn.png';
+import ugPredScreenshot from './../assets/UGpreds.png';
 
 export const WorksSamplesComponent = () => {
     const ref = useRef(null);
@@ -32,20 +34,12 @@ export const WorksSamplesComponent = () => {
             link: "https://blog.davidwilliford.dev"
         },
         {
-            name: "ACP Web App",
-            description: "A web application I participated on during time at Autonomic Solutions. This was my first work experience on a team of developers, giving a realistic setting of the daily work as a software engineer. This application was meant to create self-healing computing models based off of the autonomic nervous system. Sadly this project has since been delayed. During my contributions, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
-            image: acpScreenshot,
-            github: "",
+            name: "SteamPulse",
+            description: "SteamPulse is an analytics web dashboard designed for Steam users. This platform provides a comprehensive overview of both the Steam library and individual Steam accounts. Key features include viewing friends lists, calculating the value of Steam libraries, showcasing rare achievements, and displaying the most played titles and genres. Additionally, the dashboard offers functionality to explore featured games, search for games by ID, and view related titles. It also includes a live news feed for selected games. This project leverages Flask, Next.js, the Steam APIs, and SQLite for its robust performance and capabilities.",
+            image: steamScreenshot,
+            github: "https://github.com/davidwilliford99/SteamAnalytics",
+            github2: "https://github.com/davidwilliford99/SteamAnalytics-Server",
             isLive: false,
-            link: ""
-        },
-        {
-            name: "TextArt",
-            description: "C/C++ terminal application used to create, animate and edit text art images.This was a final project for my Data structures and Algorithms class, as it creatively implements topics from this course. It utilizes linked lists (for undo/redo functionality), multi-dimensional arrays (for the grid layout), pointers, file import / export (for saving/importing textArt files), and recursion (for drawing preset shapes like boxes, trees etc.). It is a really cool app with a cyberpunk feel. If you would like to give it a shot, visit the github link and download the .exe!.",
-            image: taScreenshot,
-            github: "https://github.com/davidwilliford99/TextArt",
-            isLive: false,
-            link: ""
         },
         {
             name: "BGC Web Application",
@@ -55,6 +49,14 @@ export const WorksSamplesComponent = () => {
             isLive: true,
             link: "https://bonegraftconsortium.com",
             isDemo: true
+        },
+        {
+            name: "TextArt",
+            description: "C/C++ terminal application used to create, animate and edit text art images.This was a final project for my Data structures and Algorithms class, as it creatively implements topics from this course. It utilizes linked lists (for undo/redo functionality), multi-dimensional arrays (for the grid layout), pointers, file import / export (for saving/importing textArt files), and recursion (for drawing preset shapes like boxes, trees etc.). It is a really cool app with a cyberpunk feel. If you would like to give it a shot, visit the github link and download the .exe!.",
+            image: taScreenshot,
+            github: "https://github.com/davidwilliford99/TextArt",
+            isLive: false,
+            link: ""
         },
         {
             name: "SnackMajic Subscription",
@@ -69,6 +71,21 @@ export const WorksSamplesComponent = () => {
             description: "A web application that displays statistics on various undergraduate majors. One of my first full-stack projects created during my time as a CS student. It started with a dataset from Kaggle, which was then imported into a MySQL database. Then built a REST API using Java Spring Boot. The frontend is built with React and Tailwind. This project significantly enhanced my understanding of full-stack development and had a major impact on my early skill growth.",
             image: cmScreenshot,
             github: "https://github.com/davidwilliford99/CollegeMajors",
+            isLive: false,
+            link: ""
+        },
+        {
+            name: "Undergrad Predictions Data Analysis",
+            description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
+            image: ugPredScreenshot,
+            github: "https://github.com/davidwilliford99/UndergradPredictions",
+            isLive: false,
+        },
+        {
+            name: "ACP Web App",
+            description: "A web application I participated on during time at Autonomic Solutions. This was my first work experience on a team of developers, giving a realistic setting of the daily work as a software engineer. This application was meant to create self-healing computing models based off of the autonomic nervous system. Sadly this project has since been delayed. During my contributions, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
+            image: acpScreenshot,
+            github: "",
             isLive: false,
             link: ""
         },
@@ -138,7 +155,7 @@ export const WorksSamplesComponent = () => {
 
                             <div>
                                 <h1 className='font-Gloock text-2xl my-5 w-full lg:w-1/2'>{work.name}</h1>
-                                <p className=''>{work.description}</p>
+                                <p className='text-neutral-300'>{work.description}</p>
                                 {work.isDemo && (
                                     <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 text-xs mt-2'>
                                         <p className='text-yellow-500'>&#x25B3;</p>
@@ -164,6 +181,16 @@ export const WorksSamplesComponent = () => {
                                             className='my-5 px-5 py-2 text-dark font-semibold bg-orange-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
                                         >
                                             Github Repo
+                                        </a>
+                                    )}
+                                    {work.github2 && (
+                                        <a 
+                                            href={work.github2}
+                                            target='_blank'
+                                            rel="noreferrer"
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-cyan-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                        >
+                                            Github Repo 2
                                         </a>
                                     )}
                                 </div>
