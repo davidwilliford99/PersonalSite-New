@@ -43,7 +43,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "BGC Web Application",
-            description: "A non-profit repository for surgeons and other medical professionals, providing an unbiased source of bone grafts. This web application is built with React, Tailwind, Django and CockroachDB. BGC implements features such as PayPal payments, SSL security, and a credit system. This website is live on the url, but currently is still in demo for testing. We are also still adding frontend copmonents.",
+            description: "A non-profit repository for surgeons and other medical professionals, providing an unbiased source of bone grafts. This web application is built with React, Tailwind, Django and CockroachDB. BGC implements features such as PayPal payments, SSL security, and a credit system. This website is live on the url, but currently is still in demo for testing. We are also still adding frontend components.",
             image: bgcScreenshot,
             github: "",
             isLive: true,
@@ -60,7 +60,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "SnackMajic Subscription",
-            description: "SnackMajic is a subset of the Aji website, which is a store for selling candy, wine and pantry items from each part of the globe. They are both an online ecommerce store and a physical store in my current town. The owner of this store wanted a subscription box service, and I was tasked to implement this on her shopify website. This project utilized shopify liquid, Recharge Subscriptions and many other shopify apps. I was able to get this working rather quickly, and is live now!",
+            description: "SnackMajic is a subset of the Aji website, which is a store for snacks, wine and pantry items of each part of the globe. They are both an online ecommerce store and a physical store in my current town. The owner of this store wanted a subscription box service, and I was tasked to implement this on her shopify website. This project utilized shopify liquid, Recharge Subscriptions and many other shopify apps. I was able to get this working rather quickly, and is live now!",
             image: ajScreenshot,
             github: "",
             isLive: true,
