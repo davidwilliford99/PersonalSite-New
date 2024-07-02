@@ -52,7 +52,7 @@ export const WorksSamplesComponent = () => {
         },
         {
             name: "TextArt",
-            description: "C/C++ terminal application used to create, animate and edit text art images.This was a final project for my Data structures and Algorithms class, as it creatively implements topics from this course. It utilizes linked lists (for undo/redo functionality), multi-dimensional arrays (for the grid layout), pointers, file import / export (for saving/importing textArt files), and recursion (for drawing preset shapes like boxes, trees etc.). It is a really cool app with a cyberpunk feel. If you would like to give it a shot, visit the github link and download the .exe!.",
+            description: "C/C++ terminal application used to create, animate and edit text art images. As a final project for my Data structures and Algorithms class, it implements many topics from this course. Linked lists (for undo/redo functionality), multi-dimensional arrays (for grid layout), pointers, file import / export (for saving/importing ASCII art files), and recursion (for drawing preset shapes like boxes, trees etc.). It's a fun app with a cyberpunk feel. If you would like to give it a shot, visit the github link and download the .exe!.",
             image: taScreenshot,
             github: "https://github.com/davidwilliford99/TextArt",
             isLive: false,
