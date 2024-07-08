@@ -11,6 +11,7 @@ import bgcScreenshot from './../assets/BGC1.png';
 import blogScreenshot from './../assets/Blog-ss.png';
 import steamScreenshot from './../assets/SteamAn.png';
 import ugPredScreenshot from './../assets/UGpreds.png';
+import ccScreenshot from './../assets/CardCraftSS.png';
 
 export const WorksSamplesComponent = () => {
     const ref = useRef(null);
@@ -49,6 +50,15 @@ export const WorksSamplesComponent = () => {
             isLive: true,
             link: "https://bonegraftconsortium.com",
             isDemo: true
+        },
+        {
+            name: "CardCraft",
+            description: "CardCraft is a web application group project that served as a capstone project for my copmuter science program. This web application allows users to upload notes, then utilizes the ChatGPT API to create sets of flash cards. Users can store, edit, or delete these flashcards from their account. This application was built with Next.js, Django, Cockroach DB and PostgreSQL. My role in this project was primarily architecture and organization, providing my team with actionable steps and making sure components integrate smoothly.",
+            image: ccScreenshot,
+            github: "https://github.com/davidwilliford99/CardCraft",
+            isLive: false,
+            link: "",
+            isDemo: false
         },
         {
             name: "TextArt",
