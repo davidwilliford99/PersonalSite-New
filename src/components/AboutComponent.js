@@ -41,7 +41,7 @@ export const AboutComponent = () => {
                     }}
                     >
                         <h1 className='font-Roboto text-offWhite text-4xl md:text-6xl mb-10'>
-                            About me ...
+                            About me
                         </h1>
 
                         <p className='text-lg md:text-lg mb-8'>
