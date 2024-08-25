@@ -77,15 +77,15 @@ export const IntroComponent = (props) => {
                 >
                     I am David Williford, <br/>
                     Web Developer,<br/>
-                    Programmer
+                    Freelancer
             </h1>
 
-            <div className='buttons flex gap-2'>
+            <div className='buttons flex gap-2 mb-2'>
                 <Link 
                     onClick={worksScroll}
                     className='
                             md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                            rounded-lg text-center py-3 my-8
+                            rounded-lg text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
                             
                             w-full'
@@ -101,7 +101,7 @@ export const IntroComponent = (props) => {
                     onClick={() => {window.open('https://blog.davidwilliford.dev', '_blank');}}
                     className='
                             md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                            rounded-lg text-center py-3 my-8
+                            rounded-lg text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
                             
                             w-full'
@@ -114,6 +114,24 @@ export const IntroComponent = (props) => {
                     MY BLOG
                 </Link>
             </div>
+
+            <Link 
+                to="https://calendly.com/d9899w/1-on-1-remote-consultation"
+                target='_blank'
+                className='
+                        md:w-full font-Montserrat text-orange-300 bg-dark2 text-md
+                        rounded-lg text-center py-3
+                        hover:bg-neutral-300 hover:text-dark transition-all
+                        mb-8
+                        w-full'
+                style={{
+                    opacity: isInView ? 1 : 0,
+                    transition: "background-color 0.3s, opacity 3s",
+                    transitionDelay: "opacity 3s"
+                }}
+                >
+                BOOK A FREE CONSULTATION
+            </Link>
 
         </div>
 
