@@ -82,7 +82,7 @@ export const WorksComponent = () => {
                     className='font-Roboto text-lg md:text-2xl md:tracking-widest text-offWhite'
 
                     >
-                        Some technologies that I am comfortable with ... 
+                        Technologies I use to accomplish my client's goals ... 
                     </h1>
 
                 <ul className='flex flex-wrap gap-5 mt-10'>

@@ -76,8 +76,8 @@ export const IntroComponent = (props) => {
                 ref={ref}
                 >
                     I am David Williford, <br/>
-                    software developer<br/>
-                    and tech enthusiast.
+                    Web Developer,<br/>
+                    Programmer
             </h1>
 
             <div className='buttons flex gap-2'>
@@ -95,7 +95,7 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    SEE MY PROJECTS
+                    MY WORKS
                 </Link>
                 <Link 
                     onClick={() => {window.open('https://blog.davidwilliford.dev', '_blank');}}
@@ -111,7 +111,7 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    VISIT MY BLOG
+                    MY BLOG
                 </Link>
             </div>
 
