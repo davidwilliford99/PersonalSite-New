@@ -77,7 +77,7 @@ export const IntroComponent = (props) => {
                 >
                     I am David Williford, <br/>
                     Web Developer,<br/>
-                    Freelancer
+                    Programmer
             </h1>
 
             <div className='buttons flex gap-2 mb-2'>
