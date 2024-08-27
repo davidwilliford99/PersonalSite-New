@@ -7,6 +7,7 @@ import github from './../assets/github.png'
 import hashnode from './../assets/hashnode.png'
 import { useInView } from 'framer-motion';
 
+import { PopupWidget } from "react-calendly";
 
 
 export const IntroComponent = (props) => {
@@ -16,7 +17,8 @@ export const IntroComponent = (props) => {
     const isInView = useInView(ref, {margin: '-100px', once: true})
 
     // prop for scrollingto projects section
-    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
+    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"});
+
 
     return (
 
@@ -39,7 +41,7 @@ export const IntroComponent = (props) => {
 
             <div 
                 id='welcome-text' 
-                className='flex items-center justify-center md:justify-start mt-3 md:mt-0'
+                className='flex items-center justify-center md:justify-start mt-20 md:mt-0'
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 2s"
@@ -66,7 +68,7 @@ export const IntroComponent = (props) => {
                             font-Gloock md:text-7xl leading-tight
                             2xl:text-8xl
                             
-                            text-4xl mt-20 md:mt-0
+                            text-4xl md:mt-0
                             '
                 style={{
                     opacity: isInView ? 1 : 0,
@@ -115,7 +117,7 @@ export const IntroComponent = (props) => {
                 </Link>
             </div>
 
-            <Link 
+            {/* <Link 
                 to="https://calendly.com/d9899w/1-on-1-remote-consultation"
                 target='_blank'
                 className='
@@ -131,7 +133,26 @@ export const IntroComponent = (props) => {
                 }}
                 >
                 BOOK A FREE CONSULTATION
-            </Link>
+            </Link> */}
+
+            
+            {/* Calendly popup link */}
+            <div className=''>
+                <PopupWidget
+                    url="https://calendly.com/d9899w/1-on-1-remote-consultation"
+                    /*
+                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                    */
+                    rootElement={document.getElementById("root")}
+                    text="Book a free consultation"
+                    textColor="#2c2c2c"
+                    color="#fdba74"
+                />
+            </div>
+
+
+
 
         </div>
 

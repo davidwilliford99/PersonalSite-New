@@ -49,7 +49,7 @@ export const MobileNavbar = (props) => {
       <div 
             id='Navbar' 
             className='bg-dark fixed w-full font-Montserrat 2xl:px-48
-                       flex justify-center items-center z-20 lg:invisible bottom-0'
+                       flex justify-center items-center z-20 lg:invisible top-0'
             ref={ref}
             >
         
