@@ -19,7 +19,7 @@ export const MobileNavbar = (props) => {
     const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
     const aboutScroll = () => props.aboutClickRef.current.scrollIntoView({behavior: "smooth"})
     const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
-    const resumeScroll = () => props.resumeClickRef.current.scrollIntoView({behavior: "smooth"})
+    const servicesScroll = () => props.servicesClickRef.current.scrollIntoView({behavior: "smooth"})
 
    
     
@@ -28,19 +28,19 @@ export const MobileNavbar = (props) => {
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll, image: introImg
+            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
         },
         {
-            name: "Services", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: worksImg
+            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll
         },
         {
-            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
+            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
         },
         {
-            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView, goTo: resumeScroll, image: resumeImg
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
         },
 
     ];
