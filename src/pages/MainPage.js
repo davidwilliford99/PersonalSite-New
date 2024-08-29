@@ -18,21 +18,21 @@ export const MainPage = () => {
   const introClickRef = useRef(null)
   const worksClickRef = useRef(null)
   const contactClickRef = useRef(null)
-  const resumeClickRef = useRef(null)
+  const servicesClickRef = useRef(null)
 
   // Refs for scroll location
   const introRef = useRef(null)
   const worksRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
-  const resumeRef = useRef(null)
+  const servicesRef = useRef(null)
 
   // View States for scroll location
   const introInView = useInView(introRef, {margin: '-250px'})
   const worksInView = useInView(worksRef, {margin: '-250px'})
   const aboutInView = useInView(aboutRef, {margin: '-250px'})
   const contactInView = useInView(contactRef, {margin: '-250px'})
-  const resumeInView = useInView(resumeRef, {margin: '-250px'})
+  const servicesInView = useInView(servicesRef, {margin: '-250px'})
 
   return (
     <div id='MainPage' className='font-Montserrat min-h-screen'>
@@ -43,13 +43,13 @@ export const MainPage = () => {
         worksInView={worksInView}
         aboutInView={aboutInView}
         contactInView={contactInView}
-        resumeInView={resumeInView}
+        servicesInView={servicesInView}
 
         aboutClickRef={aboutClickRef}
         introClickRef={introClickRef}
         worksClickRef={worksClickRef}
-        resumeClickRef={resumeClickRef}
         contactClickRef={contactClickRef}
+        servicesClickRef={servicesClickRef}
       />
 
       <MobileNavbar 
@@ -58,13 +58,13 @@ export const MainPage = () => {
         worksInView={worksInView}
         aboutInView={aboutInView}
         contactInView={contactInView}
-        resumeInView={resumeInView}
+        servicesInView={servicesInView}
 
         aboutClickRef={aboutClickRef}
         introClickRef={introClickRef}
         worksClickRef={worksClickRef}
-        resumeClickRef={resumeClickRef}
         contactClickRef={contactClickRef}
+        servicesClickRef={servicesClickRef}
       />
 
 
@@ -82,11 +82,10 @@ export const MainPage = () => {
         </div>
       </div>
       
-      <div ref={worksRef}>
-        <ServicesComponent id='Works'/>
-          <div ref={worksClickRef}>
-            <WorksSamplesComponent id='Works'/>
-          </div>
+      <div ref={servicesRef}>
+        <div ref={servicesClickRef}>
+          <ServicesComponent id='Services'/>
+        </div>
       </div>
       
 
@@ -96,9 +95,9 @@ export const MainPage = () => {
         </div>
       </div>
 
-      <div ref={resumeRef}>
-        <div ref={resumeClickRef}>
-          <ResumeComponent id='Resume'/>
+      <div ref={worksRef}>
+        <div ref={worksClickRef}>
+          <WorksSamplesComponent id='Works'/>
         </div>
       </div>
 
@@ -106,8 +105,8 @@ export const MainPage = () => {
         aboutClickRef={aboutClickRef}
         introClickRef={introClickRef}
         worksClickRef={worksClickRef}
-        resumeClickRef={resumeClickRef}
         contactClickRef={contactClickRef}
+        servicesClickRef={servicesClickRef}
       />
       
     </div>

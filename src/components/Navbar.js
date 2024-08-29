@@ -10,11 +10,10 @@ export const Navbar = (props) => {
 
     // run these functions from an event handler or an effect to execute scroll 
     const introScroll = () => props.introClickRef.current.scrollIntoView({behavior: "smooth"})   
-    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
+    const servicesScroll = () => props.servicesClickRef.current.scrollIntoView({behavior: "smooth"})
     const aboutScroll = () => props.aboutClickRef.current.scrollIntoView({behavior: "smooth"})
     const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
-    const resumeScroll = () => props.resumeClickRef.current.scrollIntoView({behavior: "smooth"})
-
+    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"})
    
     
     /**
@@ -28,13 +27,13 @@ export const Navbar = (props) => {
             name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
         },
         {
-            name: "Services", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
+            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll
         },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
         },
         {
-            name: "Resume", url: "", logo: "", isCurrent: props.resumeInView, goTo: resumeScroll
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
         },
 
     ];

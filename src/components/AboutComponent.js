@@ -10,7 +10,7 @@ export const AboutComponent = () => {
 
     return (
       <div id='About' 
-           className='font-Montserrat 2xl:px-48 px-5 md:px-20 mt-10 min-h-screen
+           className='font-Montserrat 2xl:px-48 px-5 md:px-20 mt-40 min-h-screen
                       flex items-center justify-center overflow-x-hidden
                       text-offWhite'>
             <div 
@@ -21,7 +21,7 @@ export const AboutComponent = () => {
                 <img 
                     src={aboutPhoto} 
                     alt='about' 
-                    className='md:h-[32rem] rounded-full md:rounded-3xl'
+                    className='md:h-[32rem] rounded-full border-2 border-orange-200 md:rounded-4xl'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: "all 2s"
@@ -43,7 +43,7 @@ export const AboutComponent = () => {
                             Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, gaining experience in <span className='text-orange-200'>Ecommerce, Web Development, Cloud Computing, Automation and APIs</span>.
                         </p>
 
-                        <h3 className='font-Gloock text-2xl mb-5'>Important Qualifications</h3>
+                        <h3 className='font-Gloock text-2xl mb-5'>My Qualifications</h3>
                         
                         <p className='text-md mb-2'>
                             <span className='text-white'>&#x25cf; </span> 
