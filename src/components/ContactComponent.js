@@ -51,7 +51,7 @@ export const ContactComponent = () => {
                   transition: "all 1s"
                 }}
                 >
-                All messages are read carfeully and appreciated! I would love to hear from you ... 
+                Feel free to ask any questions! Click the button in the bottom right to book a free 1-on-1 consultation. 
             </h3>
 
 

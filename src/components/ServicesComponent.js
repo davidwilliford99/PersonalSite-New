@@ -54,9 +54,7 @@ export const ServicesComponent = () => {
                     brief: "Perfect for small businesses or personal sites needing a quick and effective online presence.",
                     whoItsFor: [
                         "Small businesses",
-                        "Personal sites",
                         "Portfolios",
-                        "Limited Budgets"
                     ],
                     includes: [
                         "Template customization",
@@ -72,9 +70,8 @@ export const ServicesComponent = () => {
                     description: "Let's build you a professional ecommerce store! This will set you up to sell products online through Shopify!",
                     brief: "Ideal for businesses focusing on online retail and needing a robust, easy-to-manage platform.",
                     whoItsFor: [
-                        "Online sellers",
-                        "Small businesses",
-                        "Ecommerce"
+                        "Ecommerce",
+                        "Small stores",
                     ],
                     includes: [
                         "Theme customization",
@@ -88,10 +85,10 @@ export const ServicesComponent = () => {
                     title: "Headless Ecommerce",
                     logo: webdev1,
                     description: "Also an ecommerce build, but with a completely custom frontend. Greatly increasing website performance and customization.",
-                    brief: "For businesses desiring more control over the user experience with a custom React-based front-end.",
+                    brief: "For businesses desiring more control over the user experience with a custom frontend.",
                     whoItsFor: [
-                        "Businesses desiring more control over the user experience.",
-                        "Ecommerce companies looking to leverage additional performance and SEO capability."
+                        "Ecommerce",
+                        "Large stores",
                     ],
                     includes: [
                         "Custom frontend",
@@ -106,14 +103,12 @@ export const ServicesComponent = () => {
                     description: "Comprehensive, fully customized solutions for businesses with specific needs and high expectations.",
                     brief: "Tailored for businesses needing fully customized solutions with specific requirements.",
                     whoItsFor: [
-                        "Online Businesses",
-                        "Tech Startups",
-                        "Enterprises"
+                        "Saas Products",
+                        "Entrepeneurs",
                     ],
                     includes: [
                         "Custom frontend",
                         "Custom backend",
-                        "Custom database",
                         "Cloud hosting",
                         "Ongoing maintenance"
                     ]
@@ -236,7 +231,7 @@ export const ServicesComponent = () => {
                         "Content strategy",
                         "keyword research",
                         "Meta tags",
-                        "Description Enhancement"
+                        "Description tailoring"
                     ]
                 },
                 {
@@ -252,11 +247,10 @@ export const ServicesComponent = () => {
                     includes: [
                         "Full site audit",
                         "Technical SEO",
-                        "On-Page SEO",
-                        "Off-Page SEO",
+                        "On & Off-Page SEO",
                         "Content strategy",
                         "Keyword research",
-                        "Backlink outreach",
+                        "Backlinks",
                     ]
                 },
                 {
@@ -332,14 +326,14 @@ export const ServicesComponent = () => {
     
 
     return (
-        <div className='font-Montserrat bg-dark 2xl:px-48 md:px-20 z-0'>
+        <div className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0'>
             <motion.h1 
-                className='font-Gloock mt-40 mb-20 text-4xl md:text-6xl'
+                className='font-Gloock text-center mt-40 mb-20 text-4xl md:text-6xl'
                 initial={{ opacity: 0, x: -500 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 2 }}
             >
-                How I can grow your business...
+                How I can grow your business
             </motion.h1>
 
             <div className='' ref={ref}>
@@ -371,7 +365,7 @@ export const ServicesComponent = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
-                                    className='text-center text-neutral-400 font-light'
+                                    className='text-center text-neutral-400 text-sm md:text-md font-light'
                                 >
                                     {description}
                                 </motion.p>
@@ -385,7 +379,7 @@ export const ServicesComponent = () => {
                                         border border-orange-200 text-orange-200 rounded-md font-medium 
                                         hover:bg-neutral-300 hover:text-dark transition-all transition'
                                 >
-                                    {showPlans[index] ? 'Hide Services' : 'View Services'}
+                                    {showPlans[index] ? 'Hide Options' : 'View Options'}
                                 </button>
                             </div>
 
@@ -396,31 +390,32 @@ export const ServicesComponent = () => {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -20 }}
                                         transition={{ duration: 0.5 }}
-                                        className={`flex w-full justify-between my-20 border-x border-neutral-700`}
+                                        className={`grid grid-cols-2 lg:flex lg:flex-row flex-col w-full justify-between my-20 md:border-x gap-y-20 border-neutral-700`}
                                     >
                                         {service.plans.map((plan, idx) => (
                                             <div
                                                 key={plan.title}
                                                 className={`
-                                                    flex-1 px-4 border-neutral-700 text-center flex flex-col flex-grow items-stretch
-                                                    ${idx !== 0 ? 'border-l' : ''}`}
+                                                    mt-0 flex-1 px-4 border-neutral-700 text-center flex flex-col flex-grow items-stretch
+                                                    ${idx !== 0 ? 'border-l' : ''}
+                                                `}
                                             >
                                                 <div className='flex justify-center mb-10'>
                                                     <img className='text-white h-20' src={plan.logo} alt={plan.title} />
                                                 </div>
 
-                                                <h3 className='text-2xl mb-5 font-Gloock'>{plan.title}</h3>
+                                                <h3 className='text-xl md:text-2xl mb-5 font-Gloock'>{plan.title}</h3>
                                                 <p className='text-neutral-400 text-sm mb-10'>{plan.brief}</p>
 
-                                                <ul className='mb-10'>
-                                                    <p className='text-lg font-Gloock text-orange-200'>Tailored For</p>
+                                                <ul className=''>
+                                                    <p className='text-lg mb-2 font-Gloock text-orange-200'>Recommended For</p>
                                                     {plan.whoItsFor.map((who, i) => (
                                                         <li key={i} className='text-sm mb-2 font-light text-neutral-400'>{who}</li>
                                                     ))}
                                                 </ul>
 
                                                 <ul className=''>
-                                                    <p className='text-lg font-Gloock text-orange-200'>Includes</p>
+                                                    <p className='text-lg font-Gloock mb-2 text-orange-200'>Includes</p>
                                                     {plan.includes.map((include, i) => (
                                                         <li key={i} className='text-sm mb-2 font-light text-neutral-400'>{include}</li>
                                                     ))}
