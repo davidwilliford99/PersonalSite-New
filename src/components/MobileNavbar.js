@@ -31,10 +31,10 @@ export const MobileNavbar = (props) => {
             name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll, image: introImg
         },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: worksImg
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
+            name: "Services", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: worksImg
         },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
@@ -49,7 +49,8 @@ export const MobileNavbar = (props) => {
       <div 
             id='Navbar' 
             className='bg-dark fixed w-full font-Montserrat 2xl:px-48
-                       flex justify-center items-center z-20 lg:invisible top-0'
+                       flex justify-center items-center z-20 lg:invisible top-0
+                       border-b border-neutral-800'
             ref={ref}
             >
         
@@ -68,7 +69,7 @@ export const MobileNavbar = (props) => {
                     if(navItem.isCurrent) {
                         return (
                             <NavLink 
-                                className='w-full bg-neutral-800 text-offWhite transition border-solid border border-neutral-700 flex flex-col items-center justify-center font-semibold' 
+                                className='w-full bg-neutral-800 text-offWhite transition flex flex-col items-center justify-center font-semibold' 
                                 onClick={navItem.goTo}
                                 >
                                 
@@ -85,7 +86,7 @@ export const MobileNavbar = (props) => {
                     else {
                         return (
                             <NavLink 
-                                className='w-full text-offWhite transition border-solid border border-neutral-700 flex flex-col items-center justify-center' 
+                                className='w-full text-offWhite transition flex flex-col items-center justify-center' 
                                 onClick={navItem.goTo}
                                 >
                                 

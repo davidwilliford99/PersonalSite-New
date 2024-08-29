@@ -2,7 +2,7 @@ import { React, useRef } from 'react';
 import { AboutComponent } from '../components/AboutComponent';
 import { ContactComponent } from '../components/ContactComponent';
 import { IntroComponent } from '../components/IntroComponent';
-import { WorksComponent } from '../components/WorksComponent';
+import { ServicesComponent } from '../components/ServicesComponent';
 import { WorksSamplesComponent } from '../components/WorksSampleComponent';
 import { Navbar } from '../components/Navbar';
 import { useInView } from 'framer-motion';
@@ -75,19 +75,20 @@ export const MainPage = () => {
             worksClickRef={worksClickRef}/>
         </div>
       </div>
-      
-      <div ref={worksRef}>
-        <WorksComponent id='Works'/>
-          <div ref={worksClickRef}>
-            <WorksSamplesComponent id='Works'/>
-          </div>
-      </div>
-      
+
       <div ref={aboutRef}>
         <div ref={aboutClickRef}>
           <AboutComponent id='About'/>
         </div>
       </div>
+      
+      <div ref={worksRef}>
+        <ServicesComponent id='Works'/>
+          <div ref={worksClickRef}>
+            <WorksSamplesComponent id='Works'/>
+          </div>
+      </div>
+      
 
       <div ref={contactRef}>
         <div ref={contactClickRef}>

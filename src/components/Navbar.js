@@ -25,10 +25,10 @@ export const Navbar = (props) => {
             name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
         },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
+            name: "Services", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
         },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
