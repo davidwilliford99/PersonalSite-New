@@ -27,6 +27,15 @@ export const WorksSamplesComponent = () => {
             link: "https://blog.davidwilliford.dev"
         },
         {
+            name: "CardCraft",
+            description: "CardCraft utilizes AI to automatically generate flash card sets based on a PDF file upload. Users can store, edit, or delete these flashcards from their account. Currently not live, but feel free to check the github link!",
+            image: ccScreenshot,
+            github: "https://github.com/davidwilliford99/CardCraft",
+            isLive: false,
+            link: "",
+            isDemo: false
+        },
+        {
             name: "SnackMajic Subscription",
             description: "SnackMajic is a subset of Aji.com, which is a store for international snacks. They are both an online ecommerce store and a physical store. For this project, I was able to implement a subscription box service, with many variants and shipping around the globe.",
             image: ajScreenshot,
@@ -42,15 +51,6 @@ export const WorksSamplesComponent = () => {
             isLive: true,
             link: "https://bonegraftconsortium.com",
             isDemo: true
-        },
-        {
-            name: "CardCraft",
-            description: "CardCraft utilizes AI to automatically generate flash card sets based on a PDF file upload. Users can store, edit, or delete these flashcards from their account. Currently not live, but feel free to check the github link!",
-            image: ccScreenshot,
-            github: "https://github.com/davidwilliford99/CardCraft",
-            isLive: false,
-            link: "",
-            isDemo: false
         },
         {
             name: "TextArt",
@@ -161,7 +161,7 @@ export const WorksSamplesComponent = () => {
                                 {work.isDemo && (
                                     <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 text-xs mt-2'>
                                         <p className='text-yellow-500'>&#x25B3;</p>
-                                        <p className='text-neutral-400'>This project is still in demo mode</p>
+                                        <p className='text-neutral-400'>This project is still in development</p>
                                     </div>
                                 )}
                                 <div className='flex gap-3'>

@@ -21,7 +21,7 @@ export const AboutComponent = () => {
                 <img 
                     src={aboutPhoto} 
                     alt='about' 
-                    className='md:h-[32rem] rounded-full border-2 border-orange-200 md:rounded-4xl'
+                    className='md:h-[32rem] rounded-full border-4 border-neutral-700 md:rounded-4xl'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: "all 2s"
