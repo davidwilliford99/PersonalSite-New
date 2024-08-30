@@ -48,10 +48,10 @@ export const ServicesComponent = () => {
             ],
             plans: [
                 {
-                    title: "Simple Website",
+                    title: "Simple Website Build",
                     logo: webdev2,
                     description: "A simple website build (1-3 pages), using basic components and industry-standard tools.",
-                    brief: "Perfect for small businesses or personal sites needing a quick and effective online presence.",
+                    brief: "For small businesses or personal sites needing a quick, effective online presence.",
                     whoItsFor: [
                         "Small businesses",
                         "Portfolios",
@@ -145,10 +145,10 @@ export const ServicesComponent = () => {
                     ]
                 },
                 {
-                    title: "Advanced Website Management",
+                    title: "Advanced Management",
                     logo: maintenance1,
                     description: "Comprehensive management services, including advanced performance tuning and in-depth optimization for high-traffic sites.",
-                    brief: "Ideal for ecommerce stores or content-rich websites needing intensive management and optimization.",
+                    brief: "Ideal for content-rich websites needing intensive management and optimization.",
                     whoItsFor: [
                         "Ecommerce sites",
                         "Content-rich websites",
@@ -182,7 +182,8 @@ export const ServicesComponent = () => {
                     description: "Basic upgrades to improve page speed, optimize images, and enhance resource management.",
                     brief: "Ideal for small websites with minor performance issues needing basic optimizations.",
                     whoItsFor: [
-                        "Simple websites"
+                        "Simple websites",
+                        "Blogs & Portfolios"
                     ],
                     includes: [
                         "Speed analysis",
@@ -196,7 +197,7 @@ export const ServicesComponent = () => {
                     title: "Advanced Performance Upgrades",
                     logo: performance3,
                     description: "Comprehensive performance improvements including server-side optimization and advanced database tuning.",
-                    brief: "Best for ecommerce or content-heavy websites requiring significant performance enhancements.",
+                    brief: "Best for complex sites requiring significant performance enhancements.",
                     whoItsFor: [
                         "Ecommerce",
                         "Content-Heavy sites"
@@ -242,10 +243,10 @@ export const ServicesComponent = () => {
                     ]
                 },
                 {
-                    title: "Full Project SEO",
+                    title: "Full Site SEO",
                     logo: seo3,
                     description: "A comprehensive SEO overhaul designed for businesses with a broader reach.",
-                    brief: "Tailored for medium to large businesses or companies with international or multi-location presence.",
+                    brief: "Tailored to businesses and companies with high needs for online presence.",
                     whoItsFor: [
                         "Ecommerce",
                         "Wide Reach",
@@ -310,10 +311,10 @@ export const ServicesComponent = () => {
                     ]
                 },
                 {
-                    title: "Advanced Analytics Integration",
+                    title: "Full Analytics Integration",
                     logo: analytics2,
                     description: "Full analytics integration with advanced tracking, custom dashboards, and multi-channel attribution.",
-                    brief: "Best for larger websites or ecommerce platforms requiring detailed tracking and analysis.",
+                    brief: "Best for websites & platforms requiring detailed tracking and analysis.",
                     whoItsFor: [
                         "International",
                         "Large Sites",
@@ -372,7 +373,7 @@ export const ServicesComponent = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
-                                    className='text-center text-neutral-400 text-sm md:text-md font-light'
+                                    className='text-center text-neutral-400 text-sm mb-2 md:text-md font-light'
                                 >
                                     {description}
                                 </motion.p>
@@ -403,7 +404,7 @@ export const ServicesComponent = () => {
                                             <div
                                                 key={plan.title}
                                                 className={`
-                                                    mt-0 flex-1 px-4 border-neutral-700 text-center flex flex-col flex-grow items-stretch
+                                                    mt-0 flex-1 px-2 lg:px-4 border-neutral-700 text-center flex flex-col flex-grow items-stretch
                                                     ${idx !== 0 ? 'border-l' : ''}
                                                 `}
                                             >
@@ -414,12 +415,12 @@ export const ServicesComponent = () => {
                                                 <h3 className='text-xl md:text-2xl mb-5 font-Gloock'>{plan.title}</h3>
                                                 <p className='text-neutral-400 text-sm mb-10'>{plan.brief}</p>
 
-                                                <ul className='mb-10'>
+                                                {/* <ul className='mb-10'>
                                                     <p className='text-lg mb-2 font-Gloock text-orange-200'>Recommended For</p>
                                                     {plan.whoItsFor.map((who, i) => (
                                                         <li key={i} className='text-sm mb-2 font-light text-neutral-400'>{who}</li>
                                                     ))}
-                                                </ul>
+                                                </ul> */}
 
                                                 <ul className=''>
                                                     <p className='text-lg font-Gloock mb-2 text-orange-200'>Includes</p>
