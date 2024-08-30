@@ -116,45 +116,52 @@ export const ServicesComponent = () => {
             ]
         },
         {
-            title: "Website Maintenance & Management",
+            title: "Website Management Services",
+            cta: "",
             logo: maintenance3,
-            cta: "Upgrade your Site",
             description: [
-                "Anything from basic content changes to advanced security and performance optimizations.",
-                "Offering a range of website upgrade and maintenance services.",
-                "Custom upgrades per owner request.",
+                "Have a professional manage your website, saving you valuable time every month.",
+                "Ensure your website runs smoothly with fast load times and seamless navigation.",
+                "Optimize resources, enhance user experience, and boost SEO with expert management."
             ],
             plans: [
                 {
-                    title: "Basic Website Updates & Support",
-                    logo: maintenance1,
-                    description: "Direct, on-call support with quick response times and basic fixes based on initial audit.",
-                    brief: "Suitable for small websites with minimal update needs and requiring basic support.",
-                    whoItsFor: [
-                        "Small websites",
-                        "Ecommerce"
-                    ],
-                    includes: [
-                        "5-hours/month",
-                        "On-Call support",
-                        "Custom requests",
-                        "Performance & SEO",
-                    ]
-                },
-                {
-                    title: "Advanced Website Updates & Support",
+                    title: "Basic Website Management",
                     logo: maintenance2,
-                    description: "Advanced support for high-traffic websites requiring frequent updates and performance optimization.",
-                    brief: "Best for ecommerce sites and high-traffic websites that need ongoing, advanced support.",
+                    description: "Essential management services to maintain optimal website performance, including regular updates and basic optimization.",
+                    brief: "Perfect for small to medium-sized websites that need consistent, reliable upkeep.",
                     whoItsFor: [
-                        "Ecommerce",
-                        "Complicated sites"
+                        "Small businesses",
+                        "Personal websites",
+                        "Portfolio sites"
                     ],
                     includes: [
                         "20 hours/month",
-                        "On-Call support",
-                        "Custom requests",
-                        "Performance & SEO",
+                        "Bug Fixes",
+                        "Content Updates",
+                        "Performance Updates",
+                        "Feature Integration",
+                        "SEO updates",
+                    ]
+                },
+                {
+                    title: "Advanced Website Management",
+                    logo: maintenance1,
+                    description: "Comprehensive management services, including advanced performance tuning and in-depth optimization for high-traffic sites.",
+                    brief: "Ideal for ecommerce stores or content-rich websites needing intensive management and optimization.",
+                    whoItsFor: [
+                        "Ecommerce sites",
+                        "Content-rich websites",
+                        "High-traffic blogs"
+                    ],
+                    includes: [
+                        "40 hours/month",
+                        "Bug Fixes",
+                        "Content Updates",
+                        "Performance Updates",
+                        "Feature Integration",
+                        "SEO updates",
+                        "Google Analytics",
                     ]
                 }
             ]
@@ -407,7 +414,7 @@ export const ServicesComponent = () => {
                                                 <h3 className='text-xl md:text-2xl mb-5 font-Gloock'>{plan.title}</h3>
                                                 <p className='text-neutral-400 text-sm mb-10'>{plan.brief}</p>
 
-                                                <ul className=''>
+                                                <ul className='mb-10'>
                                                     <p className='text-lg mb-2 font-Gloock text-orange-200'>Recommended For</p>
                                                     {plan.whoItsFor.map((who, i) => (
                                                         <li key={i} className='text-sm mb-2 font-light text-neutral-400'>{who}</li>

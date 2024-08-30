@@ -28,19 +28,19 @@ export const MobileNavbar = (props) => {
      */
     const navItems = [
         {
-            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
+            name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll, image: introImg
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
         },
         {
-            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll
+            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll, image: worksImg
         },
         {
-            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
+            name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
         },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: resumeImg
         },
 
     ];
