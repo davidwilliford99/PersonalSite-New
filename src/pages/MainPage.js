@@ -35,7 +35,7 @@ export const MainPage = () => {
   const servicesInView = useInView(servicesRef, {margin: '-250px'})
 
   return (
-    <div id='MainPage' className='font-Montserrat min-h-screen'>
+    <div id='MainPage' className='max-w-screen-2xl mx-auto font-Montserrat min-h-screen'>
 
       <Navbar 
         className='fixed'

@@ -41,7 +41,9 @@ export const Navbar = (props) => {
     return (
       <div 
             id='Navbar' 
-            className='bg-dark fixed w-full font-Montserrat 2xl:px-48
+            className='
+                       bg-dark fixed w-full font-Montserrat 2xl:px-48
+                       max-w-screen-2xl
                        flex justify-center items-center z-10 invisible lg:visible'
             ref={ref}
             >

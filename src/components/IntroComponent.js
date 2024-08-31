@@ -66,8 +66,6 @@ export const IntroComponent = (props) => {
             <h1 
                 className=' 
                             font-Gloock md:text-7xl leading-tight
-                            2xl:text-8xl
-                            
                             text-4xl md:mt-0
                             '
                 style={{
@@ -78,7 +76,7 @@ export const IntroComponent = (props) => {
                 ref={ref}
                 >
                     I am David Williford, <br/>
-                    Web Developer<br/>
+                    Software Developer<br/>
                     For Hire
             </h1>
 

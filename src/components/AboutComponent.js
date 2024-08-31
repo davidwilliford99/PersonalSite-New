@@ -40,7 +40,7 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-lg mb-8'>
-                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online, gaining experience in <span className='text-orange-200'>Ecommerce, Web Development, Cloud Computing, Automation and APIs</span>.
+                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online. This fascination led me to pursue a <span className='text-orange-200'>Computer Science degree</span>, where I fell in love with all things computing. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Full-Stack Development, Cloud Computing, Automation and APIs</span>.
                         </p>
 
                         {/* <h3 className='block text-offWhite text-2xl mb-5'>Qualifications</h3>

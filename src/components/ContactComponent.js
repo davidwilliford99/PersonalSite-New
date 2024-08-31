@@ -44,15 +44,26 @@ export const ContactComponent = () => {
         </div>
 
             <h3 
-                className='text-2xl md:text-6xl text-center md:text-left font-Gloock leading-snug my-6 mb-20'
+                className='text-2xl md:text-6xl text-center md:text-left font-Gloock leading-snug mt-6'
                 style={{
                   transform: isInView ? "none" : "translateY(100px)",
                   opacity: isInView ? 1 : 0,
                   transition: "all 1s"
                 }}
                 >
-                Feel free to ask any questions! Click the button in the bottom right to book a free 1-on-1 consultation. 
+                Feel free to ask any questions!
             </h3>
+
+            <p 
+                className='text-lg md:text-3xl text-center text-neutral-400 md:text-left leading-snug mt-2 mb-20'
+                style={{
+                  transform: isInView ? "none" : "translateY(100px)",
+                  opacity: isInView ? 1 : 0,
+                  transition: "all 1s"
+                }}
+                >
+                Click the button in the bottom right to book a free 1-on-1 consultation.
+            </p>
 
 
         {/* Contact Form */}
