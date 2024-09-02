@@ -1,6 +1,6 @@
 import { React, useRef } from 'react';
 import { useInView } from 'framer-motion';
-import aboutPhoto from '../assets/aboutPhoto.jpg';
+import aboutPhoto from '../assets/aboutPhoto2.jpg';
 import { Link } from 'react-router-dom';
 
 export const AboutComponent = () => {
@@ -21,7 +21,7 @@ export const AboutComponent = () => {
                 <img 
                     src={aboutPhoto} 
                     alt='about' 
-                    className='md:h-[32rem] rounded-full border-4 border-neutral-700 md:rounded-4xl'
+                    className='md:h-[32rem] rounded-full border-4 border-orange-200 md:rounded-3xl'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: "all 2s"
@@ -43,20 +43,6 @@ export const AboutComponent = () => {
                             Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online. This fascination led me to pursue a <span className='text-orange-200'>Computer Science degree</span>, where I fell in love with all things computing. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Full-Stack Development, Cloud Computing, Automation and APIs</span>.
                         </p>
 
-                        {/* <h3 className='block text-offWhite text-2xl mb-5'>Qualifications</h3>
-                        
-                        <p className='block text-sm md:text-md mb-2'>
-                            <span className='text-white'>&#x25cf; </span> 
-                            Bachelor's degree in <span className='text-orange-200'>Computer Science</span>
-                        </p>
-                        <p className='block text-sm md:text-md mb-2'>
-                            <span className='text-white'>&#x25cf; </span> 
-                            Experience as a <span className='text-orange-200'>full-time Web Developer</span>
-                        </p>
-                        <p className='block text-sm md:text-md mb-2'>
-                            <span className='text-white'>&#x25cf; </span> 
-                            Multiple years of experience in <span className='text-orange-200'>Web Development</span>
-                        </p> */}
 
                         <Link 
                             onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}

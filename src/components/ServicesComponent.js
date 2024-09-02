@@ -113,7 +113,7 @@ export const ServicesComponent = () => {
                                         transition={{ duration: 0.5 }}
                                         className='mb-5 flex justify-center items-center bg-neutral-800 h-20 w-20 rounded-full'
                                     >
-                                        <img className='text-white h-12' src={service.logo} alt={service.title} />
+                                        <img className='text-offWhite h-12' src={service.logo} alt={service.title} />
                                     </motion.div>
                                 </div>
 
