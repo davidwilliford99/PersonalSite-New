@@ -20,58 +20,104 @@ export const WorksSamplesComponent = () => {
     const worksSamples = [
         {
             name: "My Blog",
-            description: "Where I write articles related to computer science. I primarily write on the topics of web development, ecommerce and general programming. I primarily log niche bug fixes and features of frameworks/languages I may be using.",
+            description: "Where I write articles related to computer science. I primarily write about web development, ecommerce and computer programming. I log niche bug fixes and features of frameworks/languages I may be using.",
             image: blogScreenshot,
+            features: [
+                "Web Development",
+                "Ecommerce",
+                "Bug Fixes",
+                "Programming",
+                "Problem Solving"
+            ],
             github: "",
             isLive: true,
             link: "https://blog.davidwilliford.dev"
         },
         {
             name: "CardCraft",
-            description: "CardCraft utilizes AI to automatically generate flash card sets based on a PDF file upload. Users can store, edit, or delete these flashcards from their account. Currently not live, but feel free to check the github link!",
+            description: "Utilize AI to automatically generate flash cards from PDF notes. Users can store, edit, or delete these flashcards from their account. This was my senior capstone project at ECU.",
             image: ccScreenshot,
+            features: [
+                "LLM Integration",
+                "JWT User Auth",
+                "Postgres Database",
+                "Custom UI",
+                "Django API"
+            ],
             github: "https://github.com/davidwilliford99/CardCraft",
             isLive: false,
             link: "",
             isDemo: false
         },
         {
-            name: "SnackMajic Subscription",
-            description: "SnackMajic is a subset of Aji.com, which is a store for international snacks. They are both an online ecommerce store and a physical store. For this project, I was able to implement a subscription box service, with many variants and shipping around the globe.",
+            name: "SnackMajic",
+            description: "A subscription box service for Aji.com. This allows you to receive a monthly box of your favorite snacks from any part of the world.",
             image: ajScreenshot,
+            features: [
+                "Shopify",
+                "Recharge Subscriptions",
+                "Custom UI",
+                "Payment Setup"
+            ],
             github: "",
             isLive: true,
             link: "https://sweetaji.com/pages/subscription-boxes"
         },
         {
-            name: "BGC Web Application",
-            description: "A non-profit repository for surgeons and various medical professionals, providing an unbiased source of bone grafts. BGC implements features such as PayPal payments, SSL security, and a credit system. This website is live on the url, but is in sandbox mode as we await a black-box testing phase from our client's colleagues.",
+            name: "Bone Graft Consortium",
+            description: "A non-profit repository to provide medical professionals an unbiased source of bone grafts. Currently undergoing black-box demos from select surgeons and surgical techs.",
             image: bgcScreenshot,
             github: "",
             isLive: true,
             link: "https://bonegraftconsortium.com",
+            features: [
+                "Postgres DB",
+                "Cloud Hosting",
+                "Django API",
+                "React Frontend",
+                "Paypal Integration"
+            ],
             isDemo: true
         },
         {
             name: "TextArt",
-            description: "A simple, fun terminal application with a cyberpunk feel. Used to create, animate and edit text art images. If you would like to give it a shot, visit the github link and download the .exe!.",
+            description: "A simple, just-for-fun terminal application with a cyberpunk feel. Used to create, animate and edit text art images. Utilizes low-level computation, written in C/C++. Visit the github link and download the .exe!.",
             image: taScreenshot,
             github: "https://github.com/davidwilliford99/TextArt",
+            features: [
+                "Completely from scratch",
+                "Low Level Computing",
+                "Terminal GUI",
+                "Animation Support",
+                "Save/Edit/Upload"
+            ],
             isLive: false,
             link: ""
         },
         {
             name: "SteamPulse",
-            description: "SteamPulse is an analytics web dashboard designed for Steam users. This platform provides a comprehensive overview of both the Steam library and individual Steam accounts. Key features include viewing friends lists, calculating the value of Steam libraries, showcasing rare achievements, and displaying the most played titles and genres. Additionally, the dashboard offers functionality to explore featured games, search for games by ID, and view related titles.",
+            description: "An analytics web dashboard designed for Steam users. Provides a comprehensive overview of both the Steam library and individual accounts. The analytics and account details go much farther into detail than steam's application.",
             image: steamScreenshot,
+            features: [
+                "Custom User Auth",
+                "SQLite Database",
+                "Custom UI",
+                "Flask API"
+            ],
             github: "https://github.com/davidwilliford99/SteamAnalytics",
             github2: "https://github.com/davidwilliford99/SteamAnalytics-Server",
             isLive: false,
         },
         {
             name: "MajorStatistics",
-            description: "A web application that displays statistics on various undergraduate majors. It started with a dataset from Kaggle, which was then imported into a MySQL database. Then I built a REST API using Java Spring Boot, and eventually added a frontend using React and Tailwind.",
+            description: "Displays statistics on various undergraduate majors. Started as a dataset from Kaggle, then imported into a MySQL database. Afterwards, a REST API using Java Spring Boot and a frontend using React was built.",
             image: cmScreenshot,
+            features: [
+                "Spring Boot API",
+                "MySQL Database",
+                "React Frontend",
+                "Dataset Integration"
+            ],
             github: "https://github.com/davidwilliford99/CollegeMajors",
             isLive: false,
             link: ""
@@ -138,16 +184,17 @@ export const WorksSamplesComponent = () => {
             {/* My works examples are dynamically generated */}
             <ul className='flex flex-col md:flex-row md:flex-wrap gap-5'>
                 {worksSamples.map((work, index) => (
-                    <li 
+                    <li
                         key={index} 
-                        className='bg-dark2 rounded-xl p-5 w-full'
+                        className='w-full py-10 border-t bg-dark border-neutral-700'
                         style={{
                             transform: isInView ? `translateY(0px)` : `translateY(${index * -300}px)`,
                             transition: "all 3s",
                             transitionDelay: `${1.5 - index * 0.5}s`
                         }}
                     >
-                        <div className='w-full flex flex-col lg:flex-row gap-5'>
+                        
+                        <div className='w-full flex flex-col lg:flex-row-reverse gap-5'>
 
                             <img 
                                 src={work.image}
@@ -156,21 +203,35 @@ export const WorksSamplesComponent = () => {
                             />
 
                             <div>
-                                <h1 className='font-Gloock text-2xl my-5 w-full lg:w-1/2'>{work.name}</h1>
-                                <p className='text-neutral-300'>{work.description}</p>
+                                <h1 className='font-Gloock text-2xl lg:text-4xl my-5 w-full lg:w-1/2'>{work.name}</h1>
+                                <p className='text-neutral-400'>{work.description}</p>
                                 {work.isDemo && (
                                     <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 text-xs mt-2'>
                                         <p className='text-yellow-500'>&#x25B3;</p>
                                         <p className='text-neutral-400'>This project is still in development</p>
                                     </div>
                                 )}
+
+
+
+                                {work.features && (
+                                    <ul className='flex flex-wrap gap-2 py-10'>
+                                        {work.features.map((feat) => {
+                                        return (
+                                            <a className='bg-neutral-800 text-orange-300 text-xs px-5 py-1 rounded-sm'>{feat}</a>
+                                        )
+                                    })}
+                                    </ul>
+                                )}
+
+
                                 <div className='flex gap-3'>
                                     {work.isLive && (
                                         <a 
                                             href={work.link}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-purple-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-green-200 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
                                         >
                                             See It Live
                                         </a>
@@ -180,7 +241,7 @@ export const WorksSamplesComponent = () => {
                                             href={work.github}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-orange-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-orange-300 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
                                         >
                                             Github Repo
                                         </a>
@@ -190,7 +251,7 @@ export const WorksSamplesComponent = () => {
                                             href={work.github2}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-cyan-500 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-5 py-2 text-dark font-semibold bg-yellow-200 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
                                         >
                                             Github Repo 2
                                         </a>
