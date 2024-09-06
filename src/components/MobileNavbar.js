@@ -50,7 +50,7 @@ export const MobileNavbar = (props) => {
     return (
         <div className="lg:hidden fixed w-full z-30">
           {/* Hamburger Menu */}
-          <div className="fixed w-full flex justify-between items-center px-5 py-3 border-b border-neutral-800 z-30">
+          <div className="fixed w-full flex justify-between items-center px-5 py-3 z-30">
             <h1 className="text-neutral-300 text-xl font-Gloock"></h1>
             <button
               onClick={() => setIsOpen(!isOpen)}
