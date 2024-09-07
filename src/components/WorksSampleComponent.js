@@ -231,7 +231,7 @@ export const WorksSamplesComponent = () => {
                                             href={work.link}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-green-200 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-8 py-3 text-dark border border-orange-300 text-orange-300 rounded-3xl hover:border-offWhite transition hover:text-offWhite'
                                         >
                                             See It Live
                                         </a>
@@ -241,7 +241,7 @@ export const WorksSamplesComponent = () => {
                                             href={work.github}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-orange-300 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-8 py-3 text-dark border border-orange-300 text-orange-300 rounded-3xl hover:border-offWhite transition hover:text-offWhite'
                                         >
                                             Github Repo
                                         </a>
@@ -251,7 +251,7 @@ export const WorksSamplesComponent = () => {
                                             href={work.github2}
                                             target='_blank'
                                             rel="noreferrer"
-                                            className='my-5 px-5 py-2 text-dark font-semibold bg-yellow-200 rounded-lg hover:bg-neutral-900 transition hover:text-offWhite'
+                                            className='my-5 px-8 py-3 text-dark border border-orange-300 text-orange-300 rounded-3xl hover:border-offWhite transition hover:text-offWhite'
                                         >
                                             Github Repo 2
                                         </a>

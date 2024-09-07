@@ -7,8 +7,8 @@ export const Footer = () => {
         <div className='overflow-x-hidden z-0'>
             <div className='grid grid-cols-1 lg:grid-cols-3 bg-neutral-800 pb-20 pt-5 lg:pb-5 lg:pt-5 gap-5'>
 
-                <div className='lg:px-20'>
-                    <h3 className='text-2xl text-neutral-500'>David Williford</h3>
+                <div className='flex justify-center lg:justify-start items-center lg:px-20 text-center lg:text-left'>
+                    <h3 className='text-xl text-neutral-500'>David Williford</h3>
                 </div>
  
                 <div id='column-1' className='z-10 flex gap-1 justify-center text-sm md:text-lg'>
@@ -32,8 +32,8 @@ export const Footer = () => {
                     </a>
                 </div>
 
-                <div className='text-right flex items-center text-neutral-500'>
-                    <p className='text-center'>&copy; 2024 David Williford. All rights reserved.</p>
+                <div className='flex text-center justify-center lg:text-right items-center text-neutral-500'>
+                    <p className='text-center lg:text-right text-xs'>&copy; 2024 David Williford. All rights reserved.</p>
                 </div>
 
             </div>
