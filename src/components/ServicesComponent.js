@@ -48,13 +48,23 @@ export const ServicesComponent = () => {
     return (
         <div className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0'>
             <motion.h1 
-                className='font-Gloock text-center mt-40 lg:mb-20 text-4xl md:text-6xl'
-                initial={{ opacity: 0, x: -500 }}
+                className='font-Gloock mt-40 lg:mb-2 text-4xl md:text-6xl'
+                initial={{ opacity: 0, x: -100 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1 }}
             >
                 How I can grow your business
             </motion.h1>
+
+            <motion.p 
+                className='mb-10 mt-2 text-neutral-500'
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+                transition={{ duration: 1.5 }}
+            >
+                With years of experience in software development and computer science,<br/>
+                I can assist you in the following areas:
+            </motion.p>
     
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`} ref={ref}>
                 {services.map((service, index) => {
@@ -88,7 +98,7 @@ export const ServicesComponent = () => {
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                                         transition={{ duration: 0.5, delay: 0.1 }}
-                                        className='text-2xl mb-5 text-center font-Gloock'
+                                        className='text-2xl mb-5 text-left font-Gloock'
                                     >
                                         {service.title}
                                     </motion.h3>

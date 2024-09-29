@@ -4,7 +4,7 @@ import { React } from 'react';
 
 export const Footer = () => {
     return (
-        <div className='overflow-x-hidden z-0'>
+        <div className='overflow-x-hidden z-0 max-w-screen-xl mx-auto'>
             <div className='grid grid-cols-1 lg:grid-cols-3 bg-neutral-800 pb-20 pt-5 lg:pb-5 lg:pt-5 gap-5'>
 
                 <div className='flex justify-center lg:justify-start items-center lg:px-20 text-center lg:text-left'>

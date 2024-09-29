@@ -8,6 +8,8 @@ import hashnode from './../assets/hashnode.png'
 import custom from './../assets/Custom.svg';
 import website from './../assets/Website.svg';
 import { useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
+
 
 import { PopupWidget } from "react-calendly";
 
@@ -30,7 +32,7 @@ export const IntroComponent = (props) => {
            className='  
                     font-Montserrat 2xl:px-48 md:min-h-screen items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
-                    grid grid-cols-1 lg:grid-cols-4
+                    grid grid-cols-1 lg:grid-cols-4 border-b border-neutral-700
                     '
            >
 
@@ -39,7 +41,7 @@ export const IntroComponent = (props) => {
             id='main-text-section'
             className='
                     flex flex-col text-offWhite md:px-20 lg:px-5 fadeIn
-                    px-5 col-span-3 lg:mr-20'
+                    px-5 col-span-3 lg:pr-20 lg:border-r border-neutral-700'
             >
 
 
@@ -78,7 +80,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "1.5s"
                 }}
                 >
-                    I am David Williford, <br/>
+                    David Williford, <br/>
                     Web & Automation<br/>
                     Expert
             </h1>
@@ -170,18 +172,25 @@ export const IntroComponent = (props) => {
 
 
         {/* Contact Form */}
-        <div className='bg-neutral-800 p-6 rounded-3xl mt-20 md:mt-0 md:mx-20 lg:mx-0 lg:mt-0'>
+        <motion.div 
+            className='p-6 lg:h-full flex flex-col justify-center rounded-md mt-20 md:mt-0 md:mx-20 lg:mx-0 lg:mt-0'
+            initial={{ opacity: 0, x: 500 }} // Start off-screen to the right and invisible
+            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 500 }} // Animate into view only when the element is visible
+            transition={{
+                opacity: { duration: 3, delay: 3 },
+                x: { type: "spring", stiffness: 50, damping: 20, delay: 3 }, // Delay for the animation
+            }}
+            >
 
             <div className='flex flex-col'>
                 <h3 className='font-Gloock text-2xl text-neutral-300 mb-2'>Tired of being overwhelmed?</h3>
-                {/* <p className='py-2 text-neutral-400 text-md'>streamlining your operations, cutting costs, and freeing up your time.</p> */}
+                <p className='py-2 text-neutral-500 text-xs mb-2'>Let's automate your business processes, allowing you to make money while saving time.</p>
             </div>
 
             <form 
                 action="https://formsubmit.co/contact@davidwilliford.dev" 
                 method='POST' 
                 className='w-full flex flex-col items-center justify-center'
-                ref={ref}
             >
             
                 <button className='flex flex-col gap-2 w-full items-center justify-center gap-3' id='name and email'>
@@ -193,7 +202,7 @@ export const IntroComponent = (props) => {
                     />
                     <input 
                         type="email" 
-                        placeholder='Email Address' 
+                        placeholder='Email or Phone #' 
                         name="Email" 
                         className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
                     />
@@ -212,8 +221,8 @@ export const IntroComponent = (props) => {
                     type='submit'
                     onClick={() => setFormSubmitted(!formSubmitted)}
                     className='
-                            w-full font-Montserrat text-dark bg-green-200 text-md
-                            rounded-md text-center py-3 mt-5 mb-5 
+                            w-full font-Montserrat text-dark bg-orange-400 text-md
+                            rounded-md text-center py-3 mt-5 mb-5 font-semibold
                             hover:bg-neutral-300 hover:text-dark transition-all'
                     style={{
                         opacity: isInView ? 1 : 0,
@@ -221,11 +230,11 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    Submit
+                    Get Started
                 </button>
 
             </form>
-        </div>
+        </motion.div>
   
       </div>
   

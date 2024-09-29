@@ -22,6 +22,7 @@ export const MobileNavbar = (props) => {
     const aboutScroll = () => props.aboutClickRef.current.scrollIntoView({behavior: "smooth"})
     const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
     const servicesScroll = () => props.servicesClickRef.current.scrollIntoView({behavior: "smooth"})
+    const storiesScroll = () => props.storiesClickRef.current.scrollIntoView({behavior: "smooth"})
 
    
     
@@ -33,16 +34,19 @@ export const MobileNavbar = (props) => {
             name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll, image: introImg
         },
         {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
+            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll, image: worksImg
         },
         {
-            name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll, image: worksImg
+          name: "Stories", url: "", logo: "", isCurrent: props.storiesInView, goTo: storiesScroll
         },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
         },
+        // {
+        //     name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: resumeImg
+        // },
         {
-            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll, image: resumeImg
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll, image: aboutImg
         },
 
     ];

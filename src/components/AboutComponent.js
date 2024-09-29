@@ -21,7 +21,7 @@ export const AboutComponent = () => {
                 <img 
                     src={aboutPhoto} 
                     alt='about' 
-                    className='md:h-[32rem] rounded-full border-4 border-orange-200 md:rounded-3xl'
+                    className='md:h-[32rem] rounded-full border-4 border-orange-300 md:rounded-xl'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: "all 2s"
@@ -40,7 +40,7 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-lg mb-8'>
-                            Throughout my life, I have spent a lot of time on the <span className='text-orange-200'>internet</span>, finding it fascinating how people can connect online. This fascination led me to pursue a <span className='text-orange-200'>Computer Science degree</span>, where I fell in love with all things computing. I have multiple years of experience in <span className='text-orange-200'>Ecommerce, Full-Stack Development, Cloud Computing, Automation and APIs</span>.
+                            Throughout my life, I have spent a lot of time on the <span className='text-orange-300'>internet</span>, finding it fascinating how people can connect online. This fascination led me to pursue a <span className='text-orange-300'>Computer Science degree</span>, where I fell in love with all things computing. I have multiple years of experience in <span className='text-orange-300'>Ecommerce, Full-Stack Development, Cloud Computing, Automation and APIs</span>.
                         </p>
 
 
