@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import linkedIn from './../assets/linkedin.png'
 import github from './../assets/github.png'
@@ -15,8 +15,9 @@ import { PopupWidget } from "react-calendly";
 export const IntroComponent = (props) => {
 
     
-    const ref = useRef(null)
-    const isInView = useInView(ref, {margin: '-100px', once: true})
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     // prop for scrollingto projects section
     const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"});
@@ -25,17 +26,20 @@ export const IntroComponent = (props) => {
     return (
 
       <div id='Intro' 
+           ref={ref}
            className='  
-                    font-Montserrat 2xl:px-48 md:min-h-screen flex items-center 
-                    flex-col md:flex-row md:justify-between overflow-x-hidden z-0
+                    font-Montserrat 2xl:px-48 md:min-h-screen items-center 
+                    md:flex-row md:justify-between overflow-x-hidden z-0
+                    grid grid-cols-1 lg:grid-cols-4
                     '
            >
+
         
         <div 
             id='main-text-section'
             className='
-                    flex flex-col text-offWhite md:px-20 fadeIn
-                    px-5'
+                    flex flex-col text-offWhite md:px-20 lg:px-5 fadeIn
+                    px-5 col-span-3 lg:mr-20'
             >
 
 
@@ -73,34 +77,30 @@ export const IntroComponent = (props) => {
                     transition: "all 5s",
                     transitionDelay: "1.5s"
                 }}
-                ref={ref}
                 >
                     I am David Williford, <br/>
-                    Web Solutions Expert<br/>
-                    For Hire
+                    Web & Automation<br/>
+                    Expert
             </h1>
 
-            <ul 
-                className='
-                    flex flex-col gap-2
-                    font-Lato text-xl text-neutral-400 mt-5
-                '>
-                <li className='flex gap-5'>
-                    <img src={custom} className=''/>
-                    <p>Building custom web solutions for businesses</p>
-                </li>
-                <li className='flex gap-5'>
-                    <img src={website} className=''/>
-                    <p>I can make your website do <span className='text-orange-300 font-semibold'>ANYTHING</span>.</p>
-                </li>
-            </ul>
+            <p 
+                className='text-neutral-400 text-md lg:text-xl mt-5'
+                style={{
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 5s",
+                    transitionDelay: "1.5s"
+                }}
+            >
+                I help businesses <span className='text-orange-300'>achieve more with fewer resources</span>, giving them more time to focus on growth
+            </p>
 
-            <div className='buttons flex gap-2 mb-2'>
+            <div className='flex buttons gap-2 mb-2'>
                 <Link 
                     onClick={worksScroll}
                     className='
-                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                            rounded-lg text-center py-3 mt-8
+                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 
+                            text-xs lg:text-md
+                            rounded-md text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
                             
                             w-full'
@@ -110,13 +110,14 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    MY WORK
+                    CONTACT ME
                 </Link>
                 <Link 
-                    onClick={() => {window.open('https://blog.davidwilliford.dev', '_blank');}}
+                    onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}
                     className='
-                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                            rounded-lg text-center py-3 mt-8
+                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2
+                            text-xs lg:text-md
+                            rounded-md text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
                             
                             w-full'
@@ -126,27 +127,29 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    BLOG
+                    FREE CONSULTATION
                 </Link>
             </div>
 
-            {/* <Link 
-                to="https://calendly.com/d9899w/1-on-1-remote-consultation"
-                target='_blank'
-                className='
-                        md:w-full font-Montserrat text-orange-300 bg-dark2 text-md
-                        rounded-lg text-center py-3
-                        hover:bg-neutral-300 hover:text-dark transition-all
-                        mb-8
-                        w-full'
+            {/* <div 
+                id='socials' 
+                className='flex justify-center lg:justify-start gap-6 mx-3 my-10 lg:my-5'
                 style={{
-                    opacity: isInView ? 1 : 0,
-                    transition: "background-color 0.3s, opacity 3s",
-                    transitionDelay: "opacity 3s"
+                    transform: isInView ? "none" : "translateX(200px)",
+                    opacity: isInView ? 1: 0,
+                    transition: "all 3s",
+                    transitionDelay: "2s"
                 }}
                 >
-                BOOK A FREE CONSULTATION
-            </Link> */}
+                
+                <a href='https://www.linkedin.com/in/davidwilliford99/' target='_blank' rel="noreferrer">
+                    <img src={linkedIn} alt='linkedin logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
+                </a>
+                
+                <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
+                    <img src={github} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
+                </a>
+            </div> */}
 
             
             {/* Calendly popup link */}
@@ -163,36 +166,66 @@ export const IntroComponent = (props) => {
                     color="#fdba74"
                 />
             </div>
-
-
-
-
         </div>
 
 
+        {/* Contact Form */}
+        <div className='bg-neutral-800 p-6 rounded-3xl mt-20 md:mt-0 md:mx-20 lg:mx-0 lg:mt-0'>
 
-        <div 
-            id='socials' 
-            className='pr-5 md:pr-20 mb-10 flex md:flex-col'
-            style={{
-                transform: isInView ? "none" : "translateX(200px)",
-                opacity: isInView ? 1: 0,
-                transition: "all 3s",
-                transitionDelay: "2s"
-            }}
+            <div className='flex flex-col'>
+                <h3 className='font-Gloock text-2xl text-neutral-300 mb-2'>Tired of being overwhelmed?</h3>
+                {/* <p className='py-2 text-neutral-400 text-md'>streamlining your operations, cutting costs, and freeing up your time.</p> */}
+            </div>
+
+            <form 
+                action="https://formsubmit.co/contact@davidwilliford.dev" 
+                method='POST' 
+                className='w-full flex flex-col items-center justify-center'
+                ref={ref}
             >
             
-            <a href='https://www.linkedin.com/in/davidwilliford99/' target='_blank' rel="noreferrer">
-                <img src={linkedIn} alt='linkedin logo' className='h-16 mt-3 md:h-10 md:mb-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
-            </a>
-            
-            <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
-                <img src={github} alt='github logo' className='h-16 mt-3 mb-3 md:h-10 md:mt-5 mx-3 md:hover:rotate-180 transition cursor-pointer'/>
-            </a>
+                <button className='flex flex-col gap-2 w-full items-center justify-center gap-3' id='name and email'>
+                    <input 
+                        type="text" 
+                        placeholder='Your Name' 
+                        name="Name" 
+                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
+                    />
+                    <input 
+                        type="email" 
+                        placeholder='Email Address' 
+                        name="Email" 
+                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
+                    />
+                    <input 
+                        type="text" 
+                        placeholder='Business Name' 
+                        name="Business" 
+                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
+                    />
+                    <input type="hidden" name="_subject" value="Website Contact Form Submission!"></input>
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name='_next' value='https://davidwilliford99.github.io/PersonalSite-New/#/ThankYou'></input>
+                </button>
+                
+                <button 
+                    type='submit'
+                    onClick={() => setFormSubmitted(!formSubmitted)}
+                    className='
+                            w-full font-Montserrat text-dark bg-green-200 text-md
+                            rounded-md text-center py-3 mt-5 mb-5 
+                            hover:bg-neutral-300 hover:text-dark transition-all'
+                    style={{
+                        opacity: isInView ? 1 : 0,
+                        transition: "background-color 0.3s, opacity 3s",
+                        transitionDelay: "opacity 3s"
+                    }}
+                    >
+                    Submit
+                </button>
 
-
+            </form>
         </div>
-
   
       </div>
   
