@@ -26,7 +26,6 @@ export const IntroComponent = (props) => {
            className='  
                     font-Montserrat 2xl:px-48 md:min-h-screen flex items-center 
                     flex-col md:flex-row md:justify-between overflow-x-hidden z-0
-                        
                     '
            >
         
@@ -34,7 +33,6 @@ export const IntroComponent = (props) => {
             id='main-text-section'
             className='
                     flex flex-col text-offWhite md:px-20 fadeIn
-                    
                     px-5'
             >
 
