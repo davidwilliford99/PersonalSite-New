@@ -5,6 +5,8 @@ import { useRef } from 'react';
 import linkedIn from './../assets/linkedin.png'
 import github from './../assets/github.png'
 import hashnode from './../assets/hashnode.png'
+import custom from './../assets/Custom.svg';
+import website from './../assets/Website.svg';
 import { useInView } from 'framer-motion';
 
 import { PopupWidget } from "react-calendly";
@@ -63,7 +65,7 @@ export const IntroComponent = (props) => {
 
             <h1 
                 className=' 
-                            font-Gloock md:text-7xl leading-tight
+                            font-Gloock md:text-6xl 2xl:text-7xl leading-tight
                             text-4xl md:mt-0
                             '
                 style={{
@@ -74,9 +76,24 @@ export const IntroComponent = (props) => {
                 ref={ref}
                 >
                     I am David Williford, <br/>
-                    Software Developer<br/>
+                    Web Solutions Expert<br/>
                     For Hire
             </h1>
+
+            <ul 
+                className='
+                    flex flex-col gap-2
+                    font-Lato text-xl text-neutral-400 mt-5
+                '>
+                <li className='flex gap-5'>
+                    <img src={custom} className=''/>
+                    <p>Building custom web solutions for businesses</p>
+                </li>
+                <li className='flex gap-5'>
+                    <img src={website} className=''/>
+                    <p>I can make your website do <span className='text-orange-300 font-semibold'>ANYTHING</span>.</p>
+                </li>
+            </ul>
 
             <div className='buttons flex gap-2 mb-2'>
                 <Link 

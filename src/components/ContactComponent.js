@@ -55,7 +55,7 @@ export const ContactComponent = () => {
             </h3>
 
             <p 
-                className='text-lg md:text-3xl text-center text-neutral-400 md:text-left leading-snug mt-2 mb-20'
+                className='text-lg md:text-xl text-center text-neutral-400 md:text-left leading-snug mt-2 mb-20'
                 style={{
                   transform: isInView ? "none" : "translateY(100px)",
                   opacity: isInView ? 1 : 0,
