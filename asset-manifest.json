@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d2a151c.css",
-    "main.js": "/static/js/main.085f8058.js",
+    "main.css": "/static/css/main.3aed6b98.css",
+    "main.js": "/static/js/main.31a84e90.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto2.jpg": "/static/media/aboutPhoto2.e049675adaae757e2647.jpg",
     "static/media/CardCraftSS.png": "/static/media/CardCraftSS.215ec11f3b937a586473.png",
@@ -22,20 +22,23 @@
     "static/media/about-mobile.png": "/static/media/about-mobile.17930b02565a61017fab.png",
     "static/media/resume-mobile.png": "/static/media/resume-mobile.c624e9809171283f9269.png",
     "static/media/works-mobile.png": "/static/media/works-mobile.257f3a570f728bb0e9bf.png",
+    "static/media/maintenance1.svg": "/static/media/maintenance1.6beb47e9590117a61a9b56e640acbae4.svg",
+    "static/media/maintenance2.svg": "/static/media/maintenance2.ae38902f08885774fdb6242208e618ed.svg",
     "static/media/maintenance3.svg": "/static/media/maintenance3.8d6f58ae300d6612ccd7cd5d3aba604b.svg",
     "static/media/webdev4.svg": "/static/media/webdev4.b1237665d0d2a14deb5fff3995004c04.svg",
+    "static/media/seo1.svg": "/static/media/seo1.500bb001c2768588e12cca684db00461.svg",
     "static/media/webdev5.svg": "/static/media/webdev5.2eff1f6cca4fc25a1f65f5b13adcd3b2.svg",
     "static/media/analytics3.svg": "/static/media/analytics3.e680a1ed7babeebb0fd80cbdc91b6991.svg",
     "static/media/webdev3.svg": "/static/media/webdev3.f502be3e2df762530e1da44ab96c467e.svg",
     "index.html": "/index.html",
-    "static/media/Website.svg": "/static/media/Website.eb0bf7c73e3c7a46f1020e32049ad956.svg",
-    "static/media/Custom.svg": "/static/media/Custom.92fa2fedb080bfbbd8fe1b664a5aaaea.svg",
-    "main.4d2a151c.css.map": "/static/css/main.4d2a151c.css.map",
-    "main.085f8058.js.map": "/static/js/main.085f8058.js.map",
+    "static/media/Website.svg": "/static/media/Website.10fdf60b9d23a347b5c2c65c08c87348.svg",
+    "static/media/Custom.svg": "/static/media/Custom.4a0fe71294f85339e2246a140b1d7402.svg",
+    "main.3aed6b98.css.map": "/static/css/main.3aed6b98.css.map",
+    "main.31a84e90.js.map": "/static/js/main.31a84e90.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d2a151c.css",
-    "static/js/main.085f8058.js"
+    "static/css/main.3aed6b98.css",
+    "static/js/main.31a84e90.js"
   ]
 }
