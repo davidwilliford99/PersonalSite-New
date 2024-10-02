@@ -10,7 +10,7 @@ export const AboutComponent = () => {
 
     return (
       <div id='About' 
-           className='font-Montserrat 2xl:px-48 px-5 md:px-20 mt-40 min-h-screen
+           className='font-Montserrat 2xl:px-48 px-5 md:px-20 py-40
                       flex items-center justify-center overflow-x-hidden
                       text-offWhite'>
             <div 

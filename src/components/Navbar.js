@@ -25,6 +25,9 @@ export const Navbar = (props) => {
             name: "Welcome", url: "", logo: "", isCurrent: props.introInView, goTo: introScroll
         },
         {
+            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
+        },
+        {
             name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll
         },
         {
@@ -32,9 +35,6 @@ export const Navbar = (props) => {
         },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
-        },
-        {
-            name: "About", url: "", logo: "", isCurrent: props.aboutInView, goTo: aboutScroll
         },
         // {
         //     name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll

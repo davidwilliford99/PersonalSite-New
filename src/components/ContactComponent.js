@@ -13,8 +13,9 @@ export const ContactComponent = () => {
 
       <div 
           id='About' 
-          className='  font-Montserrat 2xl:px-48 px-5 md:px-20 mt-60 min-h-screen
-                        flex flex-col overflow-x-hidden text-offWhite'
+          className='  
+            font-Montserrat 2xl:px-48 px-5 md:px-20 my-60
+            flex flex-col overflow-x-hidden text-offWhite pb-20'
           ref={ref}
            >
 

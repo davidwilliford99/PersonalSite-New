@@ -80,9 +80,16 @@ export const MainPage = () => {
         <div ref={introClickRef}>
           <IntroComponent 
             id='Intro' 
-            worksClickRef={worksClickRef}/>
+            contactClickRef={contactClickRef}
+          />
         </div>
       </div>
+
+      <div ref={aboutRef}>
+        <div ref={aboutClickRef}>
+          <AboutComponent id='About'/>
+        </div>
+      </div> 
 
       <div ref={servicesRef}>
         <div ref={servicesClickRef}>
@@ -101,12 +108,6 @@ export const MainPage = () => {
           <ContactComponent id='Contact'/>
         </div>
       </div>
-
-      <div ref={aboutRef}>
-        <div ref={aboutClickRef}>
-          <AboutComponent id='About'/>
-        </div>
-      </div>   
 
       {/* <div ref={worksRef}>
         <div ref={worksClickRef}>

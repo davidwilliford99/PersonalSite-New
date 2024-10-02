@@ -22,17 +22,17 @@ export const IntroComponent = (props) => {
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     // prop for scrollingto projects section
-    const worksScroll = () => props.worksClickRef.current.scrollIntoView({behavior: "smooth"});
-
+    const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
 
     return (
 
       <div id='Intro' 
            ref={ref}
            className='  
-                    font-Montserrat 2xl:px-48 md:min-h-screen items-center 
+                    font-Montserrat 2xl:px-48 py-20 items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
                     grid grid-cols-1 lg:grid-cols-4 border-b border-neutral-700
+                    px-5 2xl:px-48 md:px-20
                     '
            >
 
@@ -41,7 +41,7 @@ export const IntroComponent = (props) => {
             id='main-text-section'
             className='
                     flex flex-col text-offWhite md:px-20 lg:px-5 fadeIn
-                    px-5 col-span-3 lg:pr-20 lg:border-r border-neutral-700'
+                    px-5 col-span-3 lg:pr-20 border-neutral-700'
             >
 
 
@@ -72,17 +72,18 @@ export const IntroComponent = (props) => {
             <h1 
                 className=' 
                             font-Gloock md:text-6xl 2xl:text-7xl leading-tight
-                            text-4xl md:mt-0
+                            text-white text-4xl md:mt-0
                             '
                 style={{
                     opacity: isInView ? 1 : 0,
                     transition: "all 5s",
-                    transitionDelay: "1.5s"
+                    transitionDelay: "0.5s"
                 }}
                 >
                     David Williford, <br/>
                     Web & Automation<br/>
                     Expert
+
             </h1>
 
             <p 
@@ -98,7 +99,7 @@ export const IntroComponent = (props) => {
 
             <div className='flex buttons gap-2 mb-2'>
                 <Link 
-                    onClick={worksScroll}
+                    onClick={contactScroll}
                     className='
                             md:w-1/2 font-Montserrat text-orange-300 bg-dark2 
                             text-xs lg:text-md
@@ -112,12 +113,12 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    CONTACT ME
+                    GET IN TOUCH
                 </Link>
-                <Link 
+                {/* <Link 
                     onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}
                     className='
-                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2
+                            md:w-1/2 font-Montserrat text-orange-300 border border-dark2
                             text-xs lg:text-md
                             rounded-md text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
@@ -130,10 +131,10 @@ export const IntroComponent = (props) => {
                     }}
                     >
                     FREE CONSULTATION
-                </Link>
+                </Link> */}
             </div>
 
-            {/* <div 
+            <div 
                 id='socials' 
                 className='flex justify-center lg:justify-start gap-6 mx-3 my-10 lg:my-5'
                 style={{
@@ -151,7 +152,7 @@ export const IntroComponent = (props) => {
                 <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
                     <img src={github} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
                 </a>
-            </div> */}
+            </div>
 
             
             {/* Calendly popup link */}
@@ -172,7 +173,7 @@ export const IntroComponent = (props) => {
 
 
         {/* Contact Form */}
-        <motion.div 
+        {/* <motion.div 
             className='p-6 lg:h-full flex flex-col justify-center rounded-md mt-20 md:mt-0 md:mx-20 lg:mx-0 lg:mt-0'
             initial={{ opacity: 0, x: 500 }} // Start off-screen to the right and invisible
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 500 }} // Animate into view only when the element is visible
@@ -234,7 +235,7 @@ export const IntroComponent = (props) => {
                 </button>
 
             </form>
-        </motion.div>
+        </motion.div> */}
   
       </div>
   

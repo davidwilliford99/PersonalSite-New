@@ -138,13 +138,13 @@ export const StoriesComponent = () => {
             </motion.h1>
 
             <motion.p 
-                className='mb-10 mt-2 text-neutral-500'
+                className='mb-10 mt-2 text-neutral-400'
                 initial={{ opacity: 0, y: 100 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
             >
                 Read some examples of how I can assist different types of businesses.<br/> 
-                Many of my integrations generate a ROI in less than 1 month!
+                <span className='text-orange-300'>Many of my integrations generate a ROI in less than 1 month!</span>
             </motion.p>
     
 

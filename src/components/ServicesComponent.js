@@ -7,8 +7,12 @@ import webdev4 from './../assets/service-icons/webdev4.svg';
 import webdev5 from './../assets/service-icons/webdev5.svg';
 
 import maintenance3 from './../assets/service-icons/maintenance3.svg';
+import maintenance2 from './../assets/service-icons/maintenance2.svg';
+import maintenance1 from './../assets/service-icons/maintenance1.svg';
 
 import analytics3 from './../assets/service-icons/analytics3.svg';
+
+import seo1 from './../assets/service-icons/seo1.svg';
 
 export const ServicesComponent = () => {
     const ref = useRef(null);
@@ -17,19 +21,39 @@ export const ServicesComponent = () => {
 
     const services = [
         {
+            title: "Web Development",
+            logo: webdev5,
+            description: "Specializing in custom web experiences, I can make you a website that truly can do ANYTHING."
+        },        
+        {
+            title: "Web Upgrades",
+            logo: maintenance1,
+            description: "Having issues & limitations with your current site? Let's talk about how I can upgrade your current site."
+        },
+        {
+            title: "SEO",
+            logo: seo1,
+            description: "Make sure your site is visible to search engines, driving more organic traffic and sales."
+        },
+        {
             title: "Automation",
             logo: analytics3,
             description: "Tired of doing the same tasks over and over? Let's talk about how I can automate your business, saving you time and money."
         },
         {
-            title: "Custom Web-Dev",
-            logo: webdev5,
-            description: "Specializing in custom web experiences, I can make you a website that truly can do ANYTHING."
-        },
-        {
             title: "E-commerce",
             logo: webdev4,
             description: "Let's build out your online store! Already have a store? Then let's add some automation and custom integrations."
+        },
+        {
+            title: "Web Design",
+            logo: webdev5,
+            description: "Make your site leave an impact, with an elegant, custom design that matches your brand."
+        },
+        {
+            title: "SaaS",
+            logo: maintenance2,
+            description: "Have a custom SaaS platform and need a developer? I can provide development services at a fair rate, without needing to hire full-time."
         },
         {
             title: "Web Management",
@@ -53,18 +77,9 @@ export const ServicesComponent = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                How I can grow your business
+                I can assist you with:
             </motion.h1>
 
-            <motion.p 
-                className='mb-10 mt-2 text-neutral-500'
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : {}}
-                transition={{ duration: 1.5 }}
-            >
-                With years of experience in software development and computer science,<br/>
-                I can assist you in the following areas:
-            </motion.p>
     
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`} ref={ref}>
                 {services.map((service, index) => {
@@ -131,7 +146,7 @@ export const ServicesComponent = () => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                        Get In touch!
+                        Let's Talk: How I can assist YOU
                 </Link>
             </div>
 
