@@ -185,6 +185,10 @@ export const IntroComponent = (props) => {
                 <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
                     <img src={github} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
                 </a>
+
+                <a href='https://blog.davidwilliford.dev/' target='_blank' rel="noreferrer">
+                    <img src={hashnode} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
+                </a>
             </div>
 
             
