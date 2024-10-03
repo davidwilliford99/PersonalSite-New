@@ -126,18 +126,18 @@ export const StoriesComponent = () => {
 
     return (
         <div 
-            className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0'
+            className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0 py-40'
             ref={ref}>
             <motion.h1
-                className='font-Gloock mt-40 lg:mb-2 text-4xl md:text-6xl'
+                className='font-Gloock mt-40 lg:mb-8 text-4xl md:text-6xl'
                 initial={{ opacity: 0, y: 100 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                Client Stories
+                Example Client Stories
             </motion.h1>
 
-            <motion.p 
+            {/* <motion.p 
                 className='mb-10 mt-2 text-neutral-400'
                 initial={{ opacity: 0, y: 100 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -145,7 +145,7 @@ export const StoriesComponent = () => {
             >
                 Read some examples of how I can assist different types of businesses.<br/> 
                 <span className='text-orange-300'>Many of my integrations generate a ROI in less than 1 month!</span>
-            </motion.p>
+            </motion.p> */}
     
 
 
@@ -163,7 +163,7 @@ export const StoriesComponent = () => {
                         return (
                             <button 
                                 className={`
-                                    ${selectedStory.id === story.id ? 'bg-dark': 'bg-neutral-800'} p-4 text-offWhite text-md text-left w-full hover:bg-neutral-700 transition duration-500
+                                    ${selectedStory.id === story.id ? 'bg-dark': 'bg-neutral-800'} p-4 text-offWhite text-md text-left w-full hover:bg-neutral-700 transition duration-300 font-light rounded-lg
                                 `}
                                 onClick={() => {setSelectedStory(story)}}
                             >
@@ -197,10 +197,10 @@ export const StoriesComponent = () => {
                     <motion.div 
                         key={selectedStory.id}
                         className='md:col-span-2 lg:col-span-3 text-offWhite rounded-md'
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 0 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.5 }}
+                        exit={{ opacity: 0, y: 0 }}
+                        transition={{ duration: 0.3 }}
                     >
                         <motion.img 
                             src={selectedStory.image} 
@@ -208,7 +208,7 @@ export const StoriesComponent = () => {
                             className='w-full h-60 object-cover'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.3 }}
                         />
 
                         <motion.div 

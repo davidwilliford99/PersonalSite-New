@@ -1,6 +1,6 @@
 import { React, useRef } from 'react';
 import { useInView } from 'framer-motion';
-import aboutPhoto from '../assets/aboutPhoto2.jpg';
+import aboutPhoto from '../assets/aboutPhoto2.png';
 import { Link } from 'react-router-dom';
 
 export const AboutComponent = () => {
@@ -21,7 +21,7 @@ export const AboutComponent = () => {
                 <img 
                     src={aboutPhoto} 
                     alt='about' 
-                    className='md:h-[32rem] rounded-full border-4 border-orange-300 md:rounded-xl'
+                    className='md:h-[32rem]'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: "all 2s"

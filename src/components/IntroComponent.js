@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import linkedIn from './../assets/linkedin.png'
 import github from './../assets/github.png'
@@ -16,10 +16,45 @@ import { PopupWidget } from "react-calendly";
 
 export const IntroComponent = (props) => {
 
-    
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
+
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [currentText, setCurrentText] = useState('');
+    const [fullTextIndex, setFullTextIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [typingSpeed, setTypingSpeed] = useState(150);
+
+    const texts = [
+        "Web Developer",
+        "Software Engineer",
+        "Automation Expert",
+    ];
+
+
+    // Typing animation
+    useEffect(() => {
+        const handleTyping = () => {
+            const fullText = texts[fullTextIndex];
+            setCurrentText(
+                isDeleting
+                    ? fullText.substring(0, currentText.length - 1)
+                    : fullText.substring(0, currentText.length + 1)
+            );
+            setTypingSpeed(isDeleting ? 75 : 150);
+
+            if (!isDeleting && currentText === fullText) {
+                setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+            } else if (isDeleting && currentText === '') {
+                setIsDeleting(false);
+                setFullTextIndex((prev) => (prev + 1) % texts.length); // Move to next text
+            }
+        };
+
+        const typingInterval = setTimeout(handleTyping, typingSpeed);
+        return () => clearTimeout(typingInterval);
+    }, [currentText, isDeleting, fullTextIndex, typingSpeed]);
+
 
     // prop for scrollingto projects section
     const contactScroll = () => props.contactClickRef.current.scrollIntoView({behavior: "smooth"})
@@ -29,7 +64,7 @@ export const IntroComponent = (props) => {
       <div id='Intro' 
            ref={ref}
            className='  
-                    font-Montserrat 2xl:px-48 py-20 items-center 
+                    font-Montserrat 2xl:px-48 py-48 items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
                     grid grid-cols-1 lg:grid-cols-4 border-b border-neutral-700
                     px-5 2xl:px-48 md:px-20
@@ -76,13 +111,28 @@ export const IntroComponent = (props) => {
                             '
                 style={{
                     opacity: isInView ? 1 : 0,
-                    transition: "all 5s",
-                    transitionDelay: "0.5s"
+                    transition: "all 2s",
+                    transitionDelay: ""
                 }}
                 >
                     David Williford, <br/>
-                    Web & Automation<br/>
-                    Expert
+                    <span 
+                        className="inline-block"
+                        style={{
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 1s",
+                            transitionDelay: "2s"
+                        }}
+                    >
+                        {currentText}
+                        <motion.span
+                            animate={{ opacity: [0, 1, 0] }}
+                            transition={{ repeat: Infinity, duration: 1 }}
+                            className='text-white'
+                        >
+                            |
+                        </motion.span>
+                    </span>
 
             </h1>
 
@@ -90,11 +140,11 @@ export const IntroComponent = (props) => {
                 className='text-neutral-400 text-md lg:text-xl mt-5'
                 style={{
                     opacity: isInView ? 1 : 0,
-                    transition: "all 5s",
-                    transitionDelay: "1.5s"
+                    transition: "all 1s",
+                    transitionDelay: "3s"
                 }}
             >
-                I help businesses <span className='text-orange-300'>achieve more with fewer resources</span>, giving them more time to focus on growth
+                I build & manage <span className='text-orange-300'>tailored digital solutions</span>, so your business can grow faster.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
@@ -115,23 +165,6 @@ export const IntroComponent = (props) => {
                     >
                     GET IN TOUCH
                 </Link>
-                {/* <Link 
-                    onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}
-                    className='
-                            md:w-1/2 font-Montserrat text-orange-300 border border-dark2
-                            text-xs lg:text-md
-                            rounded-md text-center py-3 mt-8
-                            hover:bg-neutral-300 hover:text-dark transition-all
-                            
-                            w-full'
-                    style={{
-                        opacity: isInView ? 1 : 0,
-                        transition: "background-color 0.3s, opacity 3s",
-                        transitionDelay: "opacity 3s"
-                    }}
-                    >
-                    FREE CONSULTATION
-                </Link> */}
             </div>
 
             <div 
@@ -170,72 +203,6 @@ export const IntroComponent = (props) => {
                 />
             </div>
         </div>
-
-
-        {/* Contact Form */}
-        {/* <motion.div 
-            className='p-6 lg:h-full flex flex-col justify-center rounded-md mt-20 md:mt-0 md:mx-20 lg:mx-0 lg:mt-0'
-            initial={{ opacity: 0, x: 500 }} // Start off-screen to the right and invisible
-            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 500 }} // Animate into view only when the element is visible
-            transition={{
-                opacity: { duration: 3, delay: 3 },
-                x: { type: "spring", stiffness: 50, damping: 20, delay: 3 }, // Delay for the animation
-            }}
-            >
-
-            <div className='flex flex-col'>
-                <h3 className='font-Gloock text-2xl text-neutral-300 mb-2'>Tired of being overwhelmed?</h3>
-                <p className='py-2 text-neutral-500 text-xs mb-2'>Let's automate your business processes, allowing you to make money while saving time.</p>
-            </div>
-
-            <form 
-                action="https://formsubmit.co/contact@davidwilliford.dev" 
-                method='POST' 
-                className='w-full flex flex-col items-center justify-center'
-            >
-            
-                <button className='flex flex-col gap-2 w-full items-center justify-center gap-3' id='name and email'>
-                    <input 
-                        type="text" 
-                        placeholder='Your Name' 
-                        name="Name" 
-                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
-                    />
-                    <input 
-                        type="email" 
-                        placeholder='Email or Phone #' 
-                        name="Email" 
-                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
-                    />
-                    <input 
-                        type="text" 
-                        placeholder='Business Name' 
-                        name="Business" 
-                        className='w-full bg-dark border border-dark2 rounded-md p-3 text-white text-sm'
-                    />
-                    <input type="hidden" name="_subject" value="Website Contact Form Submission!"></input>
-                    <input type="hidden" name="_captcha" value="false"></input>
-                    <input type="hidden" name='_next' value='https://davidwilliford99.github.io/PersonalSite-New/#/ThankYou'></input>
-                </button>
-                
-                <button 
-                    type='submit'
-                    onClick={() => setFormSubmitted(!formSubmitted)}
-                    className='
-                            w-full font-Montserrat text-dark bg-orange-400 text-md
-                            rounded-md text-center py-3 mt-5 mb-5 font-semibold
-                            hover:bg-neutral-300 hover:text-dark transition-all'
-                    style={{
-                        opacity: isInView ? 1 : 0,
-                        transition: "background-color 0.3s, opacity 3s",
-                        transitionDelay: "opacity 3s"
-                    }}
-                    >
-                    Get Started
-                </button>
-
-            </form>
-        </motion.div> */}
   
       </div>
   

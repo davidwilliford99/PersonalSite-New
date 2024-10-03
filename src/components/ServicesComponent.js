@@ -21,14 +21,14 @@ export const ServicesComponent = () => {
 
     const services = [
         {
-            title: "Web Development",
+            title: "Development",
             logo: webdev5,
             description: "Specializing in custom web experiences, I can make you a website that truly can do ANYTHING."
         },        
         {
-            title: "Web Upgrades",
-            logo: maintenance1,
-            description: "Having issues & limitations with your current site? Let's talk about how I can upgrade your current site."
+            title: "Management",
+            logo: maintenance3,
+            description: "Have a professional manage your website, cloud platform, hosting and more. Saving you valuable time every month."
         },
         {
             title: "SEO",
@@ -36,19 +36,24 @@ export const ServicesComponent = () => {
             description: "Make sure your site is visible to search engines, driving more organic traffic and sales."
         },
         {
+            title: "Cloud",
+            logo: maintenance1,
+            description: "Take your business to the next level with scalable, secure cloud solutions that save time, reduce costs, and ensure your data is always accessible."
+        },    
+        {
+            title: "E-commerce",
+            logo: webdev4,
+            description: "Let's build out your online store! Already have a store? Then let's add some automation and custom integrations."
+        },    
+        {
             title: "Automation",
             logo: analytics3,
             description: "Tired of doing the same tasks over and over? Let's talk about how I can automate your business, saving you time and money."
         },
         {
-            title: "E-commerce",
-            logo: webdev4,
-            description: "Let's build out your online store! Already have a store? Then let's add some automation and custom integrations."
-        },
-        {
-            title: "Web Design",
+            title: "Design",
             logo: webdev5,
-            description: "Make your site leave an impact, with an elegant, custom design that matches your brand."
+            description: "Make sure your site, logos and marketing material leave an impact. Along with an elegant, custom design that matches your brand."
         },
         {
             title: "SaaS",
@@ -56,14 +61,9 @@ export const ServicesComponent = () => {
             description: "Have a custom SaaS platform and need a developer? I can provide development services at a fair rate, without needing to hire full-time."
         },
         {
-            title: "Web Management",
-            logo: maintenance3,
-            description: "Have a professional manage your website, saving you valuable time every month."
-        },
-        {
-            title: "Custom Apps",
+            title: "Custom Solutions",
             logo: webdev3,
-            description: "Have an app idea? Book a 1-on-1 consultation and let's talk about how we can build it together!."
+            description: "Have an app idea? Book a 1-on-1 consultation and let's talk about how we can build it together!"
         },
     ];
     
@@ -72,7 +72,7 @@ export const ServicesComponent = () => {
     return (
         <div className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0'>
             <motion.h1 
-                className='font-Gloock mt-40 lg:mb-2 text-4xl md:text-6xl'
+                className='font-Gloock mt-40 lg:mb-8 text-4xl md:text-6xl'
                 initial={{ opacity: 0, x: -100 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 1 }}
@@ -146,7 +146,7 @@ export const ServicesComponent = () => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                        Let's Talk: How I can assist YOU
+                        Curate Your Custom Service Package
                 </Link>
             </div>
 
