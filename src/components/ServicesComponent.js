@@ -72,7 +72,7 @@ export const ServicesComponent = () => {
     return (
         <div className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0'>
             <motion.h1 
-                className='font-Gloock mt-40 lg:mb-8 text-4xl md:text-6xl'
+                className='font-Gloock lg:mt-40 mb-8 text-4xl md:text-6xl'
                 initial={{ opacity: 0, x: -100 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 1 }}

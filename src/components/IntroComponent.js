@@ -64,7 +64,7 @@ export const IntroComponent = (props) => {
       <div id='Intro' 
            ref={ref}
            className='  
-                    font-Montserrat 2xl:px-48 py-48 items-center 
+                    font-Montserrat 2xl:px-48 py-20 lg:py-48 items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
                     grid grid-cols-1 lg:grid-cols-4 border-b border-neutral-700
                     px-5 2xl:px-48 md:px-20

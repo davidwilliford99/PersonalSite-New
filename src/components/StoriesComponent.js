@@ -126,26 +126,16 @@ export const StoriesComponent = () => {
 
     return (
         <div 
-            className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0 py-40'
+            className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0 lg:py-40'
             ref={ref}>
             <motion.h1
-                className='font-Gloock mt-40 lg:mb-8 text-4xl md:text-6xl'
-                initial={{ opacity: 0, y: 100 }}
+                className='font-Gloock mt-40 mb-8 text-4xl md:text-6xl'
+                initial={{ opacity: 0, y: 10 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
             >
                 Example Client Stories
             </motion.h1>
-
-            {/* <motion.p 
-                className='mb-10 mt-2 text-neutral-400'
-                initial={{ opacity: 0, y: 100 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 1 }}
-            >
-                Read some examples of how I can assist different types of businesses.<br/> 
-                <span className='text-orange-300'>Many of my integrations generate a ROI in less than 1 month!</span>
-            </motion.p> */}
     
 
 
