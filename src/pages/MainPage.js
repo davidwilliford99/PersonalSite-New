@@ -10,6 +10,7 @@ import { useInView } from 'framer-motion';
 import { ResumeComponent } from '../components/ResumeComponent';
 import { Footer } from '../components/Footer';
 import { MobileNavbar } from '../components/MobileNavbar';
+import { TestimonialComponent } from '../components/TestimonialComponent';
 
 
 export const MainPage = () => {
@@ -84,6 +85,8 @@ export const MainPage = () => {
           />
         </div>
       </div>
+
+      <TestimonialComponent/>
 
       <div ref={aboutRef}>
         <div ref={aboutClickRef}>

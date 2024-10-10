@@ -66,7 +66,7 @@ export const IntroComponent = (props) => {
            className='  
                     font-Montserrat 2xl:px-48 py-20 lg:py-48 items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
-                    grid grid-cols-1 lg:grid-cols-4 border-b border-neutral-700
+                    grid grid-cols-1 lg:grid-cols-4
                     px-5 2xl:px-48 md:px-20
                     '
            >
@@ -107,7 +107,7 @@ export const IntroComponent = (props) => {
             <h1 
                 className=' 
                             font-Gloock md:text-6xl 2xl:text-7xl leading-tight
-                            text-white text-4xl md:mt-0
+                            text-offWhite text-4xl md:mt-0
                             '
                 style={{
                     opacity: isInView ? 1 : 0,
@@ -144,7 +144,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I build & manage <span className='text-orange-300'>tailored digital solutions</span>, so your business can grow faster.
+                I help <span className='text-orange-300'>businesses</span> get their workflows <span className='text-orange-300'>automated</span> with <span className='text-orange-300'>custom solutions</span> so they can <span className='text-orange-300'>scale faster</span> without wasting time on <span className='text-orange-300'>manual tasks</span>.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
@@ -196,12 +196,8 @@ export const IntroComponent = (props) => {
             <div className=''>
                 <PopupWidget
                     url="https://calendly.com/d9899w/1-on-1-remote-consultation"
-                    /*
-                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                    */
                     rootElement={document.getElementById("root")}
-                    text="Book a free consultation"
+                    text="Free 1-on-1 Strategy Session"
                     textColor="#2c2c2c"
                     color="#fdba74"
                 />
