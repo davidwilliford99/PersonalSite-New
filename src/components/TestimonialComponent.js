@@ -44,7 +44,7 @@ export const TestimonialComponent = () => {
                 ))}
 
                 {/* Divider */}
-                <div className="absolute inset-y-0 left-1/2 border-l border-neutral-700"></div>
+                <div className="absolute inset-y-0 hidden lg:block left-1/2 border-l border-neutral-700"></div>
 
 
             </div>
