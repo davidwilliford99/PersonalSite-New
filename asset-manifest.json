@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cfdc8df.css",
-    "main.js": "/static/js/main.4f99f8c9.js",
+    "main.css": "/static/css/main.9b57e527.css",
+    "main.js": "/static/js/main.ae943de7.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto2.png": "/static/media/aboutPhoto2.0ca16a1260e0481a5277.png",
     "static/media/CardCraftSS.png": "/static/media/CardCraftSS.215ec11f3b937a586473.png",
@@ -31,14 +31,14 @@
     "static/media/analytics3.svg": "/static/media/analytics3.e680a1ed7babeebb0fd80cbdc91b6991.svg",
     "static/media/webdev3.svg": "/static/media/webdev3.f502be3e2df762530e1da44ab96c467e.svg",
     "index.html": "/index.html",
-    "static/media/Website.svg": "/static/media/Website.eb0bf7c73e3c7a46f1020e32049ad956.svg",
-    "static/media/Custom.svg": "/static/media/Custom.92fa2fedb080bfbbd8fe1b664a5aaaea.svg",
-    "main.9cfdc8df.css.map": "/static/css/main.9cfdc8df.css.map",
-    "main.4f99f8c9.js.map": "/static/js/main.4f99f8c9.js.map",
+    "static/media/Website.svg": "/static/media/Website.10fdf60b9d23a347b5c2c65c08c87348.svg",
+    "static/media/Custom.svg": "/static/media/Custom.4a0fe71294f85339e2246a140b1d7402.svg",
+    "main.9b57e527.css.map": "/static/css/main.9b57e527.css.map",
+    "main.ae943de7.js.map": "/static/js/main.ae943de7.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cfdc8df.css",
-    "static/js/main.4f99f8c9.js"
+    "static/css/main.9b57e527.css",
+    "static/js/main.ae943de7.js"
   ]
 }
