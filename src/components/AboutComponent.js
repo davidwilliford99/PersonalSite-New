@@ -40,7 +40,7 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-lg mb-8'>
-                            As a former <span className='text-orange-300'>Computer Science student</span> and technology enthusiast, I'm driven by curiosity and a desire to make progress in both my life and the world around me. This passion has led me to specialize in <span className='text-orange-300'>automation, software development, ecommerce, cloud computing, and APIs</span>. I provide services that leverage these technologies to help businesses <span className='text-orange-300'>streamline their operations</span>, <span className='text-orange-300'>increase efficiency</span>, and <span className='text-orange-300'>scale effectively</span>. My goal is to empower companies with custom solutions that free them from manual tasks, allowing them to focus on growth and innovation.
+                            As a former <span className='text-orange-300'>Computer Science student</span> and technology enthusiast, I was driven by curiosity to understand the advanced systems in the world around me. This desire has led me to specialize in <span className='text-orange-300'>automation, software development, ecommerce, cloud computing, and APIs</span>. I provide services that leverage these technologies to help businesses <span className='text-orange-300'>streamline their operations</span>, <span className='text-orange-300'>increase efficiency</span>, and <span className='text-orange-300'>scale effectively</span> without breaking the bank. My goal is to empower companies with custom solutions that free them from manual tasks, allowing them to focus on growth and innovation.
                         </p>
 
 

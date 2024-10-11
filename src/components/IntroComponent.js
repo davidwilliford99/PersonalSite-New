@@ -28,7 +28,7 @@ export const IntroComponent = (props) => {
     const texts = [
         "Web Developer",
         "Software Engineer",
-        "Automation Expert",
+        "Automation Specialist",
     ];
 
 
@@ -64,7 +64,7 @@ export const IntroComponent = (props) => {
       <div id='Intro' 
            ref={ref}
            className='  
-                    font-Montserrat 2xl:px-48 py-20 lg:py-48 items-center 
+                    font-Montserrat 2xl:px-48 py-20 lg:py-40 items-center 
                     md:flex-row md:justify-between overflow-x-hidden z-0
                     grid grid-cols-1 lg:grid-cols-4
                     px-5 2xl:px-48 md:px-20
@@ -128,7 +128,7 @@ export const IntroComponent = (props) => {
                         <motion.span
                             animate={{ opacity: [0, 1, 0] }}
                             transition={{ repeat: Infinity, duration: 1 }}
-                            className='text-white'
+                            className='text-offWhite'
                         >
                             |
                         </motion.span>
@@ -197,7 +197,7 @@ export const IntroComponent = (props) => {
                 <PopupWidget
                     url="https://calendly.com/d9899w/1-on-1-remote-consultation"
                     rootElement={document.getElementById("root")}
-                    text="Free 1-on-1 Strategy Session"
+                    text="Free 1-on-1 Strategy Meeting"
                     textColor="#2c2c2c"
                     color="#fdba74"
                 />

@@ -12,8 +12,17 @@ export const StoriesComponent = () => {
             title: "Joe's E-Commerce Store",
             client: "Joe runs an e-commerce store selling dog toys.",
             objective: "Joe wants to add a subscription service to his website, allowing customers to select 5-7 different dog toys each month to be shipped to them.",
-            solution: "Joe hires me to build and integrate a custom subscription service into his e-commerce platform. The system allows customers to handpick their monthly items through a seamless user interface, and once selections are made, Joe is automatically notified to prepare and ship the boxes.",
-            result: "Joe now enjoys a consistent, low-effort source of recurring revenue. The subscription service attracts loyal customers, and Joe’s only task is to pack the boxes, reducing his manual work and creating a scalable income stream.",
+            solution: [
+                "Build and integrate custom subscription service.",
+                "Allow customers to handpick monthly items.",
+                "Notify Joe to prepare and ship boxes."
+            ],
+            result: [
+                "Consistent, low-effort recurring revenue.",
+                "Attracts loyal customers.",
+                "Reduces manual work.",
+                "Creates scalable income stream."
+            ],
             image: "https://images.pexels.com/photos/6169650/pexels-photo-6169650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -21,8 +30,19 @@ export const StoriesComponent = () => {
             title: "Jeremy’s Auto Repair Shop",
             client: "Jeremy owns multiple automotive repair shops.",
             objective: "Jeremy wants to attract more new customers by simplifying the process of distributing repair estimates.",
-            solution: "Jeremy hires me to build an online form that integrates with his website. The form allows potential customers to upload photos and provide details of the damage to their vehicle. Jeremy receives the form details through a secure login and can generate and send estimates via email directly to the customer.",
-            result: "The new system significantly increases the number of leads Jeremy receives, as potential customers appreciate the ease of obtaining estimates without having to visit the shop. It saves time for both Jeremy and his customers, improving the customer experience and greatly increasing revenue.",
+            solution: [
+                "Build online form for website.",
+                "Allow photo uploads and damage details.",
+                "Secure login for form details.",
+                "Generate and send estimates via email."
+            ],
+            result: [
+                "Increases number of leads.",
+                "Ease of obtaining estimates.",
+                "Saves time for Jeremy and customers.",
+                "Improves customer experience.",
+                "Greatly increases revenue."
+            ],
             image: "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -30,8 +50,18 @@ export const StoriesComponent = () => {
             title: "Nathan’s HVAC Service",
             client: "Nathan runs an HVAC repair service with a team that visits clients’ homes.",
             objective: "Nathan is frustrated by the manual scheduling process and frequent miscommunications between clients and his crew.",
-            solution: "Nathan hires me to develop an automated scheduling system for his website. The system allows customers to describe their repair needs, select which appliances require servicing, and choose from available time slots based on the crew’s calendar.",
-            result: "Nathan now has a fully-automated scheduling system that eliminates the need for manual intervention. His crew’s daily schedule is organized in advance, minimizing downtime and confusion. Nathan saves hours of time every day, allowing him to focus on his business and deal with owner-level tasks.",
+            solution: [
+                "Develop automated scheduling system.",
+                "Describe repair needs and select appliances.",
+                "Choose time slots based on crew’s calendar."
+            ],
+            result: [
+                "Fully-automated scheduling system.",
+                "Eliminates manual intervention.",
+                "Organized daily schedule.",
+                "Minimizes downtime and confusion.",
+                "Saves hours of time daily."
+            ],
             image: "https://images.pexels.com/photos/5463581/pexels-photo-5463581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -39,8 +69,17 @@ export const StoriesComponent = () => {
             title: "Sarah’s Fitness App",
             client: "Sarah owns a mobile app that provides curated health and fitness content, such as workout routines and meal plans.",
             objective: "Sarah wants to track user interactions to guide them toward the most relevant content and improve overall engagement on her platform.",
-            solution: "Sarah hires me to integrate an advanced analytics platform, such as Google Analytics or Mixpanel, into her web app. I also create personalized dashboards and integrate machine learning algorithms to recommend the most relevant content based on user behavior.",
-            result: "Sarah can now see detailed insights into how users interact with her content. The system automatically suggests new workouts or meal plans based on the user’s history and engagement, increasing user retention and satisfaction.",
+            solution: [
+                "Integrate advanced analytics platform.",
+                "Create personalized dashboards.",
+                "Recommend content based on user behavior."
+            ],
+            result: [
+                "Detailed insights into user interactions.",
+                "Suggests new workouts or meal plans.",
+                "Increases user retention.",
+                "Improves user satisfaction."
+            ],
             image: "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -48,8 +87,18 @@ export const StoriesComponent = () => {
             title: "Mike’s Home Inspection",
             client: "Mike is a home inspector using applications like HomeGauge.",
             objective: "Mike wants to streamline client interactions & report generation, eliminating the need for manual communication, including payment collection and report distribution.",
-            solution: "I integrate HomeGauge into Mike’s website, automatically generating & uploading inspection reports to a secure client portal. I also create a booking form with an integrated payment gateway, allowing clients to schedule inspections, submit property details, and pay upfront.",
-            result: "Mike’s workflow is fully automated, allowing clients to book, pay, and access reports without needing direct communication. Now Mike can solely focus on inspecting homes, greatly increasing his productivity and income.",
+            solution: [
+                "Integrate HomeGauge into website.",
+                "Generate and upload inspection reports.",
+                "Create booking form with payment gateway.",
+                "Schedule inspections and submit property details."
+            ],
+            result: [
+                "Fully automated workflow.",
+                "Clients book, pay, and access reports.",
+                "Focus on inspecting homes.",
+                "Increases productivity and income."
+            ],
             image: "https://images.pexels.com/photos/28101526/pexels-photo-28101526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -57,8 +106,20 @@ export const StoriesComponent = () => {
             title: "Emily’s Law Firm",
             client: "Emily is a partner at a local law firm.",
             objective: "Emily’s firm deals with high volumes of client contracts and legal documents that need to be reviewed, signed, and stored securely. Manual document handling is slow and prone to errors, and keeping track of clients’ cases is becoming difficult.",
-            solution: "Emily hires me to automate the document generation process and integrate a custom CRM system. I create templates for frequently used contracts, integrate e-signature functionality, and automate secure document storage. Additionally, I set up a CRM that tracks all client communications, case progress, and deadlines.",
-            result: "The firm’s administrative load is drastically reduced, with contracts now generated and signed within minutes. The CRM provides the team with a clear view of ongoing cases, helping them meet deadlines and improve client satisfaction.",
+            solution: [
+                "Automate document generation process.",
+                "Integrate custom CRM system.",
+                "Create templates for contracts.",
+                "Integrate e-signature functionality.",
+                "Automate secure document storage.",
+                "Track client communications and case progress."
+            ],
+            result: [
+                "Drastically reduced administrative load.",
+                "Contracts generated and signed quickly.",
+                "Clear view of ongoing cases.",
+                "Meet deadlines and improve client satisfaction."
+            ],
             image: "https://images.pexels.com/photos/4427556/pexels-photo-4427556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -66,8 +127,18 @@ export const StoriesComponent = () => {
             title: "Sarah’s Education Platform",
             client: "Sarah runs an online education platform that offers courses in coding and data science.",
             objective: "Sarah’s platform is growing, but managing course enrollments, tracking student progress, and delivering personalized content has become cumbersome, leading to a poor user experience.",
-            solution: "Sarah hires me to integrate a Learning Management System (LMS) that automates course enrollment, progress tracking, and personalized content delivery. I also integrate a feedback loop that captures testimonials after course completion.",
-            result: "Students now enjoy a seamless learning experience, with courses and progress tracking automatically handled by the system. Sarah can easily monitor student engagement and course completion, allowing her to improve the curriculum and increase student retention.",
+            solution: [
+                "Integrate Learning Management System (LMS).",
+                "Automate course enrollment and progress tracking.",
+                "Deliver personalized content.",
+                "Capture testimonials after course completion."
+            ],
+            result: [
+                "Seamless learning experience.",
+                "Courses and progress tracking automated.",
+                "Monitor student engagement.",
+                "Improve curriculum and increase retention."
+            ],
             image: "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -75,8 +146,18 @@ export const StoriesComponent = () => {
             title: "Lisa’s Travel Agency",
             client: "Lisa owns a travel agency that specializes in high-end custom vacations.",
             objective: "Lisa’s agency spends hours manually creating custom itineraries, managing bookings, and following up with clients to finalize details. She wants to automate the booking process and improve client communication.",
-            solution: "Lisa hires me to build an automated booking system with a custom itinerary generator. I develop a web platform where clients can select their desired vacation packages, customize their preferences, and book directly through the website. The system then automatically generates a detailed itinerary based on a customer questionnaire.",
-            result: "Lisa’s clients can now book vacations and receive custom itineraries within minutes, drastically reducing manual work for her team. The follow-up system keeps clients engaged and informed, improving customer satisfaction.",
+            solution: [
+                "Build automated booking system.",
+                "Create custom itinerary generator.",
+                "Develop web platform for vacation packages.",
+                "Generate detailed itineraries automatically."
+            ],
+            result: [
+                "Clients book vacations quickly.",
+                "Custom itineraries within minutes.",
+                "Reduces manual work.",
+                "Improves customer satisfaction."
+            ],
             image: "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -84,8 +165,20 @@ export const StoriesComponent = () => {
             title: "Jake’s Construction Firm",
             client: "Jake owns a construction company that handles multiple residential and commercial projects simultaneously.",
             objective: "Jake wants to streamline project management, reduce miscommunication between his team and clients, and automate scheduling and budgeting tasks to improve efficiency.",
-            solution: "Jake hires me to create a custom project management platform that automates scheduling, tracks project progress, and manages client communication. Clients can log in to view progress updates, communicate directly with the team, and receive automated reports on budget and timeline changes.",
-            result: "Jake’s team now operates with a clear view of each project’s status, reducing miscommunication and delays. The automated scheduling and budgeting system ensures that projects stay on track, and clients are always up to date with progress reports. Jake’s company can now take on more projects while maintaining high levels of customer satisfaction.",
+            solution: [
+                "Create custom project management platform.",
+                "Automate scheduling and track progress.",
+                "Manage client communication.",
+                "Clients view progress updates.",
+                "Receive automated budget and timeline reports."
+            ],
+            result: [
+                "Clear view of project status.",
+                "Reduces miscommunication and delays.",
+                "Automated scheduling and budgeting.",
+                "Projects stay on track.",
+                "Clients up to date with progress."
+            ],
             image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -93,8 +186,23 @@ export const StoriesComponent = () => {
             title: "Andy's Solar Business",
             client: "GreenPower Solar is a company that installs solar panels for residential and commercial properties.",
             objective: "GreenPower Solar handles a lot of manual tasks, like scheduling site surveys, preparing installation quotes, tracking project progress, and managing customer communications. They want to reduce the time spent on these repetitive tasks and improve overall efficiency.",
-            solution: "GreenPower Solar hires me to automate their workflow. I develop custom automation systems that integrate their website with a CRM and project management tool. The system allows potential customers to request site surveys via an online form, automatically schedules site visits based on availability, and generates quotes using predefined pricing models. Additionally, I set up automated project tracking and email notifications to keep customers informed at every stage, from site survey to installation completion.",
-            result: "The automated system saves GreenPower Solar tons of time by reducing manual input and tracking. Customers can easily request surveys and receive quotes without delays, improving the overall customer experience. The team can now focus on the actual installations and growing the business rather than handling repetitive tasks, leading to faster project turnarounds and higher customer satisfaction.",
+            solution: [
+                "Automate workflow with custom systems.",
+                "Integrate website with CRM and project management.",
+                "Request site surveys via online form.",
+                "Automatically schedule site visits.",
+                "Generate quotes using predefined models.",
+                "Automate project tracking and email notifications."
+            ],
+            result: [
+                "Saves time by reducing manual input.",
+                "Customers request surveys easily.",
+                "Receive quotes without delays.",
+                "Improves customer experience.",
+                "Focus on installations and business growth.",
+                "Faster project turnarounds.",
+                "Higher customer satisfaction."
+            ],
             image: "https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
     ];
@@ -134,7 +242,7 @@ export const StoriesComponent = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                Example Client Stories
+                How I can help clients in your niche
             </motion.h1>
     
 
@@ -220,13 +328,27 @@ export const StoriesComponent = () => {
                             {/* Solution Section */}
                             <div className='mb-4'>
                                 <h4 className="text-lg mb-1">Solution</h4>
-                                <p className="text-neutral-400">{selectedStory.solution}</p>
+                                <ul className="ml-5 text-neutral-400">
+                                    {selectedStory.solution.map((point, index) => (
+                                        <li key={index} className="flex items-start mt-2">
+                                            <span className="mr-2">&#9679;</span>
+                                            <span>{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
 
                             {/* Result Section */}
                             <div className='mb-4'>
                                 <h4 className="text-lg mb-1">Result</h4>
-                                <p className="text-neutral-400">{selectedStory.result}</p>
+                                <ul className="ml-5 text-neutral-400">
+                                    {selectedStory.result.map((point, index) => (
+                                        <li key={index} className="flex items-start mt-2">
+                                            <span className="mr-2">&#9679;</span>
+                                            <span>{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </motion.div>
 

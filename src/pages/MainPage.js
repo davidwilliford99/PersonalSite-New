@@ -86,13 +86,13 @@ export const MainPage = () => {
         </div>
       </div>
 
-      <TestimonialComponent/>
-
       <div ref={aboutRef}>
         <div ref={aboutClickRef}>
           <AboutComponent id='About'/>
         </div>
       </div> 
+
+      <TestimonialComponent/>
 
       <div ref={servicesRef}>
         <div ref={servicesClickRef}>

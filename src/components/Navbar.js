@@ -46,7 +46,7 @@ export const Navbar = (props) => {
       <div 
             id='Navbar' 
             className='
-                       bg-dark fixed w-full font-Montserrat 2xl:px-48
+                       bg-dark fixed w-full font-Gloock 2xl:px-48
                        max-w-screen-2xl
                        flex justify-center items-center z-10 invisible lg:visible'
             ref={ref}
@@ -71,7 +71,7 @@ export const Navbar = (props) => {
                                 onClick={navItem.goTo}
                                 >
 
-                                <li className='font-semibold font-Roboto tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
+                                <li className='tracking-widest bg-dark w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
 
@@ -86,7 +86,7 @@ export const Navbar = (props) => {
                                 onClick={navItem.goTo}
                                 >
 
-                                <li className='font-semibold font-Roboto tracking-widest w-full py-5 text-center tracking-wider'>
+                                <li className='tracking-widest w-full py-5 text-center tracking-wider'>
                                     {navItem.name}
                                 </li>
                                 
