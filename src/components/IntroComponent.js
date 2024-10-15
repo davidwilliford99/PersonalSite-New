@@ -28,7 +28,7 @@ export const IntroComponent = (props) => {
     const texts = [
         "Web Developer",
         "Software Engineer",
-        "Automation Specialist",
+        "SaaS Specialist",
     ];
 
 
@@ -144,7 +144,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I help <span className='text-orange-300'>businesses</span> get their workflows <span className='text-orange-300'>automated</span> with <span className='text-orange-300'>custom solutions</span> so they can <span className='text-orange-300'>scale faster</span> without wasting time on <span className='text-orange-300'>manual tasks</span>.
+                I build <span className='text-orange-300'>custom software</span>, <span className='text-orange-300'>SaaS platforms</span>, and <span className='text-orange-300'>e-commerce storefronts</span>. I also <span className='text-orange-300'>automate complicated workflows</span> allowing your business to <span className='text-orange-300'>scale faster</span> without wasting time on manual tasks.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
@@ -177,17 +177,17 @@ export const IntroComponent = (props) => {
                     transitionDelay: "2s"
                 }}
                 >
+
+                <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
+                    <img src={github} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
+                </a>
                 
                 <a href='https://www.linkedin.com/in/davidwilliford99/' target='_blank' rel="noreferrer">
                     <img src={linkedIn} alt='linkedin logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
                 </a>
-                
-                <a href='https://github.com/davidwilliford99' target='_blank' rel="noreferrer">
-                    <img src={github} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
-                </a>
 
                 <a href='https://blog.davidwilliford.dev/' target='_blank' rel="noreferrer">
-                    <img src={hashnode} alt='github logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
+                    <img src={hashnode} alt='blog logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
                 </a>
             </div>
 

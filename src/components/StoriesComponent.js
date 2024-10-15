@@ -234,10 +234,10 @@ export const StoriesComponent = () => {
 
     return (
         <div 
-            className='font-Montserrat bg-dark px-5 2xl:px-48 md:px-20 z-0 lg:py-40'
+            className='font-Montserrat bg-dark lg:py-40 z-0'
             ref={ref}>
             <motion.h1
-                className='font-Gloock mt-40 mb-8 text-4xl md:text-6xl'
+                className='font-Gloock mt-40 mb-8 text-4xl md:text-6xl px-5 2xl:px-48 md:px-20'
                 initial={{ opacity: 0, y: 10 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
@@ -303,7 +303,7 @@ export const StoriesComponent = () => {
                         <motion.img 
                             src={selectedStory.image} 
                             alt={selectedStory.title} 
-                            className='w-full h-60 object-cover'
+                            className='w-full h-40 object-cover'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}
