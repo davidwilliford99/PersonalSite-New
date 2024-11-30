@@ -36,9 +36,9 @@ export const Navbar = (props) => {
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
         },
-        // {
-        //     name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
-        // },
+        {
+            name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
+        },
 
     ];
 

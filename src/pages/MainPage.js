@@ -112,11 +112,11 @@ export const MainPage = () => {
         </div>
       </div>
 
-      {/* <div ref={worksRef}>
+      <div ref={worksRef}>
         <div ref={worksClickRef}>
           <WorksSamplesComponent id='Works'/>
         </div>
-      </div> */}
+      </div>
 
       <Footer 
         aboutClickRef={aboutClickRef}

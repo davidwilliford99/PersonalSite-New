@@ -242,7 +242,7 @@ export const StoriesComponent = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                How I can help clients in your niche
+                How I can assist businesses in your cartegory
             </motion.h1>
     
 
@@ -255,13 +255,13 @@ export const StoriesComponent = () => {
                 {/* Desktop Story Title Menu */}
                 <div 
                     style={{ display: isMdScreen ? 'block' : 'none'}}
-                    className='bg-neutral-800'
+                    className='bg-dark border-r border-neutral-700'
                 >
                     {stories.map((story, index) => {
                         return (
                             <button 
                                 className={`
-                                    ${selectedStory.id === story.id ? 'bg-dark': 'bg-neutral-800'} p-4 text-offWhite text-md text-left w-full hover:bg-neutral-700 transition duration-300 font-light rounded-lg
+                                    ${selectedStory.id === story.id ? 'bg-orange-400': 'bg-dark'} p-4 text-offWhite text-md text-left w-full hover:bg-neutral-800 transition duration-300 font-light
                                 `}
                                 onClick={() => {setSelectedStory(story)}}
                             >
