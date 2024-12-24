@@ -132,6 +132,17 @@ export const WorksSamplesComponent = () => {
             name: "Undergrad Predictions Data Analysis",
             description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
             image: ugPredScreenshot,
+            features: [
+                "Random Forest",
+                "Python",
+                "Apache Spark",
+                "Jupyter Notebook",
+                "Kaggle",
+                "pandas",
+                "scikit-learn",
+                "pyspark",
+                "matplotlib"
+            ],
             github: "https://github.com/davidwilliford99/UndergradPredictions",
             isLive: false,
         },
