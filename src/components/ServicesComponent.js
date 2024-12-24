@@ -24,7 +24,7 @@ export const ServicesComponent = () => {
         {
             title: "Development",
             logo: webdev5,
-            description: "Specializing in custom web experiences, I can make your website do ANYTHING!"
+            description: "With a professional background in software development, I can make you an application to do almost anything."
         },    
         {
             title: "Cloud",
@@ -34,37 +34,37 @@ export const ServicesComponent = () => {
         {
             title: "Architecture",
             logo: webdev5,
-            description: "Making sure your applications scale to multiple users and regions around the world. Ensuring smooth sailing for all levels of traffic."
+            description: "Making sure your applications scale to multiple users and regions around the world."
         },
         {
             title: "E-commerce",
             logo: webdev4,
-            description: "Boost or build your e-commerce site effortlessly with custom automation, allowing you to sell more with less work."
+            description: "Boost or build your e-commerce site effortlessly, allowing you to sell more with less work."
         },    
         {
             title: "Maintenance",
             logo: maintenance3,
-            description: "Have a professional maintain your website, cloud platform, hosting and more. Saving you valuable time every month."
+            description: "Have a professional maintain your website, cloud platform, hosting and more. Saving you valuable time."
         },
         {
             title: "SEO",
             logo: seo1,
-            description: "With some simple tweaks to your site, I can make sure your site is visible to search engines, driving more organic traffic and sales."
+            description: "Make sure your site is visible to search engines, driving more organic traffic and sales."
         },   
         {
             title: "Automation",
             logo: analytics3,
-            description: "Tired of doing the same tasks over and over? Let's talk about how I can automate your business, saving you time and money."
+            description: "Tired of doing the same tasks over and over? Let's automate your business, saving you time and money."
         },
         {
             title: "SaaS Development",
             logo: maintenance2,
-            description: "Have a custom SaaS platform and need a developer? I can provide development services at a fair rate, without needing to hire full-time employees."
+            description: "Have a custom SaaS platform and need a developer? I can help you develop it!"
         },
         {
             title: "Custom Apps",
             logo: webdev3,
-            description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together!"
+            description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together."
         },
     ];
     
