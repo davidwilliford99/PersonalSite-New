@@ -6,7 +6,7 @@ import acpScreenshot from './../assets/ACP1.png';
 import cmScreenshot from './../assets/CM1.png';
 import taScreenshot from './../assets/TextArt1.png';
 import pwScreenshot from './../assets/pw1.png';
-import ajScreenshot from './../assets/AJI1.png';
+import sfScreenshot from './../assets/SF1.png';
 import bgcScreenshot from './../assets/BGC1.png';
 import blogScreenshot from './../assets/Blog-ss.png';
 import steamScreenshot from './../assets/SteamAn.png';
@@ -20,7 +20,7 @@ export const WorksSamplesComponent = () => {
     const worksSamples = [
         {
             name: "My Blog",
-            description: "Where I write articles related to computer science. I primarily write about web development, ecommerce and computer programming. I log niche bug fixes and features of frameworks/languages I may be using.",
+            description: "Where I write articles related to my expertise. I primarily write about ecommerce based web solutions. I log niche bug fixes and features of frameworks/languages I may be using.",
             image: blogScreenshot,
             features: [
                 "Web Development",
@@ -39,9 +39,10 @@ export const WorksSamplesComponent = () => {
             image: ccScreenshot,
             features: [
                 "LLM Integration",
-                "JWT User Auth",
-                "Postgres Database",
-                "Custom UI",
+                "Google Cloud Platform",
+                "Auth",
+                "PostgreSQL",
+                "Next.Js",
                 "Django API"
             ],
             github: "https://github.com/davidwilliford99/CardCraft",
@@ -50,18 +51,21 @@ export const WorksSamplesComponent = () => {
             isDemo: false
         },
         {
-            name: "SnackMajic",
-            description: "A subscription box service for Aji.com. This allows you to receive a monthly box of your favorite snacks from any part of the world.",
-            image: ajScreenshot,
+            name: "Sizzlefish Headless Rebuild",
+            description: "An upgraded headless rebuild of Sizzlefish.com (planned to go live in 2025). Taking their frontend to something more scalable and higher-performance was my primary project during my employment here. Contains robusts capabilities including a fill-your-own-box subscription service, product reviews, loyalty & referrals, discounts and more (all of the functionalities they currently have).",
+            image: sfScreenshot,
             features: [
-                "Shopify",
+                "Shopify APIs",
+                "GraphQL",
+                "Hydrogen & Oxygen",
                 "Recharge Subscriptions",
-                "Custom UI",
-                "Payment Setup"
+                "Yotpo",
+                "AWS Lambda",
+                "Remix",
+                "Stripe"
             ],
             github: "",
-            isLive: true,
-            link: "https://sweetaji.com/pages/subscription-boxes"
+            isLive: false
         },
         {
             name: "Bone Graft Consortium",
@@ -71,11 +75,11 @@ export const WorksSamplesComponent = () => {
             isLive: true,
             link: "https://bonegraftconsortium.com",
             features: [
-                "Postgres DB",
-                "Cloud Hosting",
-                "Django API",
-                "React Frontend",
-                "Paypal Integration"
+                "PostgreSQL",
+                "Amazon Web Services",
+                "Django",
+                "Vanilla React",
+                "Paypal Payments API"
             ],
             isDemo: true
         },
@@ -85,9 +89,9 @@ export const WorksSamplesComponent = () => {
             image: taScreenshot,
             github: "https://github.com/davidwilliford99/TextArt",
             features: [
-                "Completely from scratch",
-                "Low Level Computing",
-                "Terminal GUI",
+                "C++",
+                "Feature-Rich",
+                "Terminal-Based GUI",
                 "Animation Support",
                 "Save/Edit/Upload"
             ],
@@ -99,10 +103,11 @@ export const WorksSamplesComponent = () => {
             description: "An analytics web dashboard designed for Steam users. Provides a comprehensive overview of both the Steam library and individual accounts. The analytics and account details go much farther into detail than steam's application.",
             image: steamScreenshot,
             features: [
-                "Custom User Auth",
-                "SQLite Database",
-                "Custom UI",
-                "Flask API"
+                "Data Analyitics",
+                "SQLite",
+                "Next.js",
+                "Flask",
+                "Steam APIs"
             ],
             github: "https://github.com/davidwilliford99/SteamAnalytics",
             github2: "https://github.com/davidwilliford99/SteamAnalytics-Server",
@@ -113,22 +118,23 @@ export const WorksSamplesComponent = () => {
             description: "Displays statistics on various undergraduate majors. Started as a dataset from Kaggle, then imported into a MySQL database. Afterwards, a REST API using Java Spring Boot and a frontend using React was built.",
             image: cmScreenshot,
             features: [
-                "Spring Boot API",
-                "MySQL Database",
-                "React Frontend",
-                "Dataset Integration"
+                "Spring Boot",
+                "MySQL",
+                "React",
+                "Data Analytics",
+                "Kaggle Dataset"
             ],
             github: "https://github.com/davidwilliford99/CollegeMajors",
             isLive: false,
             link: ""
         },
-        // {
-        //     name: "Undergrad Predictions Data Analysis",
-        //     description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
-        //     image: ugPredScreenshot,
-        //     github: "https://github.com/davidwilliford99/UndergradPredictions",
-        //     isLive: false,
-        // },
+        {
+            name: "Undergrad Predictions Data Analysis",
+            description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
+            image: ugPredScreenshot,
+            github: "https://github.com/davidwilliford99/UndergradPredictions",
+            isLive: false,
+        },
         // {
         //     name: "ACP Web App",
         //     description: "A web application I participated on during time at Autonomic Solutions. This was my first work experience on a team of developers, giving a realistic setting of the daily work as a software engineer. This application was meant to create self-healing computing models based off of the autonomic nervous system. Sadly this project has since been delayed. During my contributions, I was primarily frontend using Angular, but I also delved into the backend with Spring Boot before departing.",
@@ -137,14 +143,6 @@ export const WorksSamplesComponent = () => {
         //     isLive: false,
         //     link: ""
         // },
-        // {
-        //     name: "Sizzlefish Headless Rebuild",
-        //     description: "Rebuild of Sizzlefish.com from the ground up, migrating them from a Shopify theme to a custom headless build. This transition has greatly increased performance and SEO, taking them from $10m to $15m in sales per year.",
-        //     image: ajScreenshot,
-        //     github: "",
-        //     isLive: true,
-        //     link: "https://sweetaji.com/pages/subscription-boxes"
-        // }
     ];
 
     return (
@@ -203,7 +201,7 @@ export const WorksSamplesComponent = () => {
                             />
 
                             <div>
-                                <h1 className='font-Gloock text-2xl lg:text-4xl my-5 w-full lg:w-1/2'>{work.name}</h1>
+                                <h1 className='font-Gloock text-2xl lg:text-4xl my-5 w-full'>{work.name}</h1>
                                 <p className='text-neutral-400'>{work.description}</p>
                                 {work.isDemo && (
                                     <div className='bg-neutral-800 p-2 rounded-xl flex gap-2 text-xs mt-2'>

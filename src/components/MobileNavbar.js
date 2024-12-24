@@ -39,9 +39,9 @@ export const MobileNavbar = (props) => {
         {
             name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll, image: worksImg
         },
-        {
-          name: "Stories", url: "", logo: "", isCurrent: props.storiesInView, goTo: storiesScroll
-        },
+        // {
+        //   name: "Stories", url: "", logo: "", isCurrent: props.storiesInView, goTo: storiesScroll
+        // },
         {
             name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll, image: contactImg
         },

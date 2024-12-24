@@ -100,11 +100,11 @@ export const MainPage = () => {
         </div>
       </div>
 
-      <div ref={storiesRef}>
+      {/* <div ref={storiesRef}>
         <div ref={storiesClickRef}>
           <StoriesComponent id='Stories' />
         </div>
-      </div>
+      </div> */}
 
       <div ref={contactRef}>
         <div ref={contactClickRef}>

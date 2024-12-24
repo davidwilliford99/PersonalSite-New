@@ -28,7 +28,7 @@ export const IntroComponent = (props) => {
     const texts = [
         "Web Developer",
         "Software Engineer",
-        "SaaS Specialist",
+        "Cloud Computer",
     ];
 
 
@@ -144,7 +144,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I build <span className='text-orange-300'>custom software</span>, <span className='text-orange-300'>SaaS platforms</span>, and <span className='text-orange-300'>e-commerce storefronts</span>. I also <span className='text-orange-300'>automate complicated workflows</span> allowing your business to <span className='text-orange-300'>scale faster</span> without wasting time on manual tasks.
+                I build <span className='text-orange-300'>custom software</span>, <span className='text-orange-300'>cloud infrastructure</span>, and <span className='text-orange-300'>e-commerce storefronts</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale effectively</span>, saving you time, money and the typical growing pains.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
@@ -155,7 +155,7 @@ export const IntroComponent = (props) => {
                             text-xs lg:text-md
                             rounded-md text-center py-3 mt-8
                             hover:bg-neutral-300 hover:text-dark transition-all
-                            
+                            border border-dark2
                             w-full'
                     style={{
                         opacity: isInView ? 1 : 0,
@@ -164,6 +164,21 @@ export const IntroComponent = (props) => {
                     }}
                     >
                     GET IN TOUCH
+                </Link>
+                <Link 
+                    to={'https://blog.davidwilliford.dev'}
+                    className='
+                            md:w-1/2 font-Montserrat text-orange-300 text-xs lg:text-md
+                            rounded-md text-center py-3 mt-8 w-full
+                            border border-orange-300 transition-colors duration-300 ease-in-out
+                            w-full'
+                    style={{
+                        opacity: isInView ? 1 : 0,
+                        transition: "background-color 0.3s, opacity 3s",
+                        transitionDelay: "opacity 3s"
+                    }}
+                    >
+                    My Blog
                 </Link>
             </div>
 
@@ -197,7 +212,7 @@ export const IntroComponent = (props) => {
                 <PopupWidget
                     url="https://calendly.com/d9899w/1-on-1-remote-consultation"
                     rootElement={document.getElementById("root")}
-                    text="Free 1-on-1 Strategy Meeting"
+                    text="Meet with Me!"
                     textColor="#2c2c2c"
                     color="#fdba74"
                 />

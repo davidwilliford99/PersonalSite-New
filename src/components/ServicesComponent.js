@@ -25,7 +25,22 @@ export const ServicesComponent = () => {
             title: "Development",
             logo: webdev5,
             description: "Specializing in custom web experiences, I can make your website do ANYTHING!"
-        },        
+        },    
+        {
+            title: "Cloud",
+            logo: maintenance1,
+            description: "Scalable, secure cloud solutions that save time and reduce costs, ensuring your data is always accessible."
+        }, 
+        {
+            title: "Architecture",
+            logo: webdev5,
+            description: "Making sure your applications scale to multiple users and regions around the world. Ensuring smooth sailing for all levels of traffic."
+        },
+        {
+            title: "E-commerce",
+            logo: webdev4,
+            description: "Boost or build your e-commerce site effortlessly with custom automation, allowing you to sell more with less work."
+        },    
         {
             title: "Maintenance",
             logo: maintenance3,
@@ -35,36 +50,21 @@ export const ServicesComponent = () => {
             title: "SEO",
             logo: seo1,
             description: "With some simple tweaks to your site, I can make sure your site is visible to search engines, driving more organic traffic and sales."
-        },
-        {
-            title: "Cloud",
-            logo: maintenance1,
-            description: "Scalable, secure cloud solutions that save time and reduce costs, ensuring your data is always accessible."
-        },    
-        {
-            title: "E-commerce",
-            logo: webdev4,
-            description: "Boost or build your e-commerce site effortlessly with custom automation, allowing you to sell more with less work."
-        },
+        },   
         {
             title: "Automation",
             logo: analytics3,
             description: "Tired of doing the same tasks over and over? Let's talk about how I can automate your business, saving you time and money."
         },
         {
-            title: "Design",
-            logo: webdev5,
-            description: "Make sure your site, logos and marketing material leave an impact. Along with an elegant, custom design that matches your brand."
-        },
-        {
-            title: "SaaS",
+            title: "SaaS Development",
             logo: maintenance2,
             description: "Have a custom SaaS platform and need a developer? I can provide development services at a fair rate, without needing to hire full-time employees."
         },
         {
             title: "Custom Apps",
             logo: webdev3,
-            description: "Have an app idea? Book a 1-on-1 consultation and let's talk about how we can build it together!"
+            description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together!"
         },
     ];
     
