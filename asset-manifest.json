@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3149a283.css",
-    "main.js": "/static/js/main.e9b861c8.js",
+    "main.js": "/static/js/main.e3c6d3c3.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto2.png": "/static/media/aboutPhoto2.0ca16a1260e0481a5277.png",
     "static/media/CardCraftSS.png": "/static/media/CardCraftSS.215ec11f3b937a586473.png",
@@ -34,11 +34,11 @@
     "static/media/Website.svg": "/static/media/Website.10fdf60b9d23a347b5c2c65c08c87348.svg",
     "static/media/Custom.svg": "/static/media/Custom.4a0fe71294f85339e2246a140b1d7402.svg",
     "main.3149a283.css.map": "/static/css/main.3149a283.css.map",
-    "main.e9b861c8.js.map": "/static/js/main.e9b861c8.js.map",
+    "main.e3c6d3c3.js.map": "/static/js/main.e3c6d3c3.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3149a283.css",
-    "static/js/main.e9b861c8.js"
+    "static/js/main.e3c6d3c3.js"
   ]
 }
