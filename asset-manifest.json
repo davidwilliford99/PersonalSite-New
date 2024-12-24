@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.52479a46.css",
-    "main.js": "/static/js/main.193c41fc.js",
+    "main.css": "/static/css/main.3149a283.css",
+    "main.js": "/static/js/main.e62d5d1d.js",
     "static/js/787.717a35c2.chunk.js": "/static/js/787.717a35c2.chunk.js",
     "static/media/aboutPhoto2.png": "/static/media/aboutPhoto2.0ca16a1260e0481a5277.png",
     "static/media/CardCraftSS.png": "/static/media/CardCraftSS.215ec11f3b937a586473.png",
-    "static/media/AJI1.png": "/static/media/AJI1.fe16ed7174de59accf4a.png",
+    "static/media/SF1.png": "/static/media/SF1.c54c95c4e3ed7b89f9f3.png",
     "static/media/Blog-ss.png": "/static/media/Blog-ss.1fc8c0d21ed256af8bed.png",
     "static/media/BGC1.png": "/static/media/BGC1.60e3adef8754ebfa0504.png",
     "static/media/CM1.png": "/static/media/CM1.4a099fd9c6f06e28a067.png",
@@ -31,14 +31,14 @@
     "static/media/analytics3.svg": "/static/media/analytics3.e680a1ed7babeebb0fd80cbdc91b6991.svg",
     "static/media/webdev3.svg": "/static/media/webdev3.f502be3e2df762530e1da44ab96c467e.svg",
     "index.html": "/index.html",
-    "static/media/Website.svg": "/static/media/Website.eb0bf7c73e3c7a46f1020e32049ad956.svg",
-    "static/media/Custom.svg": "/static/media/Custom.92fa2fedb080bfbbd8fe1b664a5aaaea.svg",
-    "main.52479a46.css.map": "/static/css/main.52479a46.css.map",
-    "main.193c41fc.js.map": "/static/js/main.193c41fc.js.map",
+    "static/media/Website.svg": "/static/media/Website.10fdf60b9d23a347b5c2c65c08c87348.svg",
+    "static/media/Custom.svg": "/static/media/Custom.4a0fe71294f85339e2246a140b1d7402.svg",
+    "main.3149a283.css.map": "/static/css/main.3149a283.css.map",
+    "main.e62d5d1d.js.map": "/static/js/main.e62d5d1d.js.map",
     "787.717a35c2.chunk.js.map": "/static/js/787.717a35c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52479a46.css",
-    "static/js/main.193c41fc.js"
+    "static/css/main.3149a283.css",
+    "static/js/main.e62d5d1d.js"
   ]
 }
