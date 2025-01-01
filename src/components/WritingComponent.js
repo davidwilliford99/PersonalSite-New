@@ -54,7 +54,7 @@ export const WritingComponent = () => {
                 <h3 className='text-3xl md:text-6xl font-Gloock leading-snug my-6 text-center md:text-left text-offWhite'>
                     My Recent Articles:
                 </h3>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                     {blogs.map((blog, index) => (
                         <a
                             key={blog.node.id}
