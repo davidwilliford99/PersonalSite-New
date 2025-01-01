@@ -24,7 +24,7 @@ export const ServicesComponent = () => {
         {
             title: "Development",
             logo: webdev5,
-            description: "With a professional background in software development, I can make you an application to do almost anything."
+            description: "With a professional background in software development, I can make you an application to do practically anything."
         },    
         {
             title: "Cloud",
@@ -34,17 +34,17 @@ export const ServicesComponent = () => {
         {
             title: "Architecture",
             logo: webdev5,
-            description: "Making sure your applications scale to multiple users and regions around the world."
+            description: "Making sure your applications and resources scale to multiple users and regions around the world."
         },
         {
             title: "E-commerce",
             logo: webdev4,
-            description: "Boost or build your e-commerce site effortlessly, allowing you to sell more with less work."
+            description: "I can build e-commerce sites effortlessly, allowing you to sell more with less work."
         },    
         {
             title: "Maintenance",
             logo: maintenance3,
-            description: "Have a professional maintain your website, cloud platform, hosting and more. Saving you valuable time."
+            description: "Maintaining your IT resources. Saving you time, fixing bugs & issues, and addressing cybersecurity concerns."
         },
         {
             title: "SEO",
@@ -54,18 +54,18 @@ export const ServicesComponent = () => {
         {
             title: "Automation",
             logo: analytics3,
-            description: "Tired of doing the same tasks over and over? Let's automate your business, saving you time and money."
+            description: "If you are tired of doing the same tasks over and over, I can automate your business processes, saving you time."
         },
         {
             title: "SaaS Development",
             logo: maintenance2,
             description: "Have a custom SaaS platform and need a developer? I can help you develop it!"
         },
-        {
-            title: "Custom Apps",
-            logo: webdev3,
-            description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together."
-        },
+        // {
+        //     title: "Custom Apps",
+        //     logo: webdev3,
+        //     description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together."
+        // },
     ];
     
     return (
@@ -76,7 +76,7 @@ export const ServicesComponent = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                I can assist you with:
+                Some things I can do:
             </motion.h1>
 
     
@@ -132,7 +132,7 @@ export const ServicesComponent = () => {
                 })}
             </div>
             
-            <div className='w-full flex justify-center'>
+            {/* <div className='w-full flex justify-center'>
                 <button 
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className='
@@ -212,7 +212,7 @@ export const ServicesComponent = () => {
                         </button>
                     </motion.form>
                 )}
-            </AnimatePresence>
+            </AnimatePresence> */}
 
         </div>
     );

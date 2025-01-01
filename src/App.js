@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom"
 import { MainPage } from "./pages/MainPage"
 import './App.css'
 import { ThankYouPage } from "./pages/ThankYouPage";
+import { BlogMain } from "./pages/BlogMain";
 
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
         */}
 
         <Routes>
+
           <Route exact path="/PersonalSite-New" element={<MainPage />} />
           <Route exact path="/ThankYou" element={<ThankYouPage />} />
+
           <Route exact path='/' element={ <MainPage /> }/>
         </Routes>
 

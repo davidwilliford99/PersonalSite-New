@@ -144,10 +144,28 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I build <span className='text-orange-300'>custom software</span>, <span className='text-orange-300'>cloud infrastructure</span>, and <span className='text-orange-300'>e-commerce storefronts</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale effectively</span>, saving you time, money and the typical growing pains.
+                I work in <span className='text-orange-300'>cloud computing</span>, <span className='text-orange-300'>full stack development</span>, and <span className='text-orange-300'>e-commerce</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale effectively</span>, organizing their IT resources into something scalable and maintainable.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
+                <a 
+                    href={'https://blog.davidwilliford.dev'}
+                    target='_blank'
+                    className='
+                            md:w-1/2 font-Montserrat text-orange-300 bg-dark2 
+                            text-xs lg:text-md
+                            rounded-md text-center py-3 mt-8
+                            hover:bg-neutral-300 hover:text-dark transition-all
+                            border border-dark2
+                            w-full'
+                    style={{
+                        opacity: isInView ? 1 : 0,
+                        transition: "background-color 0.3s, opacity 3s",
+                        transitionDelay: "opacity 3s"
+                    }}
+                    >
+                    READ SOME ARTICLES
+                </a>
                 <Link 
                     onClick={contactScroll}
                     className='
@@ -163,22 +181,7 @@ export const IntroComponent = (props) => {
                         transitionDelay: "opacity 3s"
                     }}
                     >
-                    GET IN TOUCH
-                </Link>
-                <Link 
-                    to={'https://blog.davidwilliford.dev'}
-                    className='
-                            md:w-1/2 font-Montserrat text-orange-300 text-xs lg:text-md
-                            rounded-md text-center py-3 mt-8 w-full
-                            border border-orange-300 transition-colors duration-300 ease-in-out
-                            w-full'
-                    style={{
-                        opacity: isInView ? 1 : 0,
-                        transition: "background-color 0.3s, opacity 3s",
-                        transitionDelay: "opacity 3s"
-                    }}
-                    >
-                    My Blog
+                    CONTACT ME
                 </Link>
             </div>
 

@@ -8,6 +8,7 @@ import { StoriesComponent } from '../components/StoriesComponent';
 import { Navbar } from '../components/Navbar';
 import { useInView } from 'framer-motion';
 import { ResumeComponent } from '../components/ResumeComponent';
+import { WritingComponent } from '../components/WritingComponent';
 import { Footer } from '../components/Footer';
 import { MobileNavbar } from '../components/MobileNavbar';
 import { TestimonialComponent } from '../components/TestimonialComponent';
@@ -22,6 +23,7 @@ export const MainPage = () => {
   const contactClickRef = useRef(null)
   const servicesClickRef = useRef(null)
   const storiesClickRef = useRef(null)
+  const writingClickRef = useRef(null)
 
   // Refs for scroll location
   const introRef = useRef(null)
@@ -30,6 +32,7 @@ export const MainPage = () => {
   const contactRef = useRef(null)
   const servicesRef = useRef(null)
   const storiesRef = useRef(null)
+  const writingRef = useRef(null)
 
   // View States for scroll location
   const introInView = useInView(introRef, {margin: '-250px'})
@@ -38,6 +41,7 @@ export const MainPage = () => {
   const contactInView = useInView(contactRef, {margin: '-250px'})
   const servicesInView = useInView(servicesRef, {margin: '-250px'})
   const storiesInView = useInView(storiesRef, { margin: '-250px' })
+  const writingInView = useInView(writingRef, { margin: '-250px' })
 
   return (
     <div id='MainPage' className='max-w-screen-2xl mx-auto font-Montserrat min-h-screen'>
@@ -50,6 +54,7 @@ export const MainPage = () => {
         contactInView={contactInView}
         servicesInView={servicesInView}
         storiesInView={storiesInView}
+        writingInView={writingInView}
 
         aboutClickRef={aboutClickRef}
         introClickRef={introClickRef}
@@ -57,6 +62,7 @@ export const MainPage = () => {
         contactClickRef={contactClickRef}
         servicesClickRef={servicesClickRef}
         storiesClickRef={storiesClickRef}
+        writingClickRef={writingClickRef}
       />
 
       <MobileNavbar 
@@ -67,6 +73,7 @@ export const MainPage = () => {
         contactInView={contactInView}
         servicesInView={servicesInView}
         storiesInView={storiesInView}
+        writingInView={writingInView}
 
         aboutClickRef={aboutClickRef}
         introClickRef={introClickRef}
@@ -74,6 +81,7 @@ export const MainPage = () => {
         contactClickRef={contactClickRef}
         servicesClickRef={servicesClickRef}
         storiesClickRef={storiesClickRef}
+        writingClickRef={writingClickRef}
       />
 
 
@@ -92,7 +100,7 @@ export const MainPage = () => {
         </div>
       </div> 
 
-      <TestimonialComponent/>
+      {/* <TestimonialComponent/> */}
 
       <div ref={servicesRef}>
         <div ref={servicesClickRef}>
@@ -106,15 +114,21 @@ export const MainPage = () => {
         </div>
       </div> */}
 
-      <div ref={contactRef}>
-        <div ref={contactClickRef}>
-          <ContactComponent id='Contact'/>
+      <div ref={writingRef}>
+        <div ref={writingClickRef}>
+          <WritingComponent id='Writing'/>
         </div>
       </div>
 
       <div ref={worksRef}>
         <div ref={worksClickRef}>
           <WorksSamplesComponent id='Works'/>
+        </div>
+      </div>
+
+      <div ref={contactRef}>
+        <div ref={contactClickRef}>
+          <ContactComponent id='Contact'/>
         </div>
       </div>
 

@@ -129,7 +129,7 @@ export const WorksSamplesComponent = () => {
             link: ""
         },
         {
-            name: "Undergrad Predictions Data Analysis",
+            name: "Undergrad Predictions (Big Data Analysis)",
             description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
             image: ugPredScreenshot,
             features: [
@@ -187,7 +187,7 @@ export const WorksSamplesComponent = () => {
                     transition: "all 3s"
                 }}
             >
-                Here are some samples of my work ...
+                Some Fun Projects
             </h3>
 
             {/* My works examples are dynamically generated */}

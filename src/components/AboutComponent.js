@@ -40,11 +40,13 @@ export const AboutComponent = () => {
                         </h1>
 
                         <p className='text-lg mb-8'>
-                            As a <span className='text-orange-300'>Computer Science graduate</span> and tech enthusiast, I'm driven by curiosity to understand advanced systems in the world around me. This desire has led me to specialize in <span className='text-orange-300'>automation, software development, ecommerce, cloud computing, and APIs</span>. I provide services that leverage these skills, in hopes to help <span className='text-orange-300'>streamline operations</span>, <span className='text-orange-300'>increase efficiency</span>, <span className='text-orange-300'>scale businesses</span> and <span className='text-orange-300'>create reccuring revenue</span>. 
+                            As a <span className='text-orange-300'>Computer Science graduate</span> and tech enthusiast, I'm driven by curiosity to understand advanced systems in the world around me. Since a young kid, I have always been fascinated with the internet and how poeple can connect online. 
+                            <br/><br/>
+                            This fascination led me to specializing in <span className='text-orange-300'>web development, cloud computing, and computer networking</span> during my time in university. Since then, I have been working as a software developer, studying to transition to architecture and cloud roles in the near future.
                         </p>
 
 
-                        <Link 
+                        {/* <Link 
                             onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}
                             className='
                                     lg:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
@@ -57,7 +59,7 @@ export const AboutComponent = () => {
                                 transitionDelay: "opacity 3s"
                             }}>
                             Book a Free Consultation
-                        </Link>
+                        </Link> */}
 
                     </div>
             </div>
