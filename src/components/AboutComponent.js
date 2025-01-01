@@ -42,7 +42,7 @@ export const AboutComponent = () => {
                         <p className='text-lg mb-8'>
                             As a <span className='text-orange-300'>Computer Science graduate</span> and tech enthusiast, I'm driven by curiosity to understand advanced systems in the world around me. Since a young kid, I have always been fascinated with the internet and how poeple can connect online. 
                             <br/><br/>
-                            This fascination led me to specializing in <span className='text-orange-300'>web development, cloud computing, and computer networking</span> during my time in university. Since then, I have been working as a software developer, studying to transition to architecture and cloud roles in the near future.
+                            This fascination led me to specializing in <span className='text-orange-300'>web development, cloud computing, and computer networking</span> during my time in university. Since then, I have been working as a software developer, recently studying to transition to architecture, operations and cloud roles.
                         </p>
 
 
