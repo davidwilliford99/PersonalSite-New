@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import blogDefault from './../assets/blog-default.jpg';
 import { useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -67,7 +68,11 @@ export const WritingComponent = () => {
                             }}
                         >
                             <div className='flex flex-col gap-3'>
-                                <img src={blog.node.coverImage.url} alt={blog.title} className='w-full h-48 object-cover rounded-md' />
+                                <img 
+                                    src={blog.node.coverImage?.url ? blog.node.coverImage.url : blogDefault} 
+                                    alt={blog.title} 
+                                    className='w-full h-48 object-cover rounded-md' 
+                                />
                                 <h2 className='text-xl text-offWhite font-semibold mt-2'>{blog.node.title}</h2>
                                 <p className='text-sm'>{blog.node.brief}</p>
                             </div>
@@ -79,7 +84,7 @@ export const WritingComponent = () => {
                 <a
                     href='https://blog.davidwilliford.dev'
                     target='_blank'
-                    className='font-Montserrat text-dark bg-orange-300 text-xs lg:text-xl rounded-full text-center py-5 px-8 mt-8 transition-all hover:opacity-90 border border-dark2 self-start'
+                    className='font-Gloock underline text-offWhite text-xs lg:text-xl py-5 mt-8 transition-all hover:opacity-90 self-start'
                     style={{
                         opacity: isInView ? 1 : 0,
                         transition: 'opacity 1s ease-out, transform 1s ease-out',
