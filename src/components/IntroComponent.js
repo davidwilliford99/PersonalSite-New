@@ -144,7 +144,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I work in <span className='text-orange-300'>cloud computing</span>, <span className='text-orange-300'>full stack development</span>, and <span className='text-orange-300'>e-commerce</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale effectively</span>, organizing their IT resources into something scalable and maintainable.
+                I work in <span className='text-orange-300'>cloud computing</span>, <span className='text-orange-300'>full stack development</span>, and <span className='text-orange-300'>e-commerce</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale their products effectively</span>. I thrive for <span className='text-orange-300'>clean, effecient</span> solutions and have a high attention to detail.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>

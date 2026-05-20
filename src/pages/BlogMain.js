@@ -15,7 +15,7 @@ export const BlogMain = () => {
                    text-offWhite'
       >
 
-        Herro
+        Hello
 
       </div>
 

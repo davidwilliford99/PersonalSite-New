@@ -10,7 +10,7 @@ export const WritingComponent = () => {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-            const response = await fetch('https://gql.hashnode.com/', {
+            const response = await fetch('https://gql-beta.hashnode.com/', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -18,24 +18,24 @@ export const WritingComponent = () => {
                 },
                 body: JSON.stringify({
                     query: `
-                        query RecentBlogs {
-                            user(username: "DavidWilliford") {
-                                posts(page: 1, pageSize: 6) {
-                                    edges {
-                                        node {
-                                            id
-                                            title
-                                            slug
-                                            brief
-                                            publishedAt
-                                            coverImage {
-                                                url
-                                            }
+                    query RecentBlogs {
+                        user(username: "DavidWilliford") {
+                            posts(first: 6) {
+                                edges {
+                                    node {
+                                        id
+                                        title
+                                        slug
+                                        brief
+                                        publishedAt
+                                        coverImage {
+                                            url
                                         }
                                     }
                                 }
                             }
-                        }`
+                        }
+                    }`
                 })
             });
             const { data } = await response.json();
