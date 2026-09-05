@@ -65,14 +65,15 @@ export const WorksSamplesComponent = () => {
                 "Stripe"
             ],
             github: "",
-            isLive: false
+            link: "headless.sizzlefish.com",
+            isLive: true
         },
         {
             name: "Bone Graft Consortium",
             description: "A non-profit repository to provide medical professionals an unbiased source of bone grafts. Currently undergoing black-box demos from select surgeons and surgical techs.",
             image: bgcScreenshot,
             github: "",
-            isLive: true,
+            isLive: false,
             link: "https://bonegraftconsortium.com",
             features: [
                 "PostgreSQL",
@@ -81,7 +82,6 @@ export const WorksSamplesComponent = () => {
                 "Vanilla React",
                 "Paypal Payments API"
             ],
-            isDemo: true
         },
         {
             name: "TextArt",
@@ -113,21 +113,21 @@ export const WorksSamplesComponent = () => {
             github2: "https://github.com/davidwilliford99/SteamAnalytics-Server",
             isLive: false,
         },
-        {
-            name: "MajorStatistics",
-            description: "Displays statistics on various undergraduate majors. Started as a dataset from Kaggle, then imported into a MySQL database. Afterwards, a REST API using Java Spring Boot and a frontend using React was built.",
-            image: cmScreenshot,
-            features: [
-                "Spring Boot",
-                "MySQL",
-                "React",
-                "Data Analytics",
-                "Kaggle Dataset"
-            ],
-            github: "https://github.com/davidwilliford99/CollegeMajors",
-            isLive: false,
-            link: ""
-        },
+        // {
+        //     name: "MajorStatistics",
+        //     description: "Displays statistics on various undergraduate majors. Started as a dataset from Kaggle, then imported into a MySQL database. Afterwards, a REST API using Java Spring Boot and a frontend using React was built.",
+        //     image: cmScreenshot,
+        //     features: [
+        //         "Spring Boot",
+        //         "MySQL",
+        //         "React",
+        //         "Data Analytics",
+        //         "Kaggle Dataset"
+        //     ],
+        //     github: "https://github.com/davidwilliford99/CollegeMajors",
+        //     isLive: false,
+        //     link: ""
+        // },
         {
             name: "Undergrad Predictions (Big Data Analysis)",
             description: "A final project for a Big Data Analytics course during my senior year. This analysis is based off of a Kaggle data sheet concerning different universities (USA only) and their region, incomes after graduation, school type etc. Two colleagues and I did a full analysis on this data, as well as Random Forest model to predict mid-career salaries based on school name, school type, school region and undergraduate major.",
