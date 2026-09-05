@@ -56,11 +56,6 @@ export const ServicesComponent = () => {
             logo: maintenance2,
             description: "Set up multiple agents that can work in parallel to solve most engineering problems."
         },
-        // {
-        //     title: "Custom Apps",
-        //     logo: webdev3,
-        //     description: "Have an app idea? Book a 1-on-1 meeting and let's see if we can build it together."
-        // },
     ];
     
     return (
@@ -126,89 +121,6 @@ export const ServicesComponent = () => {
                     )
                 })}
             </div>
-            
-            {/* <div className='w-full flex justify-center'>
-                <button 
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className='
-                            font-Montserrat text-orange-300 text-md
-                            rounded-lg text-center py-3 px-10 mt-8 bg-neutral-800
-                            transition-all flex items-center gap-2'
-                    style={{
-                        opacity: isInView ? 1 : 0,
-                        transition: "background-color 0.3s, opacity 3s",
-                        transitionDelay: "opacity 3s"
-                    }}
-                    >
-                        Curate Your Own Custom Service Package
-                        <motion.span
-                            initial={{ rotate: 0 }}
-                            animate={{ rotate: isDropdownOpen ? 180 : 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            &#9660;
-                        </motion.span>
-                </button>
-            </div>
-
-            {formSubmitted && (
-                <p className='text-green-400 text-center mt-5'>Thank you for your request! I'll reach out ASAP about how I can help.</p>
-            )}
-
-            <AnimatePresence>
-                {isDropdownOpen && (
-                    <motion.form 
-                        action="https://formsubmit.co/contact@davidwilliford.dev" 
-                        method='POST' 
-                        className='w-full max-w-screen-sm mx-auto flex flex-col mt-8 px-2 lg:bg-neutral-800 rounded-lg lg:p-8'
-                        ref={ref}
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <div className='flex flex-col w-full gap-3 mt-3 lg:p-5 text-offWhite'>
-                            <label className='text-2xl text-center'>Select Service(s)</label>
-                            <div className='grid grid-cols-2 lg:grid-cols-3 gap-2 my-5'>
-                                {services.map((service, index) => (
-                                <div key={index} className='flex'>
-                                    <input type="checkbox" name="services" value={service.title} className='mr-2'></input>
-                                    <label className=''>{service.title}</label>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className='flex flex-col gap-2'>
-                            <input type="text" required placeholder='Name' name="Name" className='w-full bg-dark border rounded-md border-neutral-700 p-4 text-offWhite placeholder-neutral-500'></input>
-                            <input type="email" required placeholder='Email' name="Email" className='w-full bg-dark border rounded-md border-neutral-700 p-4 text-offWhite placeholder-neutral-500'></input>
-                            <input type="text" placeholder='Phone #' name="Phone" className='w-full bg-dark border rounded-md border-neutral-700 p-4 text-offWhite placeholder-neutral-500'></input>
-                            <input type="hidden" name="_captcha" value="false"></input>
-                            <input type="hidden" name='_next' value='https://davidwilliford99.github.io/PersonalSite-New/#/ThankYou'></input>
-                        </div>
-                        <textarea type="text"  rows="5" cols="10" placeholder="Briefly description of your project or business, and what problems you want to fix." name="message" className='mt-2 w-full bg-dark border border-neutral-700 rounded-md p-4 text-white mb-10 placeholder-neutral-500'></textarea>
-                        
-                        <button 
-                            type='submit'
-                            onClick={() => {
-                                setFormSubmitted(prev => !prev)
-                                setIsDropdownOpen(false)
-                            }}
-                            className='
-                                    w-full font-Montserrat text-offWhite bg-orange-500 text-md
-                                    rounded-lg text-center py-3
-                                    hover:bg-neutral-300 hover:text-dark transition-all'
-                            style={{
-                                opacity: isInView ? 1 : 0,
-                                transition: "background-color 0.3s, opacity 3s",
-                                transitionDelay: "opacity 3s"
-                            }}
-                            >
-                            Submit Request
-                        </button>
-                    </motion.form>
-                )}
-            </AnimatePresence> */}
-
         </div>
     );
     

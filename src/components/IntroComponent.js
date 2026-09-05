@@ -208,18 +208,6 @@ export const IntroComponent = (props) => {
                     <img src={hashnode} alt='blog logo' className='h-10 md:hover:rotate-180 transition cursor-pointer'/>
                 </a>
             </div>
-
-            
-            {/* Calendly popup link */}
-            {/* <div className=''>
-                <PopupWidget
-                    url="https://calendly.com/d9899w/1-on-1-remote-consultation"
-                    rootElement={document.getElementById("root")}
-                    text="Meet with Me!"
-                    textColor="#2c2c2c"
-                    color="#fdba74"
-                />
-            </div> */}
         </div>
   
       </div>

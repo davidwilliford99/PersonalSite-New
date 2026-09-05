@@ -44,23 +44,6 @@ export const AboutComponent = () => {
                             <br/><br/>
                             This fascination led me to specializing in <span className='text-orange-300'>softwre development, cloud computing, and computer networking</span> during my time in university. Since then, I have been working as a software engineer, currently studying to transition to architecture, operations and cloud roles.
                         </p>
-
-
-                        {/* <Link 
-                            onClick={() => {window.open('https://calendly.com/d9899w/1-on-1-remote-consultation', '_blank');}}
-                            className='
-                                    lg:w-1/2 font-Montserrat text-orange-300 bg-dark2 text-md
-                                    rounded-lg text-center py-3 my-8
-                                    hover:bg-neutral-300 hover:text-dark transition-all
-                                    w-full'
-                            style={{
-                                opacity: isInView ? 1 : 0,
-                                transition: "background-color 0.3s, opacity 3s",
-                                transitionDelay: "opacity 3s"
-                            }}>
-                            Book a Free Consultation
-                        </Link> */}
-
                     </div>
             </div>
       </div>

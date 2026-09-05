@@ -31,18 +31,12 @@ export const Navbar = (props) => {
         {
             name: "Services", url: "", logo: "", isCurrent: props.servicesInView, goTo: servicesScroll
         },
-        // {
-        //     name: "Stories", url: "", logo: "", isCurrent: props.storiesInView, goTo: storiesScroll
-        // },
         {
             name: "Writing", url: "", logo: "", isCurrent: props.writingInView, goTo: writingScroll
         },
         {
             name: "Works", url: "", logo: "", isCurrent: props.worksInView, goTo: worksScroll
         },
-        // {
-        //     name: "Contact", url: "", logo: "", isCurrent: props.contactInView, goTo: contactScroll
-        // },
 
     ];
 
