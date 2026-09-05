@@ -74,7 +74,7 @@ export const ContactComponent = () => {
                   transition: "all 1s"
                 }}
                 >
-                Email me <a className='text-orange-300' href="mailto:contact@davidwilliford.dev">contact@davidwilliford.dev</a>
+                Email me <a className='text-orange-300' href="mailto:d9899w@gmail.com">d9899w@gmail.com</a>
             </p>
 
 
@@ -92,7 +92,7 @@ export const ContactComponent = () => {
 
         {/* Contact Form */}
         <form 
-            action="https://formsubmit.co/contact@davidwilliford.dev" 
+            action="https://formsubmit.co/d9899w@gmail.com" 
             method='POST' 
             className='w-full flex flex-col items-center justify-center'
             ref={ref}

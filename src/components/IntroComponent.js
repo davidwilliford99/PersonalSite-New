@@ -26,9 +26,9 @@ export const IntroComponent = (props) => {
     const [typingSpeed, setTypingSpeed] = useState(150);
 
     const texts = [
-        "Web Developer",
-        "Software Engineer",
-        "Cloud Computer",
+        "Software Developer",
+        "Infrastructure Engineer",
+        "Technical Writer",
     ];
 
 
@@ -144,7 +144,7 @@ export const IntroComponent = (props) => {
                     transitionDelay: "3s"
                 }}
             >
-                I work in <span className='text-orange-300'>cloud computing</span>, <span className='text-orange-300'>full stack development</span>, and <span className='text-orange-300'>e-commerce</span>. My experience allows businesses to <span className='text-orange-300'>grow and scale their products effectively</span>. I thrive for <span className='text-orange-300'>clean, effecient</span> solutions and have a high attention to detail.
+                I work in <span className='text-orange-300'>cloud architecture</span> and <span className='text-orange-300'>software development</span>. My experience has allowed businesses to <span className='text-orange-300'>grow and scale their products effectively</span>. I always thrive to engineer <span className='text-orange-300'>clean, effecient & thorough</span> solutions that have a high impact.
             </p>
 
             <div className='flex buttons gap-2 mb-2'>
@@ -211,7 +211,7 @@ export const IntroComponent = (props) => {
 
             
             {/* Calendly popup link */}
-            <div className=''>
+            {/* <div className=''>
                 <PopupWidget
                     url="https://calendly.com/d9899w/1-on-1-remote-consultation"
                     rootElement={document.getElementById("root")}
@@ -219,7 +219,7 @@ export const IntroComponent = (props) => {
                     textColor="#2c2c2c"
                     color="#fdba74"
                 />
-            </div>
+            </div> */}
         </div>
   
       </div>

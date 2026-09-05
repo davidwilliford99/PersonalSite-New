@@ -24,7 +24,7 @@ export const ServicesComponent = () => {
         {
             title: "Development",
             logo: webdev5,
-            description: "With a professional background in software development, I can make you an application to do practically anything."
+            description: "With a professional background in software development, I can work on a large variety of different applications."
         },    
         {
             title: "Cloud",
@@ -34,32 +34,27 @@ export const ServicesComponent = () => {
         {
             title: "Architecture",
             logo: webdev5,
-            description: "Making sure your applications and resources scale to multiple users and regions around the world."
+            description: "Making sure applications and resources scale to multiple users and regions around the world."
         },
         {
             title: "E-commerce",
             logo: webdev4,
-            description: "I can build e-commerce sites effortlessly, allowing you to sell more with less work."
+            description: "Building & managing e-commerce sites effortlessly, allowing owners to sell more with less work."
         },    
         {
             title: "Maintenance",
             logo: maintenance3,
-            description: "Maintaining your IT resources. Saving you time, fixing bugs & issues, and addressing cybersecurity concerns."
+            description: "Maintaining IT resources. Saving time, fixing bugs & issues, and addressing cybersecurity concerns."
         },
-        {
-            title: "SEO",
-            logo: seo1,
-            description: "Make sure your site is visible to search engines, driving more organic traffic and sales."
-        },   
         {
             title: "Automation",
             logo: analytics3,
             description: "If you are tired of doing the same tasks over and over, I can automate your business processes, saving you time."
         },
         {
-            title: "SaaS Development",
+            title: "Agentic Development",
             logo: maintenance2,
-            description: "Have a custom SaaS platform and need a developer? I can help you develop it!"
+            description: "Set up multiple agents that can work in parallel to solve most engineering problems."
         },
         // {
         //     title: "Custom Apps",
