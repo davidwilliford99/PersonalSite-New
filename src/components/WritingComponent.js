@@ -14,7 +14,6 @@ export const WritingComponent = () => {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    "x-apollo-operation-name": "FetchData",
                 },
                 body: JSON.stringify({
                     query: `
