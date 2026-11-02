@@ -65,7 +65,7 @@ export const WorksSamplesComponent = () => {
                 "Stripe"
             ],
             github: "",
-            link: "headless.sizzlefish.com",
+            link: "https://headless.sizzlefish.com",
             isLive: true
         },
         {
