@@ -2,10 +2,8 @@ import React, { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
 // projects screenshots 
-import acpScreenshot from './../assets/ACP1.png';
-import cmScreenshot from './../assets/CM1.png';
+import gsssScreenshot from './../assets/gsssScreenshot.png';
 import taScreenshot from './../assets/TextArt1.png';
-import pwScreenshot from './../assets/pw1.png';
 import sfScreenshot from './../assets/SF1.png';
 import bgcScreenshot from './../assets/BGC1.png';
 import blogScreenshot from './../assets/Blog-ss.png';
@@ -67,6 +65,18 @@ export const WorksSamplesComponent = () => {
             github: "",
             link: "https://headless.sizzlefish.com",
             isLive: true
+        },
+        {
+            name: "Benjamin Graham Style Stock Screener",
+            description: "A data-driven stock screener built around Benjamin Graham's value-investing principles. The project begins by scraping the Fortune 500 list and then pulls company data from the Yahoo Finance API to evaluate valuation metrics such as P/E ratios over time, intrinsic share value, and other fundamental signals. Results are then compiled and exported to a Google Sheet for easier screening and comparison.",
+            features: [
+                "API Integration",
+                "Financial Calculations",
+                "Data Analytics",
+                "Multithreading",
+                "Web Scraping",
+            ],
+            image: gsssScreenshot,
         },
         {
             name: "Bone Graft Consortium",
